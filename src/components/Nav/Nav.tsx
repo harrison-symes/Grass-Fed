@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom"
 import NavItem from "./NavItem"
 import cn from "classnames"
 import Burger from "./Burger";
@@ -10,6 +11,11 @@ import PodcastIcon from "../Icons/Podcast";
 
 const Nav = () => {
     const [isActive, setIsActive] = useState(false);
+    const location = useLocation()
+
+    useEffect(() => {
+        setIsActive(false)
+    }, [location])
 
     return (
         <>
