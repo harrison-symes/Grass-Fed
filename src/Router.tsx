@@ -2,6 +2,7 @@ import * as React from "react";
 import { Routes, Route, Outlet, BrowserRouter } from "react-router-dom";
 import Layout from "./Layout";
 import { ROUTES_INTERNAL } from "./constants/router.constants";
+import Recipe from "./pages/Recipe";
 
 const Home = React.lazy(() => import("./pages/Home"));
 const Recipes = React.lazy(() => import("./pages/Recipes"));
@@ -20,6 +21,14 @@ const Router = () => {
             element={
               <React.Suspense fallback={<>LOADING</>}>
                 <Recipes />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path={ROUTES_INTERNAL.RECIPE}
+            element={
+              <React.Suspense fallback={<>LOADING</>}>
+                <Recipe />
               </React.Suspense>
             }
           />

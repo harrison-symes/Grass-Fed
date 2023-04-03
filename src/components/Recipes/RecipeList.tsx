@@ -5,7 +5,7 @@ import RecipeCard from "./RecipeCard";
 const RecipeList = () => {
   const recipes = useSelector(getFilteredRecipes);
   return (
-    <div className="flex flex-wrap align-start justify-start">
+    <div className="flex flex-wrap align-start">
       {recipes.map((recipe) => (
         <RecipeCard recipe={recipe} />
       ))}

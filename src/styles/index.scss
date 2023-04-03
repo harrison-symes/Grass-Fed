@@ -65,6 +65,15 @@ body {
 .recipe-card {
     min-width: 400px;
     margin: 0 1rem 2rem 1rem;
+    cursor: pointer;
+    transform: scale(1.0);
+    
+
+    &:hover {
+        background-color: $primary;
+        transform: scale(1.1);
+        transition: transform 0.4s;
+    }
 }
 
 .label:not(:last-child) {

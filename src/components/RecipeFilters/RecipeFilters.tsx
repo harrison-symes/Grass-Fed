@@ -6,7 +6,7 @@ import RecipeTimeDropdown from "./RecipeTimeDropdown";
 
 const RecipeFilters = () => {
   return (
-    <section className="section is-medium">
+    <section className="section">
       <div className="block w-100">
         <RecipeSearch />
       </div>

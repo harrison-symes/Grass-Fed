@@ -1,13 +1,22 @@
+import { useNavigate } from "react-router-dom";
 import { IRecipe } from "../../models/recipe.models";
 import { costText, speedText } from "../helpers/recipeHelpers";
+import { useDispatch } from "react-redux";
+import { replace } from "redux-first-history";
 
 interface IRecipeProps {
   recipe: IRecipe;
 }
 
 const RecipeCard = (props: IRecipeProps) => {
+  const navigate = useNavigate();
+
+  const onClick = () => {
+    navigate(`/recipes/${props.recipe.id}`);
+  };
+
   return (
-    <div className="card recipe-card">
+    <div className="card recipe-card" onClick={onClick}>
       <div className="card-header">
         <p className="card-header-title">{props.recipe.name}</p>
       </div>

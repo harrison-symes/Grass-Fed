@@ -2,6 +2,7 @@ import { IRecipe } from "../../models/recipe.models"
 
 const testRecipes: Array<IRecipe> = [
     {
+        id: "scrambled-tofu",
         name: "Scrambled Tofu",
         categories: ["breakfast", "lunch"],
         cost: "cheap",
@@ -11,6 +12,7 @@ const testRecipes: Array<IRecipe> = [
         time: "quick"
     },
     {
+        id: "butter-chicken",
         name: "Butter Chicken",
         categories: ["dinner"],
         cost: "moderate",
@@ -20,6 +22,7 @@ const testRecipes: Array<IRecipe> = [
         time: "medium"
     },
     {
+        id: "shepherds-pie",
         name: "Shepherd's pie",
         categories: ["dinner"],
         cost: "cheap",
