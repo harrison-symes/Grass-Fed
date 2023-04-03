@@ -4,6 +4,10 @@ body {
     font-size: 16px;
 }
 
+.block {
+    display: block;
+}
+
 .flex {
     display: flex;
 }
@@ -29,7 +33,11 @@ body {
     height: 100% !important;
 }
 
-.container {
-    margin-left: 1rem;
-    margin-right: 1rem;
+.width-100, .w-100 {
+    width: 100%;
 }
+
+// .container {
+//     margin-left: 1rem;
+//     margin-right: 1rem;
+// }
