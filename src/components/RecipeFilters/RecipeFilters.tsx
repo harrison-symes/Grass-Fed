@@ -1,5 +1,6 @@
 import Dropdown from "../Dropdown/Dropdown";
 import DropdownItem from "../Dropdown/DropdownItem";
+import ResetFilters from "../Reset/ResetFilters";
 import RecipeCategoryDropdown from "./RecipeCategoryDropdown";
 import RecipeSearch from "./RecipeSearch";
 
@@ -9,8 +10,9 @@ const RecipeFilters = () => {
       <div className="block w-100">
         <RecipeSearch />
       </div>
-      <div className="block w-100">
+      <div className="flex w-100 align-end">
         <RecipeCategoryDropdown />
+        <ResetFilters />
       </div>
     </section>
   );
