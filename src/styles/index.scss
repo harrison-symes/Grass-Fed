@@ -16,12 +16,28 @@ body {
     justify-content: center;
 }
 
+.justify-start {
+    justify-content: flex-start;
+}
+
 .align-center {
     align-items: center;
 }
 
+.align-start {
+    align-items: flex-start;
+}
+
 .align-end {
-    align-items: end;
+    align-items: flex-end;
+}
+
+.justify-self-end {
+    justify-self: flex-end;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 .icon {
@@ -45,3 +61,12 @@ body {
 //     margin-left: 1rem;
 //     margin-right: 1rem;
 // }
+
+.recipe-card {
+    min-width: 400px;
+    margin: 0 1rem 2rem 1rem;
+}
+
+.label:not(:last-child) {
+    margin-bottom: 0;
+}

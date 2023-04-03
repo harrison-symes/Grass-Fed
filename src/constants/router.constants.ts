@@ -10,4 +10,6 @@ export enum ROUTES_INTERNAL {
 export enum QUERY_PARAMS {
     CATEGORY = "category",
     SEARCH = "search",
+    PRICE = "price",
+    TIME_TO_PREPARE = "time",
 }

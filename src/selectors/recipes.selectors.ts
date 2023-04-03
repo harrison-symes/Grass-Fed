@@ -9,10 +9,18 @@ export const getFilteredRecipes = createSelector(
     getRecipes,
     getQueryParam(QUERY_PARAMS.CATEGORY),
     getQueryParam(QUERY_PARAMS.SEARCH),
-    (recipes, category, search) => {
-        const filterSearch = search ? recipes.filter(recipe => recipe.name.includes(search)) : recipes
-        const filterCategory = category ? filterSearch.filter(recipe => recipe.categories.find(cat => cat === category)) : filterSearch
-        
-        return filterCategory
+    getQueryParam(QUERY_PARAMS.PRICE),
+    getQueryParam(QUERY_PARAMS.TIME_TO_PREPARE),
+    (recipes, category, search, price, time) => {
+        const filteredRecipes = recipes.filter(recipe => {
+            if (category != null && recipe.categories.findIndex(cat => cat === category) === -1) return false;
+            if (search != null && !recipe.name.includes(search)) return false;
+            if (price != null && recipe.cost !== price) return false;
+            if (time != null && recipe.time !== time) return false;
+
+            return true
+        })
+
+        return filteredRecipes
     }
 )

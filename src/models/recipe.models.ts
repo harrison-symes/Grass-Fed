@@ -11,6 +11,6 @@ export interface IRecipe {
     image: string;
     shortDescription: string;
     longDescription?: string;
-    speed: IRecipeTime;
+    time: IRecipeTime;
     cost: IRecipePrice
 }

@@ -1,8 +1,8 @@
-import Dropdown from "../Dropdown/Dropdown";
-import DropdownItem from "../Dropdown/DropdownItem";
 import ResetFilters from "../Reset/ResetFilters";
 import RecipeCategoryDropdown from "./RecipeCategoryDropdown";
+import RecipePriceDropdown from "./RecipePriceDropdown";
 import RecipeSearch from "./RecipeSearch";
+import RecipeTimeDropdown from "./RecipeTimeDropdown";
 
 const RecipeFilters = () => {
   return (
@@ -12,7 +12,11 @@ const RecipeFilters = () => {
       </div>
       <div className="flex w-100 align-end">
         <RecipeCategoryDropdown />
-        <ResetFilters />
+        <RecipePriceDropdown />
+        <RecipeTimeDropdown />
+        <div className="justify-self-end">
+          <ResetFilters />
+        </div>
       </div>
     </section>
   );

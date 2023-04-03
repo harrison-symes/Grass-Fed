@@ -8,6 +8,8 @@ const ResetFilters = () => {
     queryUpdater({
       [QUERY_PARAMS.CATEGORY]: null,
       [QUERY_PARAMS.SEARCH]: null,
+      [QUERY_PARAMS.PRICE]: null,
+      [QUERY_PARAMS.TIME_TO_PREPARE]: null,
     });
   };
 
