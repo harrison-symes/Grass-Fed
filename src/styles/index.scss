@@ -1,44 +1,9 @@
 @import "../../node_modules/bulma-slider";
 @import "../../node_modules/bulma/bulma";
+@import "../../node_modules/tachyons-sass";
 
 body {
     font-size: 16px;
-}
-
-.block {
-    display: block;
-}
-
-.flex {
-    display: flex;
-}
-
-.justify-center {
-    justify-content: center;
-}
-
-.justify-start {
-    justify-content: flex-start;
-}
-
-.align-center {
-    align-items: center;
-}
-
-.align-start {
-    align-items: flex-start;
-}
-
-.align-end {
-    align-items: flex-end;
-}
-
-.justify-self-end {
-    justify-self: flex-end;
-}
-
-.flex-wrap {
-    flex-wrap: wrap;
 }
 
 .icon {
@@ -46,66 +11,12 @@ body {
     min-width: 2rem;
 }
 
-.text-center {
-    text-align: center;
-}
-
 .input-icon {
     height: 100% !important;
 }
 
-.width-100, .w-100 {
-    width: 100%;
-}
-
-// .container {
-//     margin-left: 1rem;
-//     margin-right: 1rem;
-// }
-
 .label:not(:last-child) {
     margin-bottom: 0;
-}
-
-.center {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.ml-auto {
-    margin-left: auto;
-}
-.mr-auto {
-    margin-right: auto;
-}
-
-.mb1 {
-    margin-bottom: 0.25rem;
-}
-.mb2 {
-    margin-bottom: 0.5rem;
-}
-.mb3 {
-    margin-bottom: 1rem;
-}
-
-.mh1 {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-}
-
-.ph1 {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
-}
-.ph2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-}
-.ph3 {
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
 
 .recipe-filters {
@@ -118,14 +29,13 @@ body {
 }
 
 .recipe-filter {
-    
     @include mobile {
         width: 100%;
         margin-bottom: 0.5rem;
     }
 
     @include tablet {
-        min-width: 200px;
+        min-width: 250px;
         margin-left: 0.5rem;
             
         &:first-child {
