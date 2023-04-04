@@ -20,7 +20,7 @@ const NavItem = (props: INavItemProps) => {
   return (
     <a
       onClick={onClick}
-      className={cn("navbar-item flex align-center", {
+      className={cn("navbar-item flex items-center", {
         "is-active": path === props.href,
       })}
     >

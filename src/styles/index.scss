@@ -20,27 +20,93 @@ body {
 }
 
 .recipe-filters {
+    display: none;
+    justify-content: space-evenly;
+
+    &.is-shown {
+        display: flex;
+    }
+
+    @include mobile {
+        display: block !important;
+    }
+
+    @include tablet {
+        flex-direction: column;
+    }
+
+    @include desktop {
+        flex-direction: row;
+
+        display: flex;
+    }
+}
+
+.recipe-filter-show {
+    display: flex;
+    align-items: center;
+    color: $primary;
+
+    @include desktop {
+        display: none;
+    }
+}
+
+.recipe-filter {
+    margin-bottom: 1rem;
+
+    @include mobile {
+        width: 100%;
+    }
+
+    @include tablet {
+        width: 100%;
+        margin-left: 0.5rem;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+
+    @include desktop {
+        min-width: 250px;
+        max-width: 350px;
+    }
+}
+
+.recipe-filter__group {
+    width: 100%;
     display: flex;
     justify-content: flex-start;
 
     @include mobile {
         display: block;
-    }
-}
-
-.recipe-filter {
-    @include mobile {
-        width: 100%;
-        margin-bottom: 0.5rem;
+        .recipe-filter {
+            display: block;
+        }
     }
 
     @include tablet {
-        min-width: 250px;
+        width: 100%;
+    }
+
+    @include desktop {
+        // width: 50%;
         margin-left: 0.5rem;
-            
+
         &:first-child {
             margin-left: 0;
         }
+    }
+}
+
+.recipe-filter-reset {
+    align-self: flex-end;
+    margin-bottom: 1rem;
+    float: right;
+    @include tablet {
+        margin-left: 0.5rem;
     }
 }
 
@@ -54,7 +120,12 @@ body {
 
     @include tablet {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
+    }
+
+    @include desktop {
+        justify-content: flex-start;
     }
 }
 
@@ -68,12 +139,19 @@ body {
     }
 
     @include tablet {
+        min-width: 350px;
+        margin: 0 1rem 2rem 1rem;
+    }
+
+    @include desktop {
         min-width: 400px;
         margin: 0 1rem 2rem 1rem;
     }
 
     &:hover {
-        background-color: $primary;
+        // .card-header {
+        //     background-color: $primary;
+        // }
         transform: scale(1.1);
         transition: transform 0.4s;
     }
