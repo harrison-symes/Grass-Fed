@@ -1,3 +1,4 @@
+@import "../../node_modules/bulma-checkradio";
 @import "../../node_modules/bulma-slider";
 @import "../../node_modules/bulma/bulma";
 @import "../../node_modules/tachyons-sass";
@@ -203,4 +204,16 @@ body {
             flex-grow: 0;
         }
     }
+}
+
+.radio-input {
+    width: 100%;
+    label {
+        width: 100%;
+        display: block !important;
+    }
+}
+
+.dropdown-content {
+    padding: 0.5rem 1rem 1rem;
 }

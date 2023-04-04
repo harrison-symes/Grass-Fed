@@ -28,15 +28,23 @@ export const getCostParam = createSelector(getQueryParam(QUERY_PARAMS.PRICE), (p
     return numberValue;
 })
 
+export const getCategoryParams = createSelector(getQueryParam(QUERY_PARAMS.CATEGORY), (param): string[] => {
+    if (param == null) {
+        return []
+    }
+
+    return param.split(",")
+})
+
 export const getFilteredRecipes = createSelector(
     getRecipes,
-    getQueryParam(QUERY_PARAMS.CATEGORY),
+    getCategoryParams,
     getQueryParam(QUERY_PARAMS.SEARCH),
     getCostParam,
     getTimeParam,
-    (recipes, category, search, price, time) => {
+    (recipes, categories, search, price, time) => {
         const filteredRecipes = recipes.filter(recipe => {
-            if (category != null && recipe.categories.findIndex(cat => cat === category) === -1) return false;
+            if (categories.length === 0 || recipe.categories.findIndex(cat => categories.includes(cat)) === -1) return false;
             if (search != null && !recipe.name.includes(search)) return false;
             if (price != null && recipe.cost < price) return false;
             if (time != null && recipe.time < time) return false;
