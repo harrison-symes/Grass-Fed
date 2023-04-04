@@ -3,6 +3,10 @@
 @import "../../node_modules/bulma/bulma";
 @import "../../node_modules/tachyons-sass";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 16px;
 }
@@ -197,6 +201,37 @@ body {
                 transform: translateY(0); // move the element back down to its original position
                 bottom: 0;
             }
+        }
+    }
+}
+
+.dropdown-close__container {
+    display: none;
+    height: 40px;
+    padding: 0.5rem 0;
+
+    @include mobile {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    @include tablet {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    @include desktop {
+        display: none;
+    }
+
+    .dropdown-close__button {
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+
+        svg {
+            width: 100%;
+            height: 100%;
         }
     }
 }

@@ -46,8 +46,8 @@ export const getFilteredRecipes = createSelector(
         const filteredRecipes = recipes.filter(recipe => {
             if (categories.length !== 0 && recipe.categories.findIndex(cat => categories.includes(cat)) === -1) return false;
             if (search != null && !recipe.name.includes(search)) return false;
-            if (price != null && recipe.cost < price) return false;
-            if (time != null && recipe.time < time) return false;
+            if (price != null && recipe.cost >= price) return false;
+            if (time != null && recipe.time >= time) return false;
 
             return true
         })

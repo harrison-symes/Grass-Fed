@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import DownArrowIcon from "../Icons/DownArrow";
 import cn from "classnames";
+import CrossIcon from "../Icons/Cross";
 
 interface IDropdownProps {
   id: string;
@@ -67,7 +68,17 @@ const Dropdown = (props: IDropdownProps) => {
         id="dropdown-menu3"
         role="menu"
       >
-        <div className="dropdown-content">{props.children}</div>
+        <div className="dropdown-content">
+          <div className="dropdown-close__container">
+            <div
+              className="dropdown-close__button"
+              onClick={() => setIsActive(false)}
+            >
+              <CrossIcon />
+            </div>
+          </div>
+          {props.children}
+        </div>
       </div>
     </div>
   );

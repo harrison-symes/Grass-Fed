@@ -8,6 +8,7 @@ import PaginationLink from "./PaginationLink";
 
 interface IPaginationProps {
   totalPages: number;
+  onPageChange?: () => void;
 }
 
 const Pagination = (props: IPaginationProps) => {
@@ -21,6 +22,10 @@ const Pagination = (props: IPaginationProps) => {
     queryUpdater({
       [QUERY_PARAMS.PAGE_NUMER]: newPage.toString(),
     });
+
+    if (props.onPageChange !== undefined) {
+      props.onPageChange();
+    }
   };
 
   const pageNumbers = useMemo(
