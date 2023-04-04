@@ -1,5 +1,3 @@
-import { IRecipePrice } from "../../models/recipe.models"
-
 export const speedText = (speed: number | null) => {
     switch(speed)
     {
@@ -12,13 +10,14 @@ export const speedText = (speed: number | null) => {
     }
 }
 
-export const costText = (cost: IRecipePrice) => {
+export const costText = (cost: number | null) => {
     switch(cost)
     {
-        case "cheap": return "Cheap";
-        case "moderate": return "Reasonable";
-        case "pricey": return "A bit spenny";
-        case "luxury": return "Very pricey";
-        default: return;
+        case 1: return "Very Cheap";
+        case 2: return "Cheap";
+        case 3: return "Moderate Price";
+        case 4: return "Pricey";
+        case 5: return "Luxury";
+        default: return "Cost";
     }
 }

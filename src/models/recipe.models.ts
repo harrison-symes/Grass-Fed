@@ -1,8 +1,6 @@
 export type IRecipeCategory =
     "breakfast" | "lunch" | "dinner" | "baking" | "dessert" | "snack"
 
-export type IRecipePrice = "cheap" | "moderate" | "pricey" | "luxury"
-
 export interface IRecipe {
     id: string;
     name: string;
@@ -11,5 +9,5 @@ export interface IRecipe {
     shortDescription: string;
     longDescription?: string;
     time: number;
-    cost: IRecipePrice
+    cost: number;
 }

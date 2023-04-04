@@ -1,67 +1,41 @@
 import { useSelector } from "react-redux";
 import Dropdown from "../Dropdown/Dropdown";
-import DropdownItem from "../Dropdown/DropdownItem";
-import { getQueryParam } from "../../selectors";
+import { getCostParam } from "../../selectors";
 import { QUERY_PARAMS } from "../../constants/router.constants";
 import useQueryUpdater from "../hooks/useQueryUpdater";
-import { IRecipePrice } from "../../models/recipe.models";
-
-interface IRecipePriceOption {
-  text: string;
-  value: IRecipePrice | null;
-}
-
-const prices: IRecipePriceOption[] = [
-  {
-    text: "All Prices",
-    value: null,
-  },
-  {
-    text: "Cheap",
-    value: "cheap",
-  },
-  {
-    text: "Moderate",
-    value: "moderate",
-  },
-  {
-    text: "Pricey",
-    value: "pricey",
-  },
-  {
-    text: "Luxury",
-    value: "luxury",
-  },
-];
+import {
+  MIN_TIME_VALUE,
+  MAX_TIME_VALUE,
+} from "../../constants/recipe.constants";
+import Slider from "../Slider/Slider";
+import { costText } from "../helpers/recipeHelpers";
 
 const RecipePriceDropdown = () => {
-  const param = useSelector(getQueryParam(QUERY_PARAMS.PRICE));
+  const cost = useSelector(getCostParam);
   const queryUpdater = useQueryUpdater();
 
-  const activePrice = prices.find((price) => price.value === param);
-
-  const onItemClick = (category: IRecipePriceOption) => {
+  const onValueChange = (value: number) => {
     queryUpdater({
-      [QUERY_PARAMS.PRICE]: category.value,
+      [QUERY_PARAMS.PRICE]: value.toString(),
     });
   };
 
   return (
     <Dropdown
-      id="recipe-price-dropdown"
-      label="Price"
-      text={activePrice?.text ?? "Price"}
-      value={param}
       className="recipe-filter"
+      id="recipe-cost-dropdown"
+      label="cost-to-prepare"
+      text={costText(cost)}
+      value={cost}
     >
-      {prices.map((price) => (
-        <DropdownItem
-          key={`recipe-price-dropdown-item-${price.value}`}
-          text={price.text}
-          isActive={price.value === param}
-          onClick={() => onItemClick(price)}
-        />
-      ))}
+      <Slider
+        label={costText(cost)}
+        id="recipe-time-slider"
+        min={MIN_TIME_VALUE}
+        max={MAX_TIME_VALUE}
+        value={cost}
+        onChange={onValueChange}
+      />
     </Dropdown>
   );
 };
