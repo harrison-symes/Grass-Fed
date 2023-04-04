@@ -1,8 +1,11 @@
 import * as React from "react";
-import { Routes, Route, Outlet, BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import { HistoryRouter } from "redux-first-history/rr6";
+
 import Layout from "./Layout";
 import { ROUTES_INTERNAL } from "./constants/router.constants";
 import Recipe from "./pages/Recipe";
+import { history } from "./configureStore";
 
 const Home = React.lazy(() => import("./pages/Home"));
 const Recipes = React.lazy(() => import("./pages/Recipes"));
@@ -12,10 +15,17 @@ const GoVegan = React.lazy(() => import("./pages/GoVegan"));
 
 const Router = () => {
   return (
-    <BrowserRouter>
+    <HistoryRouter history={history}>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+          <Route
+            index
+            element={
+              <React.Suspense fallback={<>LOADING</>}>
+                <Home />
+              </React.Suspense>
+            }
+          />
           <Route
             path={ROUTES_INTERNAL.RECIPES}
             element={
@@ -58,7 +68,7 @@ const Router = () => {
           />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HistoryRouter>
   );
 };
 

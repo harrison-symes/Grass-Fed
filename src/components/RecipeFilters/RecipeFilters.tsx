@@ -10,11 +10,11 @@ const RecipeFilters = () => {
       <div className="block w-100">
         <RecipeSearch />
       </div>
-      <div className="flex w-100 align-end">
+      <div className="recipe-filters flex w-100 align-end">
         <RecipeCategoryDropdown />
         <RecipePriceDropdown />
         <RecipeTimeDropdown />
-        <div className="justify-self-end">
+        <div className="ml-auto">
           <ResetFilters />
         </div>
       </div>

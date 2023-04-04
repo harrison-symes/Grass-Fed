@@ -1,11 +1,12 @@
 import { useSelector } from "react-redux";
-import { getFilteredRecipes } from "../../selectors";
+import { getFilteredRecipes, getRecipesForPAge } from "../../selectors";
 import RecipeCard from "./RecipeCard";
 
 const RecipeList = () => {
-  const recipes = useSelector(getFilteredRecipes);
+  const recipes = useSelector(getRecipesForPAge);
+
   return (
-    <div className="flex flex-wrap align-start">
+    <div className="recipe-list">
       {recipes.map((recipe) => (
         <RecipeCard recipe={recipe} />
       ))}

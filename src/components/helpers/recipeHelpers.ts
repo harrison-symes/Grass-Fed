@@ -1,12 +1,14 @@
-import { IRecipePrice, IRecipeTime } from "../../models/recipe.models"
+import { IRecipePrice } from "../../models/recipe.models"
 
-export const speedText = (speed: IRecipeTime) => {
+export const speedText = (speed: number | null) => {
     switch(speed)
     {
-        case "long": return "Takes some time";
-        case "medium": return "Medium";
-        case "quick": return "Very quick";
-        default: return;
+        case 1: return "Quick";
+        case 2: return "Speedy";
+        case 3: return "Medium";
+        case 4: return "Takes some time";
+        case 5: return "Takes a long time";
+        default: return "Time to prepare";
     }
 }
 

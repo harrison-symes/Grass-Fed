@@ -9,8 +9,9 @@ const RecipeSearch = () => {
   const queryUpdater = useQueryUpdater();
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value === "" ? null : e.target.value;
     queryUpdater({
-      [QUERY_PARAMS.SEARCH]: e.target.value,
+      [QUERY_PARAMS.SEARCH]: value,
     });
   };
 

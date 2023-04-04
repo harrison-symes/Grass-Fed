@@ -15,3 +15,15 @@ export const getQueryParam = (param: QUERY_PARAMS) => createSelector(getQueryPar
 
     return paramObj.get(param)
 })
+
+export const getPageNumber = createSelector(
+    getQueryParam(QUERY_PARAMS.PAGE_NUMER),
+    (page): number => {
+        const pageNumber = parseInt(page ?? "")
+        if (isNaN(pageNumber))
+        {
+            return 1
+        }
+
+        return pageNumber;
+    })

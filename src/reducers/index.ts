@@ -1,6 +1,5 @@
 // reducers.js
-import { Reducer, StateFromReducersMapObject, combineReducers } from 'redux'
-import { createBrowserHistory } from 'history'
+import { Reducer, StateFromReducersMapObject } from 'redux'
 import { RouterState } from 'redux-first-history';
 import { recipeInitialState, recipesReducer } from './recipes';
 

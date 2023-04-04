@@ -52,6 +52,7 @@ const RecipePriceDropdown = () => {
       label="Price"
       text={activePrice?.text ?? "Price"}
       value={param}
+      className="recipe-filter"
     >
       {prices.map((price) => (
         <DropdownItem

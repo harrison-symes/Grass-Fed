@@ -58,6 +58,7 @@ const RecipeCategoryDropdown = () => {
 
   return (
     <Dropdown
+      className="recipe-filter"
       id="recipe-category-dropdown"
       label="Category"
       text={activeCategory?.text ?? "Category"}

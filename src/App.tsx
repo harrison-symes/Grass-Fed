@@ -1,12 +1,11 @@
 import { createBrowserHistory } from "history";
 import Router from "./Router";
-import { createStore } from "./configureStore";
 import { Provider } from "react-redux";
+import { BrowserRouter } from "react-router-dom";
+import { ConnectedRouter } from "connected-react-router";
+import { store } from "./configureStore";
 
 const App = () => {
-  const history = createBrowserHistory();
-
-  const store = createStore(history);
   console.log(store.getState());
 
   return (

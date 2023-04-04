@@ -12,4 +12,5 @@ export enum QUERY_PARAMS {
     SEARCH = "search",
     PRICE = "price",
     TIME_TO_PREPARE = "time",
+    PAGE_NUMER = "page",
 }

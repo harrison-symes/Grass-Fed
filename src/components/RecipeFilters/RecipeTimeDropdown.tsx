@@ -1,62 +1,41 @@
 import { useSelector } from "react-redux";
 import Dropdown from "../Dropdown/Dropdown";
-import DropdownItem from "../Dropdown/DropdownItem";
-import { getQueryParam } from "../../selectors";
+import { getTimeParam } from "../../selectors";
 import { QUERY_PARAMS } from "../../constants/router.constants";
 import useQueryUpdater from "../hooks/useQueryUpdater";
-import { IRecipeTime } from "../../models/recipe.models";
-
-interface IRecipeTimeOption {
-  text: string;
-  value: IRecipeTime | null;
-}
-
-const times: IRecipeTimeOption[] = [
-  {
-    text: "All times",
-    value: null,
-  },
-  {
-    text: "Quick",
-    value: "quick",
-  },
-  {
-    text: "Medium",
-    value: "medium",
-  },
-  {
-    text: "Long",
-    value: "long",
-  },
-];
+import Slider from "../Slider/Slider";
+import {
+  MAX_TIME_VALUE,
+  MIN_TIME_VALUE,
+} from "../../constants/recipe.constants";
+import { speedText } from "../helpers/recipeHelpers";
 
 const RecipeTimeDropdown = () => {
-  const param = useSelector(getQueryParam(QUERY_PARAMS.TIME_TO_PREPARE));
   const queryUpdater = useQueryUpdater();
+  const time = useSelector(getTimeParam);
 
-  const activeTime = times.find((time) => time.value === param);
-
-  const onItemClick = (category: IRecipeTimeOption) => {
+  const onValueChange = (value: number) => {
     queryUpdater({
-      [QUERY_PARAMS.TIME_TO_PREPARE]: category.value,
+      [QUERY_PARAMS.TIME_TO_PREPARE]: value.toString(),
     });
   };
 
   return (
     <Dropdown
-      id="recipe-price-dropdown"
+      className="recipe-filter"
+      id="recipe-time-dropdown"
       label="Time-to-prepare"
-      text={activeTime?.text ?? "Time to prepare"}
-      value={param}
+      text={speedText(time)}
+      value={time}
     >
-      {times.map((time) => (
-        <DropdownItem
-          key={`recipe-time-dropdown-item-${time.value}`}
-          text={time.text}
-          isActive={time.value === param}
-          onClick={() => onItemClick(time)}
-        />
-      ))}
+      <Slider
+        label={speedText(time)}
+        id="recipe-time-slider"
+        min={MIN_TIME_VALUE}
+        max={MAX_TIME_VALUE}
+        value={time}
+        onChange={onValueChange}
+      />
     </Dropdown>
   );
 };
