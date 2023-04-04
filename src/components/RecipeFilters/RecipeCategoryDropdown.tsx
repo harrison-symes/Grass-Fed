@@ -7,7 +7,6 @@ import {
   getQueryParams,
 } from "../../selectors";
 import { QUERY_PARAMS } from "../../constants/router.constants";
-import { useNavigate } from "react-router";
 import useQueryUpdater from "../hooks/useQueryUpdater";
 import Radio from "../Radio/Radio";
 
