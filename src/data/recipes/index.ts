@@ -22,6 +22,46 @@ const testRecipes: Array<IRecipe> = [
         time: 3
     },
     {
+        id: "butter-chicken-2",
+        name: "Butter Chicken",
+        categories: ["dinner"],
+        cost: 3,
+        image: "https://cdn.pickuplimes.com/cache/25/ad/25ade721bce05451beef337257d2218f.jpg",
+        shortDescription: "Yum yum",
+        longDescription: "Yum yum yum yum yum",
+        time: 3
+    },
+    {
+        id: "butter-chicken-3",
+        name: "Butter Chicken",
+        categories: ["dinner"],
+        cost: 3,
+        image: "https://cdn.pickuplimes.com/cache/25/ad/25ade721bce05451beef337257d2218f.jpg",
+        shortDescription: "Yum yum",
+        longDescription: "Yum yum yum yum yum",
+        time: 3
+    },
+    {
+        id: "butter-chicken-4",
+        name: "Butter Chicken",
+        categories: ["dinner"],
+        cost: 3,
+        image: "https://cdn.pickuplimes.com/cache/25/ad/25ade721bce05451beef337257d2218f.jpg",
+        shortDescription: "Yum yum",
+        longDescription: "Yum yum yum yum yum",
+        time: 3
+    },
+    {
+        id: "butter-chicken-5",
+        name: "Butter Chicken",
+        categories: ["dinner"],
+        cost: 3,
+        image: "https://cdn.pickuplimes.com/cache/25/ad/25ade721bce05451beef337257d2218f.jpg",
+        shortDescription: "Yum yum",
+        longDescription: "Yum yum yum yum yum",
+        time: 3
+    },
+    {
         id: "shepherds-pie",
         name: "Shepherd's pie",
         categories: ["dinner"],

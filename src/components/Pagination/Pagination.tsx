@@ -31,10 +31,10 @@ const Pagination = (props: IPaginationProps) => {
     [props.totalPages]
   );
 
-  if (props.totalPages === 1) return null;
+  if (props.totalPages <= 1) return null;
 
   return (
-    <section className="section">
+    <div className="container">
       <nav className="pagination" role="navigation" aria-label="pagination">
         <a
           className={cn("pagination-previous", { "is-disabled": page <= 1 })}
@@ -60,7 +60,7 @@ const Pagination = (props: IPaginationProps) => {
           ))}
         </ul>
       </nav>
-    </section>
+    </div>
   );
 };
 

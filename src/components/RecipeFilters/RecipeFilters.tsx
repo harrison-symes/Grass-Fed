@@ -11,7 +11,7 @@ const RecipeFilters = () => {
   const [isShown, setIsShown] = useState(false);
 
   return (
-    <section className="section">
+    <div className="container mb4">
       <div className="block w-100">
         <RecipeSearch />
       </div>
@@ -37,7 +37,8 @@ const RecipeFilters = () => {
           onClick={() => setIsShown((state) => !state)}
         />
       </div>
-    </section>
+      <hr className="hr mt2" />
+    </div>
   );
 };
 

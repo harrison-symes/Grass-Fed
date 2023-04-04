@@ -24,23 +24,27 @@ body {
     display: none;
     justify-content: space-evenly;
 
-    &.is-shown {
-        display: flex;
-    }
-
     @include mobile {
-        display: block !important;
+        display: none;
+
+        &.is-shown {
+            display: block;
+        }
     }
 
     @include tablet {
+        display: none;
         flex-direction: column;
+        &.is-shown {
+            display: flex;
+        }
     }
 
     @include desktop {
         flex-direction: row;
-
         display: flex;
     }
+
 }
 
 .recipe-filter-show {
@@ -133,27 +137,29 @@ body {
 .recipe-card {
     cursor: pointer;
     transform: scale(1.0);
+
+    margin-bottom: 1.5rem;
     
     @include mobile {
-        margin: 0 0.5rem 1rem;
-
     }
 
     @include tablet {
         min-width: 350px;
-        margin: 0 1rem 2rem 1rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
-
+    
     @include desktop {
-        min-width: 400px;
-        margin: 0 1rem 2rem 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        min-width: 384px;
     }
 
     &:hover {
         // .card-header {
         //     background-color: $primary;
         // }
-        transform: scale(1.1);
+        transform: scale(1.05);
         transition: transform 0.4s;
     }
 }
