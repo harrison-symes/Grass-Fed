@@ -24,7 +24,7 @@ const RecipePriceDropdown = () => {
     <Dropdown
       className="recipe-filter"
       id="recipe-cost-dropdown"
-      label="cost-to-prepare"
+      label="Cost-to-prepare"
       text={costText(cost)}
       value={cost}
     >

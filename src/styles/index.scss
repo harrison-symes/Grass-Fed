@@ -12,7 +12,6 @@ body {
 }
 
 .icon {
-    margin-right: 0.25rem !important;
     min-width: 2rem;
 }
 
@@ -134,7 +133,7 @@ body {
     }
 
     @include desktop {
-        justify-content: flex-start;
+        justify-content: center;
     }
 }
 
@@ -206,19 +205,12 @@ body {
 }
 
 .dropdown-close__container {
-    display: none;
     height: 40px;
-    padding: 0.5rem 0;
 
-    @include mobile {
-        display: flex;
-        justify-content: flex-end;
-    }
-    
-    @include tablet {
-        display: flex;
-        justify-content: flex-end;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
 
     @include desktop {
         display: none;
@@ -228,6 +220,9 @@ body {
         width: 32px;
         height: 32px;
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
 
         svg {
             width: 100%;

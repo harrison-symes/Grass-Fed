@@ -16,11 +16,6 @@ const Dropdown = (props: IDropdownProps) => {
   const contentRef = useRef<HTMLDivElement>(null);
   const [isActive, setIsActive] = useState(false);
 
-  const onShow = () => {
-    setIsActive(true);
-    contentRef.current?.focus();
-  };
-
   const handleClickOutside = (event: MouseEvent) => {
     if (
       contentRef.current &&
@@ -70,6 +65,7 @@ const Dropdown = (props: IDropdownProps) => {
       >
         <div className="dropdown-content">
           <div className="dropdown-close__container">
+            <p className="fw7">{props.label}</p>
             <div
               className="dropdown-close__button"
               onClick={() => setIsActive(false)}

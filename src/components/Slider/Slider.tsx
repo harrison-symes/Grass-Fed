@@ -19,7 +19,7 @@ const Slider = (props: ISliderProps) => {
       )}
       <input
         id={props.id}
-        className="slider is-fullwidth is-medium is-success"
+        className="slider is-fullwidth is-large is-success"
         step="1"
         min={props.min}
         max={props.max}

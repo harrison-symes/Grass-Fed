@@ -13,7 +13,7 @@ const Radio = (props: IRadioProps) => {
   return (
     <div className={cn("field", props.className)}>
       <input
-        className="is-checkradio"
+        className="is-checkradio is-medium"
         id={props.id}
         type="checkbox"
         checked={props.isChecked}

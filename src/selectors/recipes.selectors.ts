@@ -71,7 +71,7 @@ export const getTotalRecipePages = createSelector(
     }
 )
 
-export const getRecipesForPAge = createSelector(
+export const getRecipesForPage = createSelector(
     getFilteredRecipes,
     getPageNumber,
     getRecipesPerPage,
