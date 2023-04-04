@@ -9,19 +9,6 @@ import { QUERY_PARAMS } from "../../constants/router.constants";
 
 const RecipeList = () => {
   const recipes = useSelector(getRecipesForPage);
-  const queryUpdater = useQueryUpdater();
-
-  const prevRecipesRef = useRef<IRecipe[]>(recipes);
-
-  useEffect(() => {
-    if (prevRecipesRef.current.length !== recipes.length) {
-      queryUpdater({
-        [QUERY_PARAMS.PAGE_NUMER]: null,
-      });
-    }
-
-    prevRecipesRef.current = recipes;
-  }, [recipes]);
 
   if (recipes.length === 0) {
     return <NoRecipesFound />;

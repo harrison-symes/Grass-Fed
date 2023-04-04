@@ -3,7 +3,6 @@ import { useNavigate } from "react-router";
 import RightChevron from "../Icons/RightChevron";
 
 const RecipesBanner = () => {
-  const dispatch = useDispatch();
   const navigate = useNavigate();
   const onClick = () => {
     navigate("/recipes");

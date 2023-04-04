@@ -3,17 +3,34 @@ import RecipeList from "../components/Recipes/RecipeList";
 import { useSelector } from "react-redux";
 import { getTotalRecipeCount, getTotalRecipePages } from "../selectors";
 import Pagination from "../components/Pagination/Pagination";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
+import { QUERY_PARAMS } from "../constants/router.constants";
+import recipes from "../data/recipes";
+import { IRecipe } from "../models/recipe.models";
+import useQueryUpdater from "../components/hooks/useQueryUpdater";
 
 const Recipes = () => {
   const totalPages = useSelector(getTotalRecipePages);
   const recipeCount = useSelector(getTotalRecipeCount);
+
+  const prevRecipesRef = useRef<number>(recipeCount);
+  const queryUpdater = useQueryUpdater();
 
   const recipeListRef = useRef<HTMLDivElement>(null);
 
   const onPageChange = () => {
     recipeListRef.current?.scrollIntoView();
   };
+
+  useEffect(() => {
+    if (prevRecipesRef.current !== recipeCount) {
+      queryUpdater({
+        [QUERY_PARAMS.PAGE_NUMER]: null,
+      });
+    }
+
+    prevRecipesRef.current = recipeCount;
+  }, [recipeCount]);
 
   return (
     <div className="container">
