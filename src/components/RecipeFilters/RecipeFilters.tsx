@@ -1,11 +1,45 @@
-import RecipeSearch from "./RecipeSearch"
+import { useState } from "react";
+import ResetFilters from "../Reset/ResetFilters";
+import RecipeCategoryDropdown from "./RecipeCategoryDropdown";
+import RecipeFiltersShow from "./RecipeFiltersShow";
+import RecipePriceDropdown from "./RecipePriceDropdown";
+import RecipeSearch from "./RecipeSearch";
+import RecipeTimeDropdown from "./RecipeTimeDropdown";
+import cn from "classnames";
 
 const RecipeFilters = () => {
-    return (
-        <div>
-            <RecipeSearch />
-        </div>
-    )
-}
+  const [isShown, setIsShown] = useState(false);
 
-export default RecipeFilters
+  return (
+    <div className="container mb4">
+      <div className="block w-100">
+        <RecipeSearch />
+      </div>
+      <div
+        className={cn("recipe-filters flex w-100 align-end", {
+          "is-shown": isShown,
+        })}
+      >
+        <div className="recipe-filter__group">
+          <RecipeCategoryDropdown />
+          <RecipePriceDropdown />
+        </div>
+        <div className="recipe-filter__group">
+          <RecipeTimeDropdown />
+        </div>
+        <div className="recipe-filter-reset">
+          <ResetFilters />
+        </div>
+      </div>
+      <div>
+        <RecipeFiltersShow
+          isShown={isShown}
+          onClick={() => setIsShown((state) => !state)}
+        />
+      </div>
+      <hr className="hr mt2" />
+    </div>
+  );
+};
+
+export default RecipeFilters;

@@ -6,3 +6,11 @@ export enum ROUTES_INTERNAL {
     VIDEOS = "/videos",
     GO_VEGAN = "/go-vegan"
 }
+
+export enum QUERY_PARAMS {
+    CATEGORY = "category",
+    SEARCH = "search",
+    PRICE = "price",
+    TIME_TO_PREPARE = "time",
+    PAGE_NUMER = "page",
+}

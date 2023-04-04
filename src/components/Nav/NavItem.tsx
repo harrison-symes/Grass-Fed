@@ -1,17 +1,33 @@
-import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { getPath } from "../../selectors";
+import cn from "classnames";
+import { push } from "redux-first-history";
 
 interface INavItemProps {
-    text: string;
-    href: string;
-    icon?: React.FC;
+  text: string;
+  href: string;
+  icon?: React.FC;
 }
 
 const NavItem = (props: INavItemProps) => {
-    return (
-        <Link to={props.href} className="navbar-item flex align-center">
-            {props.icon && <props.icon />}{props.text} 
-        </Link>
-    )
-}
+  const path = useSelector(getPath);
+  const dispatch = useDispatch();
 
-export default NavItem
+  const onClick = () => {
+    dispatch(push(props.href));
+  };
+
+  return (
+    <a
+      onClick={onClick}
+      className={cn("navbar-item flex items-center", {
+        "is-active": path === props.href,
+      })}
+    >
+      {props.icon && <props.icon />}
+      {props.text}
+    </a>
+  );
+};
+
+export default NavItem;
