@@ -14,7 +14,7 @@ const IngredientQuantity = (props: IIngredientQuantityProps) => {
   const value = (props.ingredient.quantity / props.recipe.servings) * servings;
 
   return (
-    <p className="">{quantityText(value, props.ingredient.measurement)}</p>
+    <div className="">{quantityText(value, props.ingredient.measurement)}</div>
   );
 };
 

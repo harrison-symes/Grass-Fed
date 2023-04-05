@@ -19,9 +19,9 @@ const RecipeIngredient = (props: IRecipeIngredientProps) => {
       className="panel-block flex justify-between"
       onClick={() => setIsChecked((state) => !state)}
     >
-      <p className="flex justify-start items-center">
+      <div className="flex justify-start items-center">
         {ingredient.name} {isChecked && <CheckMarkIcon />}
-      </p>
+      </div>
       <IngredientQuantity recipe={props.recipe} ingredient={props.ingredient} />
     </a>
   );
