@@ -6,6 +6,7 @@ import Layout from "./Layout";
 import { ROUTES_INTERNAL } from "./constants/router.constants";
 import RecipePage from "./pages/RecipePage";
 import { history } from "./configureStore";
+import Loader from "./components/Loader/Loader";
 
 const Home = React.lazy(() => import("./pages/Home"));
 const Recipes = React.lazy(() => import("./pages/RecipesPage"));
@@ -21,7 +22,7 @@ const Router = () => {
           <Route
             index
             element={
-              <React.Suspense fallback={<>LOADING</>}>
+              <React.Suspense fallback={<Loader />}>
                 <Home />
               </React.Suspense>
             }
@@ -29,7 +30,7 @@ const Router = () => {
           <Route
             path={ROUTES_INTERNAL.RECIPES}
             element={
-              <React.Suspense fallback={<>LOADING</>}>
+              <React.Suspense fallback={<Loader />}>
                 <Recipes />
               </React.Suspense>
             }
@@ -37,7 +38,7 @@ const Router = () => {
           <Route
             path={ROUTES_INTERNAL.RECIPE}
             element={
-              <React.Suspense fallback={<>LOADING</>}>
+              <React.Suspense fallback={<Loader />}>
                 <RecipePage />
               </React.Suspense>
             }
@@ -45,7 +46,7 @@ const Router = () => {
           <Route
             path={ROUTES_INTERNAL.VIDEOS}
             element={
-              <React.Suspense fallback={<>LOADING</>}>
+              <React.Suspense fallback={<Loader />}>
                 <Videos />
               </React.Suspense>
             }
@@ -53,7 +54,7 @@ const Router = () => {
           <Route
             path={ROUTES_INTERNAL.PODCASTS}
             element={
-              <React.Suspense fallback={<>LOADING</>}>
+              <React.Suspense fallback={<Loader />}>
                 <Podcasts />
               </React.Suspense>
             }
@@ -61,7 +62,7 @@ const Router = () => {
           <Route
             path={ROUTES_INTERNAL.GO_VEGAN}
             element={
-              <React.Suspense fallback={<>LOADING</>}>
+              <React.Suspense fallback={<Loader />}>
                 <GoVegan />
               </React.Suspense>
             }
