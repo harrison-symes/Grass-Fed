@@ -2,7 +2,7 @@
   "name": "GrassFed",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://harrison-symes.github.io/sexy-weaving-app",
+  "homepage": "https://harrison-symes.github.io/grass-fed",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
     "@testing-library/jest-dom": "^5.16.5",
