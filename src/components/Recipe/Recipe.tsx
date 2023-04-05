@@ -1,9 +1,15 @@
 import { useSelector } from "react-redux";
-import { getRecipeByUrl } from "../../selectors";
+import { getRecipeByUrl, getRecipeTabParam } from "../../selectors";
 import RecipeNotFound from "./RecipeNotFound";
+
+import "./recipe.scss";
+import RecipeDescription from "./RecipeDescription";
+import RecipeTabs from "./RecipeTabs";
+import RecipeIngredients from "./RecipeIngredients";
 
 const Recipe = () => {
   const recipe = useSelector(getRecipeByUrl);
+  const activeTab = useSelector(getRecipeTabParam);
 
   if (recipe == null) {
     return <RecipeNotFound />;
@@ -11,7 +17,10 @@ const Recipe = () => {
 
   return (
     <div className="container">
-      <h1 className="is-size-1">{recipe.name}</h1>
+      <h1 className="recipe__title is-size-1">{recipe.name}</h1>
+      <RecipeTabs />
+      {activeTab === null && <RecipeDescription recipe={recipe} />}
+      {activeTab === "ingredients" && <RecipeIngredients recipe={recipe} />}
     </div>
   );
 };

@@ -21,7 +21,7 @@ const NavItem = (props: INavItemProps) => {
     <a
       onClick={onClick}
       className={cn("navbar-item flex items-center", {
-        "is-active": path === props.href,
+        "is-active": path?.includes(props.href),
       })}
     >
       {props.icon && <props.icon />}
