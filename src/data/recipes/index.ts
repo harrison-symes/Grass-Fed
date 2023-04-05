@@ -9,7 +9,72 @@ const testRecipes: Array<IRecipe> = [
         image: "https://www.noracooks.com/wp-content/uploads/2019/01/IMG_2907.jpg",
         shortDescription: "Yum yum",
         longDescription: "Yum yum yum yum yum",
-        time: 1
+        time: 1,
+        steps: [
+            {
+                groupName: "The Scramble",
+                servings: 2,
+                ingredients: [
+                    {
+                        name: "Smoked Paprika",
+                        quantity: 1,
+                        measurement: "tbsp"
+                    },
+                    {
+                        name: "Cumin",
+                        quantity: 2,
+                        measurement: "tbsp"
+                    },
+                    {
+                        name: "Tumeric",
+                        quantity: 0.5,
+                        measurement: "tbsp"
+                    },
+                    {
+                        name: "Firm Tofu",
+                        quantity: 150,
+                        measurement: "grams"
+                    },
+                    {
+                        name: "Onion",
+                        quantity: 0.5,
+                        measurement: "unit"
+                    },
+                    {
+                        name: "White Button Mushroom",
+                        quantity: 2,
+                        measurement: "unit"
+                    },
+                    {
+                        name: "Capsicum",
+                        quantity: 0.5,
+                        measurement: "unit"
+                    },
+                ],
+            },
+            {
+                groupName: "Cashew Sauce",
+                recipeId: "cashew-sauce",
+                servings: 2,
+                ingredients: [
+                    {
+                        name: "Raw Cashews",
+                        quantity: 0.5,
+                        measurement: "cups"
+                    },
+                    {
+                        name: "Onion Powder",
+                        quantity: 0.5,
+                        measurement: "tbsp"
+                    },
+                    {
+                        name: "Garlic Powder",
+                        quantity: 0.5,
+                        measurement: "tbsp"
+                    },
+                ]
+            }
+        ]
     },
     {
         id: "butter-chicken",
@@ -19,107 +84,29 @@ const testRecipes: Array<IRecipe> = [
         image: "https://cdn.pickuplimes.com/cache/25/ad/25ade721bce05451beef337257d2218f.jpg",
         shortDescription: "Yum yum",
         longDescription: "Yum yum yum yum yum",
-        time: 3
-    },
-    {
-        id: "butter-chicken-2",
-        name: "Butter Chicken",
-        categories: ["dinner"],
-        cost: 3,
-        image: "https://cdn.pickuplimes.com/cache/25/ad/25ade721bce05451beef337257d2218f.jpg",
-        shortDescription: "Yum yum",
-        longDescription: "Yum yum yum yum yum",
-        time: 3
-    },
-    {
-        id: "butter-chicken-3",
-        name: "Butter Chicken",
-        categories: ["dinner"],
-        cost: 3,
-        image: "https://cdn.pickuplimes.com/cache/25/ad/25ade721bce05451beef337257d2218f.jpg",
-        shortDescription: "Yum yum",
-        longDescription: "Yum yum yum yum yum",
-        time: 3
-    },
-    {
-        id: "butter-chicken-4",
-        name: "Butter Chicken",
-        categories: ["dinner"],
-        cost: 3,
-        image: "https://cdn.pickuplimes.com/cache/25/ad/25ade721bce05451beef337257d2218f.jpg",
-        shortDescription: "Yum yum",
-        longDescription: "Yum yum yum yum yum",
-        time: 3
-    },
-    {
-        id: "butter-chicken-5",
-        name: "Butter Chicken",
-        categories: ["dinner"],
-        cost: 3,
-        image: "https://cdn.pickuplimes.com/cache/25/ad/25ade721bce05451beef337257d2218f.jpg",
-        shortDescription: "Yum yum",
-        longDescription: "Yum yum yum yum yum",
-        time: 3
-    },
-    {
-        id: "butter-chicken-6",
-        name: "Butter Chicken",
-        categories: ["dinner"],
-        cost: 3,
-        image: "https://cdn.pickuplimes.com/cache/25/ad/25ade721bce05451beef337257d2218f.jpg",
-        shortDescription: "Yum yum",
-        longDescription: "Yum yum yum yum yum",
-        time: 3
-    },
-    {
-        id: "butter-chicken-7",
-        name: "Butter Chicken",
-        categories: ["dinner"],
-        cost: 3,
-        image: "https://cdn.pickuplimes.com/cache/25/ad/25ade721bce05451beef337257d2218f.jpg",
-        shortDescription: "Yum yum",
-        longDescription: "Yum yum yum yum yum",
-        time: 3
-    },
-    {
-        id: "butter-chicken-8",
-        name: "Butter Chicken",
-        categories: ["dinner"],
-        cost: 3,
-        image: "https://cdn.pickuplimes.com/cache/25/ad/25ade721bce05451beef337257d2218f.jpg",
-        shortDescription: "Yum yum",
-        longDescription: "Yum yum yum yum yum",
-        time: 3
-    },
-    {
-        id: "butter-chicken-9",
-        name: "Butter Chicken",
-        categories: ["dinner"],
-        cost: 3,
-        image: "https://cdn.pickuplimes.com/cache/25/ad/25ade721bce05451beef337257d2218f.jpg",
-        shortDescription: "Yum yum",
-        longDescription: "Yum yum yum yum yum",
-        time: 3
-    },
-    {
-        id: "butter-chicken-10",
-        name: "Butter Chicken",
-        categories: ["dinner"],
-        cost: 3,
-        image: "https://cdn.pickuplimes.com/cache/25/ad/25ade721bce05451beef337257d2218f.jpg",
-        shortDescription: "Yum yum",
-        longDescription: "Yum yum yum yum yum",
-        time: 3
-    },
-    {
-        id: "butter-chicken-11",
-        name: "Butter Chicken",
-        categories: ["dinner"],
-        cost: 3,
-        image: "https://cdn.pickuplimes.com/cache/25/ad/25ade721bce05451beef337257d2218f.jpg",
-        shortDescription: "Yum yum",
-        longDescription: "Yum yum yum yum yum",
-        time: 3
+        time: 3,
+        steps: [
+            {
+                groupName: "Baked Tofu",
+                servings: 3,
+                ingredients: []
+            },
+            {
+                groupName: "Mock-Chicken",
+                servings: 3,
+                ingredients: []
+            },
+            {
+                groupName: "Naan Bread",
+                recipeId: "naan-bread",
+                servings: 3,
+            },
+            {
+                groupName: "Butter Chicken",
+                servings: 3,
+                ingredients: []
+            },
+        ]
     },
     {
         id: "shepherds-pie",
@@ -129,7 +116,19 @@ const testRecipes: Array<IRecipe> = [
         image: "https://rainbowplantlife.com/wp-content/uploads/2020/11/137_image-asset-500x500.jpg",
         shortDescription: "Yum yum",
         longDescription: "Yum yum yum yum yum",
-        time: 2
+        time: 2,
+        steps: [
+            {
+                groupName: "Mashed potato",
+                servings: 3,
+                ingredients: []
+            },
+            {
+                groupName: "Pie Filling",
+                servings: 3,
+                ingredients: []
+            }
+        ]
     },
 ]
 

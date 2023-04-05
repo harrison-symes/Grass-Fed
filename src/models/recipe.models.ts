@@ -10,4 +10,20 @@ export interface IRecipe {
     longDescription?: string;
     time: number;
     cost: number;
+    steps: IRecipeStep | Array<IRecipeStep>;
+}
+
+export type IngredientMeasurement = "unit" | "grams" | "cups" | "tsp" | "tbsp" | "ml" | "l"
+
+export interface IRecipeIngredient {
+    name: string;
+    quantity: number;
+    measurement: IngredientMeasurement;
+}
+
+export interface IRecipeStep {
+    groupName: string;
+    servings?: number;
+    recipeId?: string;
+    ingredients?: IRecipeIngredient[];
 }

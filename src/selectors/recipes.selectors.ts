@@ -3,6 +3,7 @@ import { TStoreState } from "../reducers";
 import { getPageNumber, getQueryParam } from "./router.selectors";
 import { QUERY_PARAMS } from "../constants/router.constants";
 import { MAX_COST_VALUE, MAX_TIME_VALUE, MIN_COST_VALUE, MIN_TIME_VALUE, RECIPES_PER_PAGE } from "../constants/recipe.constants";
+import { RecipeTab } from "../components/Recipe/RecipeTabs";
 
 export const getRecipes = (state: TStoreState) => state.recipes.recipes
 
@@ -34,6 +35,15 @@ export const getCategoryParams = createSelector(getQueryParam(QUERY_PARAMS.CATEG
     }
 
     return param.split(",")
+})
+
+export const getRecipeTabParam = createSelector(getQueryParam(QUERY_PARAMS.TAB), (param): RecipeTab => {
+    if (param == null)
+    {
+        return null
+    }
+
+    return param as RecipeTab;
 })
 
 export const getFilteredRecipes = createSelector(
