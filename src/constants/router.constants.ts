@@ -1,3 +1,5 @@
+export const BASE_PATH = "/Grass-Fed"
+
 export enum ROUTES_INTERNAL {
     HOME = "/",
     RECIPES = "/recipes",
