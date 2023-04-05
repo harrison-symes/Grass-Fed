@@ -1,12 +1,11 @@
-import * as React from "react"
-import WIP from "../components/WIP/WIP"
+import WIP from "../components/WIP/WIP";
 
 const GoVegan = () => {
-    return (
-        <div>
-            <WIP />
-        </div>
-    )
-}
+  return (
+    <div>
+      <WIP />
+    </div>
+  );
+};
 
-export default GoVegan
+export default GoVegan;

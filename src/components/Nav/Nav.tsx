@@ -24,7 +24,6 @@ const Nav = () => {
         role="navigation"
         aria-label="main navigation"
       >
-        <div className="navbar-item is-black">Grass-Fed</div>
         <div className="navbar-brand">
           <Burger
             isActive={isActive}
@@ -32,8 +31,8 @@ const Nav = () => {
           />
         </div>
         <div className={cn("navbar-menu", { "is-active": isActive })}>
-          <div className="navbar-start">
-            <NavItem text="Home" href="/" icon={GrassIcon} />
+          <div className="navbar-start ml-auto mr-auto">
+            <NavItem text="Grass-Fed" href="/" icon={GrassIcon} />
             <NavItem text="Recipes" href="/recipes" icon={CookIcon} />
             <NavItem text="Go Vegan" href="/go-vegan" icon={CarrotIcon} />
             <NavItem text="Podcasts" href="/podcasts" icon={PodcastIcon} />

@@ -82,3 +82,22 @@ export const getRecipesForPage = createSelector(
         return recipeList.slice(start, end)
     }
 )
+
+export const getRecipeIdFromUrl = (state: TStoreState) => {
+    const path = state.router?.location?.pathname;
+    if (path == null || !path.startsWith('/recipes/')) {
+        return null;
+    }
+
+    const recipeId = path.split('/')[2];
+
+    console.log({recipeId})
+
+    if (!recipeId) {
+        return null;
+    }
+
+    return recipeId;
+}
+
+export const getRecipeByUrl = createSelector(getRecipes, getRecipeIdFromUrl, (recipes, id) => recipes.find(recipe => recipe.id === id))

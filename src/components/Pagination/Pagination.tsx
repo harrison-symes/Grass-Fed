@@ -1,10 +1,12 @@
 import { useSelector } from "react-redux";
-import { getPageNumber, getTotalRecipePages } from "../../selectors";
+import { getPageNumber } from "../../selectors";
 import cn from "classnames";
 import useQueryUpdater from "../hooks/useQueryUpdater";
 import { QUERY_PARAMS } from "../../constants/router.constants";
 import { useMemo } from "react";
 import PaginationLink from "./PaginationLink";
+
+import "./pagination.scss";
 
 interface IPaginationProps {
   totalPages: number;

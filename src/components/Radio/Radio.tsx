@@ -1,5 +1,6 @@
 import { MouseEventHandler } from "react";
 import cn from "classnames";
+import "./radio.scss";
 
 interface IRadioProps {
   className?: string;

@@ -4,11 +4,11 @@ import { HistoryRouter } from "redux-first-history/rr6";
 
 import Layout from "./Layout";
 import { ROUTES_INTERNAL } from "./constants/router.constants";
-import Recipe from "./pages/Recipe";
+import RecipePage from "./pages/RecipePage";
 import { history } from "./configureStore";
 
 const Home = React.lazy(() => import("./pages/Home"));
-const Recipes = React.lazy(() => import("./pages/Recipes"));
+const Recipes = React.lazy(() => import("./pages/RecipesPage"));
 const Videos = React.lazy(() => import("./pages/Videos"));
 const Podcasts = React.lazy(() => import("./pages/Podcasts"));
 const GoVegan = React.lazy(() => import("./pages/GoVegan"));
@@ -38,7 +38,7 @@ const Router = () => {
             path={ROUTES_INTERNAL.RECIPE}
             element={
               <React.Suspense fallback={<>LOADING</>}>
-                <Recipe />
+                <RecipePage />
               </React.Suspense>
             }
           />

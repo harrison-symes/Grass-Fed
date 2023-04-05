@@ -5,11 +5,9 @@ import { getTotalRecipeCount, getTotalRecipePages } from "../selectors";
 import Pagination from "../components/Pagination/Pagination";
 import { useRef, useEffect } from "react";
 import { QUERY_PARAMS } from "../constants/router.constants";
-import recipes from "../data/recipes";
-import { IRecipe } from "../models/recipe.models";
 import useQueryUpdater from "../components/hooks/useQueryUpdater";
 
-const Recipes = () => {
+const RecipesPage = () => {
   const totalPages = useSelector(getTotalRecipePages);
   const recipeCount = useSelector(getTotalRecipeCount);
 
@@ -47,4 +45,4 @@ const Recipes = () => {
   );
 };
 
-export default Recipes;
+export default RecipesPage;

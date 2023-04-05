@@ -3,6 +3,8 @@ import DownArrowIcon from "../Icons/DownArrow";
 import cn from "classnames";
 import CrossIcon from "../Icons/Cross";
 
+import "./dropdown.scss";
+
 interface IDropdownProps {
   id: string;
   text: string;
@@ -14,10 +16,16 @@ interface IDropdownProps {
 
 const Dropdown = (props: IDropdownProps) => {
   const contentRef = useRef<HTMLDivElement>(null);
+  const triggerRef = useRef<HTMLLabelElement>(null);
   const [isActive, setIsActive] = useState(false);
 
-  const handleClickOutside = (event: MouseEvent) => {
+  const handleClick = (event: MouseEvent) => {
     if (
+      triggerRef.current &&
+      triggerRef.current.contains(event.target as Node)
+    ) {
+      setIsActive((state) => !state);
+    } else if (
       contentRef.current &&
       !contentRef.current.contains(event.target as Node)
     ) {
@@ -28,11 +36,11 @@ const Dropdown = (props: IDropdownProps) => {
 
   useEffect(() => {
     // add event listener for clicks outside of the dropdown
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("mousedown", handleClick);
 
     return () => {
       // remove event listener on unmount
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("mousedown", handleClick);
     };
   }, []);
 
@@ -42,12 +50,11 @@ const Dropdown = (props: IDropdownProps) => {
         "is-active": isActive,
       })}
     >
-      <label className="label w-100" htmlFor={props.id}>
+      <label className="label w-100" htmlFor={props.id} ref={triggerRef}>
         {props.label}
         <div className="dropdown-trigger">
           <button
             id={props.id}
-            onClick={() => setIsActive((state) => !state)}
             className="button is-medium w-100"
             aria-haspopup="true"
             aria-controls="dropdown-menu3"
@@ -57,13 +64,8 @@ const Dropdown = (props: IDropdownProps) => {
           </button>
         </div>
       </label>
-      <div
-        className="dropdown-menu w-100"
-        ref={contentRef}
-        id="dropdown-menu3"
-        role="menu"
-      >
-        <div className="dropdown-content">
+      <div className="dropdown-menu w-100" id="dropdown-menu3" role="menu">
+        <div className="dropdown-content" ref={contentRef}>
           <div className="dropdown-close__container">
             <p className="fw7">{props.label}</p>
             <div

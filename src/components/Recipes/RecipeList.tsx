@@ -2,10 +2,8 @@ import { useSelector } from "react-redux";
 import { getRecipesForPage } from "../../selectors";
 import RecipeCard from "./RecipeCard";
 import NoRecipesFound from "./NoRecipesFound";
-import { useEffect, useRef } from "react";
-import { IRecipe } from "../../models/recipe.models";
-import useQueryUpdater from "../hooks/useQueryUpdater";
-import { QUERY_PARAMS } from "../../constants/router.constants";
+
+import "./recipeList.scss";
 
 const RecipeList = () => {
   const recipes = useSelector(getRecipesForPage);

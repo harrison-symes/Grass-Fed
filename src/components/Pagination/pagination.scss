@@ -1,0 +1,12 @@
+@import "node_modules/bulma/bulma";
+
+.pagination-list {
+    @include mobile {
+        width: 100%;
+        justify-content: center;
+
+        li {
+            flex-grow: 0;
+        }
+    }
+}
