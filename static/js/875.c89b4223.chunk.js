@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkGrassFed=self.webpackChunkGrassFed||[]).push([[875],{5333:function(s,e,n){var i=n(184);e.Z=function(){return(0,i.jsx)("div",{className:"notification is-warning",children:"This page is a work-in-progress. Please come back later."})}},9875:function(s,e,n){n.r(e);n(2791);var i=n(5333),r=n(184);e.default=function(){return(0,r.jsx)("div",{children:(0,r.jsx)(i.Z,{})})}}}]);
+//# sourceMappingURL=875.c89b4223.chunk.js.map

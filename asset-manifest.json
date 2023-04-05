@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/Grass-Fed/static/css/main.ac46af3b.css",
-    "main.js": "/Grass-Fed/static/js/main.5cc787cf.js",
-    "static/js/757.9672faba.chunk.js": "/Grass-Fed/static/js/757.9672faba.chunk.js",
-    "static/css/524.e130a388.chunk.css": "/Grass-Fed/static/css/524.e130a388.chunk.css",
-    "static/js/524.b79de591.chunk.js": "/Grass-Fed/static/js/524.b79de591.chunk.js",
-    "static/js/675.01da0e2b.chunk.js": "/Grass-Fed/static/js/675.01da0e2b.chunk.js",
-    "static/js/875.affe46e4.chunk.js": "/Grass-Fed/static/js/875.affe46e4.chunk.js",
-    "static/js/2.ea0f57bb.chunk.js": "/Grass-Fed/static/js/2.ea0f57bb.chunk.js",
-    "static/js/787.91653b47.chunk.js": "/Grass-Fed/static/js/787.91653b47.chunk.js",
-    "index.html": "/Grass-Fed/index.html",
-    "main.ac46af3b.css.map": "/Grass-Fed/static/css/main.ac46af3b.css.map",
-    "main.5cc787cf.js.map": "/Grass-Fed/static/js/main.5cc787cf.js.map",
-    "757.9672faba.chunk.js.map": "/Grass-Fed/static/js/757.9672faba.chunk.js.map",
-    "524.e130a388.chunk.css.map": "/Grass-Fed/static/css/524.e130a388.chunk.css.map",
-    "524.b79de591.chunk.js.map": "/Grass-Fed/static/js/524.b79de591.chunk.js.map",
-    "675.01da0e2b.chunk.js.map": "/Grass-Fed/static/js/675.01da0e2b.chunk.js.map",
-    "875.affe46e4.chunk.js.map": "/Grass-Fed/static/js/875.affe46e4.chunk.js.map",
-    "2.ea0f57bb.chunk.js.map": "/Grass-Fed/static/js/2.ea0f57bb.chunk.js.map",
-    "787.91653b47.chunk.js.map": "/Grass-Fed/static/js/787.91653b47.chunk.js.map"
+    "main.css": "/sexy-weaving-app/static/css/main.ac46af3b.css",
+    "main.js": "/sexy-weaving-app/static/js/main.fbd1888c.js",
+    "static/js/757.db8c545c.chunk.js": "/sexy-weaving-app/static/js/757.db8c545c.chunk.js",
+    "static/css/524.e130a388.chunk.css": "/sexy-weaving-app/static/css/524.e130a388.chunk.css",
+    "static/js/524.5f4264a3.chunk.js": "/sexy-weaving-app/static/js/524.5f4264a3.chunk.js",
+    "static/js/675.bc8bab44.chunk.js": "/sexy-weaving-app/static/js/675.bc8bab44.chunk.js",
+    "static/js/875.c89b4223.chunk.js": "/sexy-weaving-app/static/js/875.c89b4223.chunk.js",
+    "static/js/2.bca58b1f.chunk.js": "/sexy-weaving-app/static/js/2.bca58b1f.chunk.js",
+    "static/js/787.476abea8.chunk.js": "/sexy-weaving-app/static/js/787.476abea8.chunk.js",
+    "index.html": "/sexy-weaving-app/index.html",
+    "main.ac46af3b.css.map": "/sexy-weaving-app/static/css/main.ac46af3b.css.map",
+    "main.fbd1888c.js.map": "/sexy-weaving-app/static/js/main.fbd1888c.js.map",
+    "757.db8c545c.chunk.js.map": "/sexy-weaving-app/static/js/757.db8c545c.chunk.js.map",
+    "524.e130a388.chunk.css.map": "/sexy-weaving-app/static/css/524.e130a388.chunk.css.map",
+    "524.5f4264a3.chunk.js.map": "/sexy-weaving-app/static/js/524.5f4264a3.chunk.js.map",
+    "675.bc8bab44.chunk.js.map": "/sexy-weaving-app/static/js/675.bc8bab44.chunk.js.map",
+    "875.c89b4223.chunk.js.map": "/sexy-weaving-app/static/js/875.c89b4223.chunk.js.map",
+    "2.bca58b1f.chunk.js.map": "/sexy-weaving-app/static/js/2.bca58b1f.chunk.js.map",
+    "787.476abea8.chunk.js.map": "/sexy-weaving-app/static/js/787.476abea8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ac46af3b.css",
-    "static/js/main.5cc787cf.js"
+    "static/js/main.fbd1888c.js"
   ]
 }

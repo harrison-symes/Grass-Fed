@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunksanctuary=self.webpackChunksanctuary||[]).push([[675],{5333:function(n,a,s){var e=s(184);a.Z=function(){return(0,e.jsx)("div",{className:"notification is-warning",children:"This page is a work-in-progress. Please come back later."})}},7675:function(n,a,s){s.r(a);s(2791);var e=s(5333),i=s(184);a.default=function(){return(0,i.jsx)("div",{children:(0,i.jsx)(e.Z,{})})}}}]);
-//# sourceMappingURL=675.01da0e2b.chunk.js.map
