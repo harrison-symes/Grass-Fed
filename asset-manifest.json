@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/sexy-weaving-app/static/css/main.ac46af3b.css",
-    "main.js": "/sexy-weaving-app/static/js/main.fbd1888c.js",
-    "static/js/757.db8c545c.chunk.js": "/sexy-weaving-app/static/js/757.db8c545c.chunk.js",
-    "static/css/524.e130a388.chunk.css": "/sexy-weaving-app/static/css/524.e130a388.chunk.css",
-    "static/js/524.5f4264a3.chunk.js": "/sexy-weaving-app/static/js/524.5f4264a3.chunk.js",
-    "static/js/675.bc8bab44.chunk.js": "/sexy-weaving-app/static/js/675.bc8bab44.chunk.js",
-    "static/js/875.c89b4223.chunk.js": "/sexy-weaving-app/static/js/875.c89b4223.chunk.js",
-    "static/js/2.bca58b1f.chunk.js": "/sexy-weaving-app/static/js/2.bca58b1f.chunk.js",
-    "static/js/787.476abea8.chunk.js": "/sexy-weaving-app/static/js/787.476abea8.chunk.js",
-    "index.html": "/sexy-weaving-app/index.html",
-    "main.ac46af3b.css.map": "/sexy-weaving-app/static/css/main.ac46af3b.css.map",
-    "main.fbd1888c.js.map": "/sexy-weaving-app/static/js/main.fbd1888c.js.map",
-    "757.db8c545c.chunk.js.map": "/sexy-weaving-app/static/js/757.db8c545c.chunk.js.map",
-    "524.e130a388.chunk.css.map": "/sexy-weaving-app/static/css/524.e130a388.chunk.css.map",
-    "524.5f4264a3.chunk.js.map": "/sexy-weaving-app/static/js/524.5f4264a3.chunk.js.map",
-    "675.bc8bab44.chunk.js.map": "/sexy-weaving-app/static/js/675.bc8bab44.chunk.js.map",
-    "875.c89b4223.chunk.js.map": "/sexy-weaving-app/static/js/875.c89b4223.chunk.js.map",
-    "2.bca58b1f.chunk.js.map": "/sexy-weaving-app/static/js/2.bca58b1f.chunk.js.map",
-    "787.476abea8.chunk.js.map": "/sexy-weaving-app/static/js/787.476abea8.chunk.js.map"
+    "main.css": "/grass-fed/static/css/main.ac46af3b.css",
+    "main.js": "/grass-fed/static/js/main.233f2f51.js",
+    "static/js/757.db8c545c.chunk.js": "/grass-fed/static/js/757.db8c545c.chunk.js",
+    "static/css/524.e130a388.chunk.css": "/grass-fed/static/css/524.e130a388.chunk.css",
+    "static/js/524.5f4264a3.chunk.js": "/grass-fed/static/js/524.5f4264a3.chunk.js",
+    "static/js/675.bc8bab44.chunk.js": "/grass-fed/static/js/675.bc8bab44.chunk.js",
+    "static/js/875.c89b4223.chunk.js": "/grass-fed/static/js/875.c89b4223.chunk.js",
+    "static/js/2.bca58b1f.chunk.js": "/grass-fed/static/js/2.bca58b1f.chunk.js",
+    "static/js/787.476abea8.chunk.js": "/grass-fed/static/js/787.476abea8.chunk.js",
+    "index.html": "/grass-fed/index.html",
+    "main.ac46af3b.css.map": "/grass-fed/static/css/main.ac46af3b.css.map",
+    "main.233f2f51.js.map": "/grass-fed/static/js/main.233f2f51.js.map",
+    "757.db8c545c.chunk.js.map": "/grass-fed/static/js/757.db8c545c.chunk.js.map",
+    "524.e130a388.chunk.css.map": "/grass-fed/static/css/524.e130a388.chunk.css.map",
+    "524.5f4264a3.chunk.js.map": "/grass-fed/static/js/524.5f4264a3.chunk.js.map",
+    "675.bc8bab44.chunk.js.map": "/grass-fed/static/js/675.bc8bab44.chunk.js.map",
+    "875.c89b4223.chunk.js.map": "/grass-fed/static/js/875.c89b4223.chunk.js.map",
+    "2.bca58b1f.chunk.js.map": "/grass-fed/static/js/2.bca58b1f.chunk.js.map",
+    "787.476abea8.chunk.js.map": "/grass-fed/static/js/787.476abea8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ac46af3b.css",
-    "static/js/main.fbd1888c.js"
+    "static/js/main.233f2f51.js"
   ]
 }
