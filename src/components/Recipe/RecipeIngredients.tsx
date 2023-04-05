@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { IRecipe } from "../../models/recipe.models";
 import { measurementName, quantityText } from "../helpers/recipeHelpers";
+import RecipeStepIngredientsPanel from "./RecipeStepIngredientPanel";
 
 interface IRecipeIngredientsProps {
   recipe: IRecipe;
@@ -18,28 +19,10 @@ const RecipeIngredients = (props: IRecipeIngredientsProps) => {
   return (
     <div>
       {steps.map((step) => (
-        <article
-          className="panel is-primary"
+        <RecipeStepIngredientsPanel
+          step={step}
           key={`${props.recipe}-${step.groupName}-step`}
-        >
-          <div className="panel-heading flex justify-between">
-            <p>{step.groupName}</p>
-            {step.servings && (
-              <p>
-                {step.servings} {step.servings <= 1 ? "Serving" : "Servings"}
-              </p>
-            )}
-          </div>
-          {(step.ingredients ?? []).map((ingredient) => (
-            <a
-              className="panel-block flex justify-between"
-              key={`${props.recipe}-${step.groupName}-${ingredient.name}-ingredient`}
-            >
-              <p>{ingredient.name}</p>
-              <p className="">{quantityText(ingredient)}</p>
-            </a>
-          ))}
-        </article>
+        />
       ))}
     </div>
   );
