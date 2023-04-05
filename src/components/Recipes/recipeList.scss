@@ -1,0 +1,49 @@
+@import "node_modules/bulma/bulma";
+
+.recipe-list {
+    @include mobile {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    @include tablet {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    @include desktop {
+        justify-content: center;
+    }
+}
+
+.recipe-card {
+    cursor: pointer;
+    transform: scale(1.0);
+
+    margin-bottom: 1.5rem;
+
+    @include mobile {}
+
+    @include tablet {
+        min-width: 350px;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    @include desktop {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        min-width: 384px;
+    }
+
+    &:hover {
+        // .card-header {
+        //     background-color: $primary;
+        // }
+        transform: scale(1.05);
+        transition: transform 0.4s;
+    }
+}

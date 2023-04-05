@@ -1,0 +1,98 @@
+@import "node_modules/bulma/bulma";
+
+.recipe-filters {
+    display: none;
+    justify-content: space-evenly;
+
+    @include mobile {
+        display: none;
+
+        &.is-shown {
+            display: block;
+        }
+    }
+
+    @include tablet {
+        display: none;
+        flex-direction: column;
+
+        &.is-shown {
+            display: flex;
+        }
+    }
+
+    @include desktop {
+        flex-direction: row;
+        display: flex;
+    }
+
+}
+
+.recipe-filter-show {
+    display: flex;
+    align-items: center;
+    color: $primary;
+
+    @include desktop {
+        display: none;
+    }
+}
+
+.recipe-filter {
+    margin-bottom: 1rem;
+
+    @include mobile {
+        width: 100%;
+    }
+
+    @include tablet {
+        width: 100%;
+        margin-left: 0.5rem;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+
+    @include desktop {
+        min-width: 250px;
+        max-width: 350px;
+    }
+}
+
+.recipe-filter__group {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+    @include mobile {
+        display: block;
+
+        .recipe-filter {
+            display: block;
+        }
+    }
+
+    @include tablet {
+        width: 100%;
+    }
+
+    @include desktop {
+        // width: 50%;
+        margin-left: 0.5rem;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+
+.recipe-filter-reset {
+    align-self: flex-end;
+    margin-bottom: 1rem;
+
+    @include tablet {
+        margin-left: 0.5rem;
+    }
+}
