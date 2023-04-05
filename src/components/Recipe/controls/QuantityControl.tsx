@@ -12,6 +12,7 @@ const quantities: number[] = [0.5, 1, 2, 3, 4, 5];
 
 const QuantityControl = (props: IQuantityControlProps) => {
   const servings = useSelector(getServingsValue);
+  console.log({ servings });
 
   const queryUpdater = useQueryUpdater();
 

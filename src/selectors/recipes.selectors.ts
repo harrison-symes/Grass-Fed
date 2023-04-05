@@ -117,11 +117,12 @@ export const getServingsValue = createSelector(
     getRecipeByUrl,
     (servingsParam, recipe): number => {
         const servings = Number(servingsParam ?? "")
+        console.log({servingsParam, servings, recipe})
         if (recipe == null)
         {
             return 1
         }
-        if (isNaN(servings))
+        if (isNaN(servings) || servings === 0)
         {
             return recipe.servings
         }

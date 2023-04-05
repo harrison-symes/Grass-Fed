@@ -18,14 +18,24 @@ const RecipeStepIngredientsPanel = (
   const servings = useSelector(getServingsValue);
   const [isOpen, setIsOpen] = useState(true);
 
+  const chevron = isOpen ? <DownChevron /> : <UpChevron />;
+  const hasMultiSteps =
+    Array.isArray(props.recipe.steps) && props.recipe.steps.length > 1;
+
+  const onClickHeader = () => {
+    if (hasMultiSteps) {
+      setIsOpen((state) => !state);
+    }
+  };
+
   return (
     <article className="panel is-primary">
       <div
         className="panel-heading flex justify-between"
-        onClick={() => setIsOpen((state) => !state)}
+        onClick={onClickHeader}
       >
         <p className="flex items-center">
-          {step.groupName} {isOpen ? <DownChevron /> : <UpChevron />}
+          {step.groupName} {hasMultiSteps && chevron}
         </p>
         {servings && (
           <p>
