@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Grass-Fed/static/css/main.ac46af3b.css",
-    "main.js": "/Grass-Fed/static/js/main.6e050db6.js",
+    "main.js": "/Grass-Fed/static/js/main.0f3fcf74.js",
     "static/js/757.db8c545c.chunk.js": "/Grass-Fed/static/js/757.db8c545c.chunk.js",
     "static/css/524.e130a388.chunk.css": "/Grass-Fed/static/css/524.e130a388.chunk.css",
     "static/js/524.0b66b153.chunk.js": "/Grass-Fed/static/js/524.0b66b153.chunk.js",
@@ -11,7 +11,7 @@
     "static/js/787.476abea8.chunk.js": "/Grass-Fed/static/js/787.476abea8.chunk.js",
     "index.html": "/Grass-Fed/index.html",
     "main.ac46af3b.css.map": "/Grass-Fed/static/css/main.ac46af3b.css.map",
-    "main.6e050db6.js.map": "/Grass-Fed/static/js/main.6e050db6.js.map",
+    "main.0f3fcf74.js.map": "/Grass-Fed/static/js/main.0f3fcf74.js.map",
     "757.db8c545c.chunk.js.map": "/Grass-Fed/static/js/757.db8c545c.chunk.js.map",
     "524.e130a388.chunk.css.map": "/Grass-Fed/static/css/524.e130a388.chunk.css.map",
     "524.0b66b153.chunk.js.map": "/Grass-Fed/static/js/524.0b66b153.chunk.js.map",
@@ -22,6 +22,6 @@
   },
   "entrypoints": [
     "static/css/main.ac46af3b.css",
-    "static/js/main.6e050db6.js"
+    "static/js/main.0f3fcf74.js"
   ]
 }
