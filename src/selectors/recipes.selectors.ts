@@ -99,7 +99,7 @@ export const getRecipeIdFromUrl = (state: TStoreState) => {
         return null;
     }
 
-    const recipeId = path.split('/')[3];
+    const recipeId = path.split('/')[2];
 
     console.log({recipeId})
 
