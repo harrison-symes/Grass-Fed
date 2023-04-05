@@ -10,10 +10,10 @@ const testRecipes: Array<IRecipe> = [
         shortDescription: "Yum yum",
         longDescription: "Yum yum yum yum yum",
         time: 1,
+        servings: 2,
         steps: [
             {
                 groupName: "The Scramble",
-                servings: 2,
                 ingredients: [
                     {
                         name: "Smoked Paprika",
@@ -55,7 +55,6 @@ const testRecipes: Array<IRecipe> = [
             {
                 groupName: "Cashew Sauce",
                 recipeId: "cashew-sauce",
-                servings: 2,
                 ingredients: [
                     {
                         name: "Raw Cashews",
@@ -85,25 +84,22 @@ const testRecipes: Array<IRecipe> = [
         shortDescription: "Yum yum",
         longDescription: "Yum yum yum yum yum",
         time: 3,
+        servings: 3,
         steps: [
             {
                 groupName: "Baked Tofu",
-                servings: 3,
                 ingredients: []
             },
             {
                 groupName: "Mock-Chicken",
-                servings: 3,
                 ingredients: []
             },
             {
                 groupName: "Naan Bread",
                 recipeId: "naan-bread",
-                servings: 3,
             },
             {
                 groupName: "Butter Chicken",
-                servings: 3,
                 ingredients: []
             },
         ]
@@ -117,15 +113,14 @@ const testRecipes: Array<IRecipe> = [
         shortDescription: "Yum yum",
         longDescription: "Yum yum yum yum yum",
         time: 2,
+        servings: 3,
         steps: [
             {
                 groupName: "Mashed potato",
-                servings: 3,
                 ingredients: []
             },
             {
                 groupName: "Pie Filling",
-                servings: 3,
                 ingredients: []
             }
         ]

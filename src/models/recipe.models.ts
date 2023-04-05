@@ -11,6 +11,7 @@ export interface IRecipe {
     time: number;
     cost: number;
     steps: IRecipeStep | Array<IRecipeStep>;
+    servings: number;
 }
 
 export type IngredientMeasurement = "unit" | "grams" | "cups" | "tsp" | "tbsp" | "ml" | "l"
@@ -23,7 +24,6 @@ export interface IRecipeIngredient {
 
 export interface IRecipeStep {
     groupName: string;
-    servings?: number;
     recipeId?: string;
     ingredients?: IRecipeIngredient[];
 }

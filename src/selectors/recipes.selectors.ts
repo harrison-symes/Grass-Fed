@@ -111,3 +111,21 @@ export const getRecipeIdFromUrl = (state: TStoreState) => {
 }
 
 export const getRecipeByUrl = createSelector(getRecipes, getRecipeIdFromUrl, (recipes, id) => recipes.find(recipe => recipe.id === id))
+
+export const getServingsValue = createSelector(
+    getQueryParam(QUERY_PARAMS.SERVINGS),
+    getRecipeByUrl,
+    (servingsParam, recipe): number => {
+        const servings = Number(servingsParam ?? "")
+        if (recipe == null)
+        {
+            return 1
+        }
+        if (isNaN(servings))
+        {
+            return recipe.servings
+        }
+
+        return servings
+    }
+)

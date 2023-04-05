@@ -37,15 +37,15 @@ export const quantityValueText = (value: number) => {
     }
 }
 
-export const measurementName = (ingredient: IRecipeIngredient) => {
-    switch(ingredient.measurement)
+export const measurementName = (quantity: number, measurement: IngredientMeasurement) => {
+    switch(measurement)
     {
-        case "cups": return ingredient.quantity <= 1 ? "cup" : "cups";
-        case "unit": return ingredient.quantity <= 1 ? "unit" : "units";
-        default: return ingredient.measurement
+        case "cups": return quantity <= 1 ? "cup" : "cups";
+        case "unit": return quantity <= 1 ? "unit" : "units";
+        default: return measurement
     }
 }
 
-export const quantityText = (ingredient: IRecipeIngredient) => {
-    return `${quantityValueText(ingredient.quantity)} ${measurementName(ingredient)}`
+export const quantityText = (quantity: number, measurement: IngredientMeasurement) => {
+    return `${quantityValueText(quantity)} ${measurementName(quantity, measurement)}`
 }
