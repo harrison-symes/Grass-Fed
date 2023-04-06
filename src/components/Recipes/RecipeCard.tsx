@@ -1,8 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { IRecipe } from "../../models/recipe.models";
 import { costText, speedText } from "../helpers/recipeHelpers";
-import { useDispatch } from "react-redux";
-import { replace } from "redux-first-history";
 
 interface IRecipeProps {
   recipe: IRecipe;

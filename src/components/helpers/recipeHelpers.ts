@@ -1,7 +1,4 @@
-import {
-  IRecipeIngredient,
-  IngredientMeasurement,
-} from "../../models/recipe.models";
+import { IngredientMeasurement } from "../../models/recipe.models";
 
 export const speedText = (speed: number | null) => {
   switch (speed) {
