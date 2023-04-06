@@ -1,13 +1,12 @@
-import {FaPodcast} from "react-icons/fa"
-import IconContainer, { IIconProps } from "./Icon"
-
+import { FaPodcast } from "react-icons/fa";
+import IconContainer, { IIconProps } from "./Icon";
 
 const PodcastIcon = (props: IIconProps) => {
-    return (
-        <IconContainer {...props.containerProps}>
-            <FaPodcast />
-        </IconContainer>
-    )
-}
+  return (
+    <IconContainer {...props.containerProps}>
+      <FaPodcast />
+    </IconContainer>
+  );
+};
 
-export default PodcastIcon
+export default PodcastIcon;

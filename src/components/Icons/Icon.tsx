@@ -1,21 +1,17 @@
-import cn from "classnames"
+import cn from "classnames";
 
 interface IIconContainerProps {
-    className?: string;
-    children?: React.ReactNode;
+  className?: string;
+  children?: React.ReactNode;
 }
 
 export interface IIconProps {
-    className?: string;
-    containerProps?: IIconContainerProps;
+  className?: string;
+  containerProps?: IIconContainerProps;
 }
 
 const IconContainer = (props: IIconContainerProps) => {
-    return (
-        <div className={cn("icon", props.className)}>
-            {props.children}
-        </div>
-    )
-}
+  return <div className={cn("icon", props.className)}>{props.children}</div>;
+};
 
-export default IconContainer
+export default IconContainer;
