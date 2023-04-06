@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { HistoryRouter } from "redux-first-history/rr6";
 
 import Layout from "./Layout";
-import { BASE_PATH, ROUTES_INTERNAL } from "./constants/router.constants";
+import { ROUTES_INTERNAL } from "./constants/router.constants";
 import RecipePage from "./pages/RecipePage";
 import { history } from "./configureStore";
 import Loader from "./components/Loader/Loader";
@@ -16,7 +16,7 @@ const GoVegan = React.lazy(() => import("./pages/GoVegan"));
 
 const Router = () => {
   return (
-    <HistoryRouter history={history} basename={BASE_PATH}>
+    <HistoryRouter history={history}>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route
