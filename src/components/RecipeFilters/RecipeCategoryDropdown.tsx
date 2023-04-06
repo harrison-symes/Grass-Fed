@@ -1,11 +1,6 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import Dropdown from "../Dropdown/Dropdown";
-import DropdownItem from "../Dropdown/DropdownItem";
-import {
-  getCategoryParams,
-  getQueryParam,
-  getQueryParams,
-} from "../../selectors";
+import { getCategoryParams } from "../../selectors";
 import { QUERY_PARAMS } from "../../constants/router.constants";
 import useQueryUpdater from "../hooks/useQueryUpdater";
 import Radio from "../Radio/Radio";

@@ -4,13 +4,10 @@ import { getServingsValue } from "../../../selectors";
 import DropdownItem from "../../Dropdown/DropdownItem";
 import useQueryUpdater from "../../hooks/useQueryUpdater";
 import { QUERY_PARAMS } from "../../../constants/router.constants";
-import { useRef } from "react";
-
-interface IQuantityControlProps {}
 
 const quantities: number[] = [0.5, 1, 2, 3, 4, 5];
 
-const QuantityControl = (props: IQuantityControlProps) => {
+const QuantityControl = () => {
   const servings = useSelector(getServingsValue);
   console.log({ servings });
 

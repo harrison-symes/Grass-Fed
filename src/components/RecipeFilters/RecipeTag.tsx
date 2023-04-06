@@ -1,13 +1,5 @@
-interface IRecipeTagProps {
+const RecipeTag = () => {
+  return <span className="tag"></span>;
+};
 
-}
-
-const RecipeTag = (props: IRecipeTagProps) => {
-    return (
-        <span className="tag">
-
-        </span>
-    )
-}
-
-export default RecipeTag
+export default RecipeTag;

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { IRecipe, IRecipeIngredient } from "../../models/recipe.models";
-import { quantityText } from "../helpers/recipeHelpers";
 import CheckMarkIcon from "../Icons/Cook copy";
 import IngredientQuantity from "./IngredientQuantity";
 

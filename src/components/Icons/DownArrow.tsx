@@ -1,13 +1,12 @@
-import {FaChevronDown} from "react-icons/fa"
-import IconContainer, { IIconProps } from "./Icon"
-
+import { FaChevronDown } from "react-icons/fa";
+import IconContainer, { IIconProps } from "./Icon";
 
 const DownArrowIcon = (props: IIconProps) => {
-    return (
-        <IconContainer {...props.containerProps}>
-            <FaChevronDown />
-        </IconContainer>
-    )
-}
+  return (
+    <IconContainer {...props.containerProps}>
+      <FaChevronDown />
+    </IconContainer>
+  );
+};
 
-export default DownArrowIcon
+export default DownArrowIcon;

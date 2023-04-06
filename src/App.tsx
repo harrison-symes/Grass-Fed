@@ -1,7 +1,5 @@
-import { createBrowserHistory } from "history";
 import Router from "./Router";
 import { Provider } from "react-redux";
-import { BrowserRouter } from "react-router-dom";
 import { store } from "./configureStore";
 
 const App = () => {

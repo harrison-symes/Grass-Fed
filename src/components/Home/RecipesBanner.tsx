@@ -1,4 +1,3 @@
-import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
 import RightChevron from "../Icons/RightChevron";
 

@@ -1,9 +1,7 @@
 import * as React from "react";
-import { Routes, Route, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Nav from "./components/Nav/Nav";
-import Hero from "./components/Home/Hero";
-import Breadcrumbs from "./components/Breadcrumbs/Breadcrumbs";
 
 const Layout = () => {
   return (
