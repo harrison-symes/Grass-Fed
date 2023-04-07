@@ -32,7 +32,11 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "/index.html"
+        "function": "SPA"
+      },
+      {
+        "source": "/hello",
+        "function": "helloWorld"
       }
     ]
   },
