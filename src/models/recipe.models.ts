@@ -15,7 +15,7 @@ export interface IRecipe {
   longDescription?: string;
   time: number;
   cost: number;
-  steps: IRecipeStep | Array<IRecipeStep>;
+  components: IRecipeComponent | Array<IRecipeComponent>;
   servings: number;
 }
 
@@ -35,7 +35,13 @@ export interface IRecipeIngredient {
 }
 
 export interface IRecipeStep {
+  image?: string;
+  text: string;
+}
+
+export interface IRecipeComponent {
   groupName: string;
   recipeId?: string;
   ingredients?: IRecipeIngredient[];
+  steps: IRecipeStep[];
 }

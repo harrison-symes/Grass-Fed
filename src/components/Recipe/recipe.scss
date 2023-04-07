@@ -17,3 +17,47 @@
         margin-right: auto;
     }
 }
+
+.recipe-panel__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    &--active {
+        max-height: 90vh;
+
+        @include mobile {
+            max-height: 70vh;
+        }
+        overflow-y: auto;
+        transition: max-height 0.4s ease-in;
+    }
+}
+
+
+.recipe-panel__header {
+    cursor: pointer;
+}
+
+.recipe-panel__text {
+    max-width: calc(100% - #{32px});
+}
+
+.recipe-panel__image {
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - #{32px});
+    max-width: 500px;
+    max-height: 300px;
+}
+
+.recipe-panel__item {
+    &:hover {
+        background-color: lighten($success, 30%) !important;
+    }
+}
+.recipe-panel__item--active {
+    background-color: lighten($success, 30%) !important;
+    &:hover {
+        background-color: lighten($success, 20%) !important;
+    }
+}

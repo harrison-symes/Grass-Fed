@@ -9,7 +9,7 @@ import {
   MIN_TIME_VALUE,
   RECIPES_PER_PAGE,
 } from "../constants/recipe.constants";
-import { RecipeTab } from "../components/Recipe/RecipeTabs";
+import { RecipeTabType } from "../components/Recipe/RecipeTabs";
 
 export const getRecipes = (state: TStoreState) => state.recipes.recipes;
 
@@ -60,12 +60,12 @@ export const getCategoryParams = createSelector(
 
 export const getRecipeTabParam = createSelector(
   getQueryParam(QUERY_PARAMS.TAB),
-  (param): RecipeTab => {
+  (param): RecipeTabType => {
     if (param == null) {
       return null;
     }
 
-    return param as RecipeTab;
+    return param as RecipeTabType;
   }
 );
 
