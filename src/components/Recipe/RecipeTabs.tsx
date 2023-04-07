@@ -4,11 +4,11 @@ import useQueryUpdater from "../hooks/useQueryUpdater";
 import cn from "classnames";
 import { getRecipeTabParam } from "../../selectors";
 
-export type RecipeTab = "ingredients" | "steps" | null;
+export type RecipeTabType = "ingredients" | "steps" | null;
 
 interface IRecipeTabProps {
   text: string;
-  param: RecipeTab | null;
+  param: RecipeTabType | null;
   onClick: (param: string | null) => void;
   activeTab: string | null | undefined;
 }

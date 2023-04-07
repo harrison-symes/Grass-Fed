@@ -11,7 +11,7 @@ const testRecipes: Array<IRecipe> = [
     longDescription: "Yum yum yum yum yum",
     time: 1,
     servings: 2,
-    steps: [
+    components: [
       {
         groupName: "The Scramble",
         ingredients: [
@@ -51,6 +51,31 @@ const testRecipes: Array<IRecipe> = [
             measurement: "unit",
           },
         ],
+        steps: [
+          {
+            text: "Prepare your ingredients; Dice the {Onion} and {Capsicum}. Slice the {White Button Mushroom}.",
+          },
+          {
+            text: "Heat up a pan to medium heat. Add your oil of choice and allow some time for the oil to heat",
+          },
+          {
+            text: "Add the diced {Onion} to the pan. Stir frequently until it goes transparent.",
+          },
+          {
+            text: "Tear up the {Firm Tofu} with your hands and add it to the pan, make sure you stir frequently to avoid any Tofu sticking to the pan (You can add a splash of water to help prevent the sticking)",
+          },
+          {
+            text: "Add the spices ({Smoked Paprika}, {Cumin} and {Tumeric}) to the pan, be sure to stir constantly. The Tofu should start looking yellow with a redish tinge.",
+          },
+          {
+            text: "Add the {Capsicum} and {White Button Mushroom} to the pan. Stir for a couple of minutes until cooked through.",
+          },
+          {
+            text: "Serve with Cashew Sauce and Toast. Enjoy!",
+            image:
+              "https://www.noracooks.com/wp-content/uploads/2019/01/IMG_2907.jpg",
+          },
+        ],
       },
       {
         groupName: "Cashew Sauce",
@@ -71,6 +96,36 @@ const testRecipes: Array<IRecipe> = [
             quantity: 0.5,
             measurement: "tbsp",
           },
+          {
+            name: "Soy Sauce",
+            quantity: 1,
+            measurement: "tbsp",
+          },
+          {
+            name: "Water",
+            quantity: 1 / 4,
+            measurement: "cups",
+          },
+        ],
+        steps: [
+          {
+            text: "Soak the {Raw Cashews} in boiling water for several minutes and then drain them. This will soften the cashews and helps to make the sauce creamier.",
+          },
+          {
+            text: "Put the Cashews in a container that will allow you to blend them easily, such as the cup of a Nutribullet blender.",
+          },
+          {
+            text: "Add the {Onion Powder}, {Garlic Powder}, {Soy Sauce} and {Water} to the container with the Cashews",
+          },
+          {
+            text: "Blend the combined ingredients for about 20s. If the mixture is too thick you may need to add more water.",
+          },
+          {
+            text: "Taste test the sauce. You may want to add more Soy Sauce or Salt if the flavour is not strong enough",
+          },
+          {
+            text: "Serve with your Scrambled Tofu and Toast for a delicious meal. Enjoy!",
+          },
         ],
       },
     ],
@@ -86,22 +141,78 @@ const testRecipes: Array<IRecipe> = [
     longDescription: "Yum yum yum yum yum",
     time: 3,
     servings: 3,
-    steps: [
+    components: [
       {
         groupName: "Baked Tofu",
         ingredients: [],
+        steps: [
+          {
+            text: "Step 1",
+          },
+          {
+            text: "Step 2",
+          },
+          {
+            text: "Step 3",
+          },
+          {
+            text: "Step 4",
+          },
+        ],
       },
       {
         groupName: "Mock-Chicken",
         ingredients: [],
+        steps: [
+          {
+            text: "Step 1",
+          },
+          {
+            text: "Step 2",
+          },
+          {
+            text: "Step 3",
+          },
+          {
+            text: "Step 4",
+          },
+        ],
       },
       {
         groupName: "Naan Bread",
         recipeId: "naan-bread",
+        steps: [
+          {
+            text: "Step 1",
+          },
+          {
+            text: "Step 2",
+          },
+          {
+            text: "Step 3",
+          },
+          {
+            text: "Step 4",
+          },
+        ],
       },
       {
         groupName: "Butter Chicken",
         ingredients: [],
+        steps: [
+          {
+            text: "Step 1",
+          },
+          {
+            text: "Step 2",
+          },
+          {
+            text: "Step 3",
+          },
+          {
+            text: "Step 4",
+          },
+        ],
       },
     ],
   },
@@ -116,14 +227,42 @@ const testRecipes: Array<IRecipe> = [
     longDescription: "Yum yum yum yum yum",
     time: 2,
     servings: 3,
-    steps: [
+    components: [
       {
         groupName: "Mashed potato",
         ingredients: [],
+        steps: [
+          {
+            text: "Step 1",
+          },
+          {
+            text: "Step 2",
+          },
+          {
+            text: "Step 3",
+          },
+          {
+            text: "Step 4",
+          },
+        ],
       },
       {
         groupName: "Pie Filling",
         ingredients: [],
+        steps: [
+          {
+            text: "Step 1",
+          },
+          {
+            text: "Step 2",
+          },
+          {
+            text: "Step 3",
+          },
+          {
+            text: "Step 4",
+          },
+        ],
       },
     ],
   },
