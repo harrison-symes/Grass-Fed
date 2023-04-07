@@ -1,5 +1,8 @@
 {
   "projects": {
     "default": "grass-fed-nz"
+  },
+  "functions": {
+    "region": "australia-southeast1"
   }
 }
