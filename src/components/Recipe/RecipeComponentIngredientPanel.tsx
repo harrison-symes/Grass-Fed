@@ -29,11 +29,13 @@ const RecipeComponentIngredientsPanel = (
   return (
     <article className="panel is-primary">
       <div
-        className="panel-heading recipe-panel__header flex items-center justify-between"
+        className="panel-heading recipe-panel__header"
         onClick={onClickHeader}
       >
-        <p>{component.groupName}</p>
-        {hasMulticomponents && chevron}
+        <div className="flex items-center justify-between">
+          <p>{component.groupName}</p>
+          {hasMulticomponents && chevron}
+        </div>
       </div>
       {isOpen &&
         (component.ingredients ?? []).map((ingredient) => (

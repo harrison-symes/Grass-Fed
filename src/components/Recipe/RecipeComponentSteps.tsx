@@ -27,11 +27,13 @@ const RecipeComponentStepsPanel = (props: IRecipeComponentStepsPanelProps) => {
   return (
     <article className="panel is-primary">
       <div
-        className="panel-heading recipe-panel__header flex item-center justify-between"
+        className="panel-heading recipe-panel__header"
         onClick={onClickHeader}
       >
-        <p>{component.groupName}</p>
-        {hasMultiComponents && chevron}
+        <div className="flex items-center justify-between">
+          <p>{component.groupName}</p>
+          {hasMultiComponents && chevron}
+        </div>
       </div>
       {isOpen &&
         (component.steps ?? []).map((step, i) => (
