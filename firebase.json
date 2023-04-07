@@ -23,7 +23,7 @@
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
-    "public": "./build",
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -32,11 +32,7 @@
     "rewrites": [
       {
         "source": "**",
-        "function": "SPA"
-      },
-      {
-        "source": "/hello",
-        "function": "helloWorld"
+        "destination": "/index.html"
       }
     ]
   },
