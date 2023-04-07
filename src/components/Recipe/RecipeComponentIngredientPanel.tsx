@@ -4,6 +4,8 @@ import { useState } from "react";
 import UpChevron from "../Icons/UpChevron";
 import DownChevron from "../Icons/DownChevron";
 
+import cn from "classnames";
+
 interface IRecipeComponentIngredientsPanelProps {
   recipe: IRecipe;
   component: IRecipeComponent;
@@ -27,7 +29,11 @@ const RecipeComponentIngredientsPanel = (
   };
 
   return (
-    <article className="panel is-primary">
+    <article
+      className={cn("panel recipe-panel is-primary", {
+        "recipe-panel--active": isOpen,
+      })}
+    >
       <div
         className="panel-heading recipe-panel__header"
         onClick={onClickHeader}
@@ -37,14 +43,19 @@ const RecipeComponentIngredientsPanel = (
           {hasMulticomponents && chevron}
         </div>
       </div>
-      {isOpen &&
-        (component.ingredients ?? []).map((ingredient) => (
+      <div
+        className={cn("panel recipe-panel__content is-primary", {
+          "recipe-panel__content--active": isOpen,
+        })}
+      >
+        {(component.ingredients ?? []).map((ingredient) => (
           <RecipeIngredient
             recipe={props.recipe}
             ingredient={ingredient}
             key={`${component.groupName}-${ingredient.name}-ingredient`}
           />
         ))}
+      </div>
     </article>
   );
 };

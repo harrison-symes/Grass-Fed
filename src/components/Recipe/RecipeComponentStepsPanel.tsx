@@ -4,6 +4,8 @@ import UpChevron from "../Icons/UpChevron";
 import DownChevron from "../Icons/DownChevron";
 import RecipeStep from "./RecipeStep";
 
+import cn from "classnames";
+
 interface IRecipeComponentStepsPanelProps {
   recipe: IRecipe;
   component: IRecipeComponent;
@@ -25,7 +27,7 @@ const RecipeComponentStepsPanel = (props: IRecipeComponentStepsPanelProps) => {
   };
 
   return (
-    <article className="panel is-primary">
+    <article className="panel recipe-panel is-primary">
       <div
         className="panel-heading recipe-panel__header"
         onClick={onClickHeader}
@@ -35,8 +37,12 @@ const RecipeComponentStepsPanel = (props: IRecipeComponentStepsPanelProps) => {
           {hasMultiComponents && chevron}
         </div>
       </div>
-      {isOpen &&
-        (component.steps ?? []).map((step, i) => (
+      <div
+        className={cn("panel recipe-panel__content is-primary", {
+          "recipe-panel__content--active": isOpen,
+        })}
+      >
+        {(component.steps ?? []).map((step, i) => (
           <RecipeStep
             recipe={props.recipe}
             step={step}
@@ -45,6 +51,7 @@ const RecipeComponentStepsPanel = (props: IRecipeComponentStepsPanelProps) => {
             stepNumber={i + 1}
           />
         ))}
+      </div>
     </article>
   );
 };

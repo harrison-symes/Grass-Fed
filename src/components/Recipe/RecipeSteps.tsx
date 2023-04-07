@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { IRecipe } from "../../models/recipe.models";
 import RecipeIngredientsControls from "./controls/RecipeIngredientsControls";
-import RecipeComponentStepsPanel from "./RecipeComponentSteps";
+import RecipeComponentStepsPanel from "./RecipeComponentStepsPanel";
 
 interface IRecipeStepsProps {
   recipe: IRecipe;
