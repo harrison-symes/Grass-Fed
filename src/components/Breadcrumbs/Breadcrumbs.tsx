@@ -11,7 +11,7 @@ const Breadcrumbs = () => {
     .map((path) => path.charAt(0).toUpperCase() + path.slice(1));
 
   return (
-    <nav className="breadcrumb" aria-label="breadcrumbs">
+    <nav className="breadcrumb mt4" aria-label="breadcrumbs">
       <ul>
         {paths.map((path, i) => (
           <li
