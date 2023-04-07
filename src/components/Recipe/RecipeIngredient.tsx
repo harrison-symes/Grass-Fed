@@ -14,14 +14,16 @@ const RecipeIngredient = (props: IRecipeIngredientProps) => {
   const [isChecked, setIsChecked] = useState(false);
 
   return (
-    <a
-      className="panel-block flex justify-between"
-      onClick={() => setIsChecked((state) => !state)}
-    >
-      <div className="flex justify-start items-center">
-        {ingredient.name} {isChecked && <CheckMarkIcon />}
+    <a className="panel-block" onClick={() => setIsChecked((state) => !state)}>
+      <div className="w-100 flex justify-between items-center">
+        <div className="flex justify-start items-center">
+          {ingredient.name} {isChecked && <CheckMarkIcon />}
+        </div>
+        <IngredientQuantity
+          recipe={props.recipe}
+          ingredient={props.ingredient}
+        />
       </div>
-      <IngredientQuantity recipe={props.recipe} ingredient={props.ingredient} />
     </a>
   );
 };
