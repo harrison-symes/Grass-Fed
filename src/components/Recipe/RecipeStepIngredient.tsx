@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import { IRecipe, IRecipeComponent } from "../../models/recipe.models";
 import { getServingsValue } from "../../selectors";
 import IngredientQuantity from "./IngredientQuantity";
+import { pluraliseIngredient } from "../helpers/recipeHelpers";
 
 interface IRecipeStepIngredientProps {
   recipe: IRecipe;
@@ -29,13 +30,15 @@ const RecipeStepIngredient = (props: IRecipeStepIngredientProps) => {
   const quantityValue =
     (matchingIngredient.quantity / props.recipe.servings) * servings;
 
-  const isPlural = quantityValue > 1;
-
   return (
-    <>
-      {matchingIngredient?.name}
-      {isPlural && "s"} ({QuantityText})
-    </>
+    <p className="fw5 inline-flex">
+      {pluraliseIngredient(
+        matchingIngredient?.name,
+        quantityValue,
+        matchingIngredient.measurement
+      )}{" "}
+      ({QuantityText})
+    </p>
   );
 };
 

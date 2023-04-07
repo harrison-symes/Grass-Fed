@@ -68,7 +68,7 @@ const testRecipes: Array<IRecipe> = [
             text: "Add the spices ({Smoked Paprika}, {Cumin} and {Tumeric}) to the pan, be sure to stir constantly. The Tofu should start looking yellow with a redish tinge.",
           },
           {
-            text: "Add the {Capsicum} and {Mushroom} to the pan. Stir for a couple of minutes until cooked through.",
+            text: "Add the {Capsicum} and {White Button Mushroom} to the pan. Stir for a couple of minutes until cooked through.",
           },
           {
             text: "Serve with Cashew Sauce and Toast. Enjoy!",

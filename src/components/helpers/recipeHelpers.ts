@@ -78,3 +78,21 @@ export const quantityText = (
     measurement
   )}`;
 };
+
+export const pluraliseIngredient = (
+  ingredient: string,
+  quantity: number,
+  measurement: IngredientMeasurement
+) => {
+  let isPlural = false;
+
+  switch (measurement) {
+    case "unit":
+      isPlural = quantity > 1;
+      break;
+    default:
+      break;
+  }
+
+  return `${ingredient}${isPlural ? "s" : ""}`;
+};
