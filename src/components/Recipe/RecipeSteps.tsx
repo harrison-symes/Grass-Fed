@@ -1,13 +1,13 @@
 import { useMemo } from "react";
 import { IRecipe } from "../../models/recipe.models";
-import RecipeComponentIngredientsPanel from "./RecipeComponentIngredientPanel";
 import RecipeIngredientsControls from "./controls/RecipeIngredientsControls";
+import RecipeComponentStepsPanel from "./RecipeComponentSteps";
 
-interface IRecipeIngredientsProps {
+interface IRecipeStepsProps {
   recipe: IRecipe;
 }
 
-const RecipeIngredients = (props: IRecipeIngredientsProps) => {
+const RecipeSteps = (props: IRecipeStepsProps) => {
   const components = useMemo(
     () =>
       Array.isArray(props.recipe.components)
@@ -20,8 +20,8 @@ const RecipeIngredients = (props: IRecipeIngredientsProps) => {
     <div>
       <RecipeIngredientsControls recipe={props.recipe} />
       {components.map((step) => (
-        <RecipeComponentIngredientsPanel
-          key={`${props.recipe}-${step.groupName}-component-ingredients`}
+        <RecipeComponentStepsPanel
+          key={`${props.recipe}-${step.groupName}-component-steps`}
           recipe={props.recipe}
           component={step}
         />
@@ -30,4 +30,4 @@ const RecipeIngredients = (props: IRecipeIngredientsProps) => {
   );
 };
 
-export default RecipeIngredients;
+export default RecipeSteps;
