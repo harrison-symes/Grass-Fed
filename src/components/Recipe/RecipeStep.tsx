@@ -7,6 +7,8 @@ import {
 import CheckMarkIcon from "../Icons/Cook copy";
 import RecipeStepIngredient from "./RecipeStepIngredient";
 
+import cn from "classnames";
+
 interface IRecipeStepProps {
   recipe: IRecipe;
   step: IRecipeStep;
@@ -22,8 +24,6 @@ const RecipeStep = (props: IRecipeStepProps) => {
   const [isChecked, setIsChecked] = useState(false);
 
   const sentenceParts = step.text.split(regex);
-
-  console.log({ ingredients: sentenceParts });
 
   const renderSentence = () => {
     const regex = /{([^}]+)}/g;
@@ -54,24 +54,14 @@ const RecipeStep = (props: IRecipeStepProps) => {
 
   return (
     <a
-      className="panel-block column"
+      className={cn("panel-block column recipe-panel__item", {
+        "recipe-panel__item--active": isChecked,
+      })}
       onClick={() => setIsChecked((state) => !state)}
     >
       <div className="w-100 flex justify-between items-start">
         <div className="recipe-panel__text">
-          <p className="fw7">Step {props.stepNumber}:</p>{" "}
-          {/* {sentenceParts.map((part) =>
-            regex.test(part) ? (
-              <RecipeStepIngredient
-                component={props.component}
-                ingredient={part.slice(1, -1)}
-                recipe={props.recipe}
-              />
-            ) : (
-              part
-            )
-          )} */}
-          {renderSentence()}
+          <p className="fw7">Step {props.stepNumber}:</p> {renderSentence()}
         </div>
         <div className="">{isChecked && <CheckMarkIcon />}</div>
       </div>
