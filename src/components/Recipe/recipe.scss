@@ -23,7 +23,11 @@
     overflow: hidden;
     transition: max-height 0.4s ease-out;
     &--active {
-        max-height: 70vh;
+        max-height: 90vh;
+
+        @include mobile {
+            max-height: 70vh;
+        }
         overflow-y: auto;
         transition: max-height 0.4s ease-in;
     }
