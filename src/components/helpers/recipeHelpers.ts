@@ -34,8 +34,10 @@ export const costText = (cost: number | null) => {
   }
 };
 
-export const quantityValueText = (value: number) => {
+export const quantityValueText = (value: number | undefined) => {
   switch (value) {
+    case undefined:
+      return "";
     case 0.0875:
       return "1/16";
     case 0.125:
@@ -57,9 +59,11 @@ export const quantityValueText = (value: number) => {
 
 export const measurementName = (
   quantity: number,
-  measurement: IngredientMeasurement
+  measurement: IngredientMeasurement | undefined
 ) => {
   switch (measurement) {
+    case undefined:
+      return "";
     case "cups":
       return quantity <= 1 ? "cup" : "cups";
     case "unit":
@@ -71,7 +75,7 @@ export const measurementName = (
 
 export const quantityText = (
   quantity: number,
-  measurement: IngredientMeasurement
+  measurement: IngredientMeasurement | undefined
 ) => {
   return `${quantityValueText(quantity)} ${measurementName(
     quantity,
@@ -82,7 +86,7 @@ export const quantityText = (
 export const pluraliseIngredient = (
   ingredient: string,
   quantity: number,
-  measurement: IngredientMeasurement
+  measurement: IngredientMeasurement | undefined
 ) => {
   let isPlural = false;
 

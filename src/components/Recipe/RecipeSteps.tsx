@@ -21,7 +21,7 @@ const RecipeSteps = (props: IRecipeStepsProps) => {
       <RecipeIngredientsControls recipe={props.recipe} />
       {components.map((step) => (
         <RecipeComponentStepsPanel
-          key={`${props.recipe}-${step.groupName}-component-steps`}
+          key={`${props.recipe}-${step.componentName}-component-steps`}
           recipe={props.recipe}
           component={step}
         />

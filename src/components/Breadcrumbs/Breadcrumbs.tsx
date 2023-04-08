@@ -10,9 +10,19 @@ const Breadcrumbs = () => {
     .filter((path) => path !== "")
     .map((path) => path.charAt(0).toUpperCase() + path.slice(1));
 
+  if (location.pathname === "/") {
+    return null;
+  }
+
   return (
     <nav className="breadcrumb mt4" aria-label="breadcrumbs">
       <ul>
+        <li
+          key={`breadcrumbs-item-home`}
+          className={cn({ "is-active": location.pathname === "/" })}
+        >
+          <Link to={`/`}>Home</Link>
+        </li>
         {paths.map((path, i) => (
           <li
             key={`breadcrumbs-item-${path}`}

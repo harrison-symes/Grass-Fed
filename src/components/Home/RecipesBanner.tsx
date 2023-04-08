@@ -8,13 +8,13 @@ const RecipesBanner = () => {
   };
 
   return (
-    <section className="home-hero hero is-info is-large" onClick={onClick}>
-      <div className="hero-body">
-        <p className="title flex items-center justify-center">
+    <div className="home-hero hero is-info is-large" onClick={onClick}>
+      <div className="hero-body flex items-center justify-center">
+        <p className="title">
           Recipes <RightChevron />
         </p>
       </div>
-    </section>
+    </div>
   );
 };
 

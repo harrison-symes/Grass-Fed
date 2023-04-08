@@ -16,14 +16,10 @@ interface IRecipeStepProps {
   stepNumber: number;
 }
 
-const regex = /{([^}]+)}/g;
-
 const RecipeStep = (props: IRecipeStepProps) => {
   const { step } = props;
 
   const [isChecked, setIsChecked] = useState(false);
-
-  const sentenceParts = step.text.split(regex);
 
   const renderSentence = () => {
     const regex = /{([^}]+)}/g;

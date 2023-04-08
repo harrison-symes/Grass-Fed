@@ -11,11 +11,12 @@ interface IIngredientQuantityProps {
 const IngredientQuantity = (props: IIngredientQuantityProps) => {
   const servings = useSelector(getServingsValue);
 
-  const value = (props.ingredient.quantity / props.recipe.servings) * servings;
+  const value =
+    (props.ingredient.quantity ?? 1 / props.recipe.servings) * servings;
 
   return (
     <p className="fw5 inline-flex">
-      {quantityText(value, props.ingredient.measurement)}
+      {quantityText(value, props.ingredient.measurement ?? "unit")}
     </p>
   );
 };

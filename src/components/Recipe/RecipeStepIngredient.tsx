@@ -28,7 +28,7 @@ const RecipeStepIngredient = (props: IRecipeStepIngredientProps) => {
   );
 
   const quantityValue =
-    (matchingIngredient.quantity / props.recipe.servings) * servings;
+    (matchingIngredient.quantity ?? 1 / props.recipe.servings) * servings;
 
   return (
     <p className="fw5 inline-flex">
