@@ -11,10 +11,6 @@ body {
     font-size: 16px;
 }
 
-.icon {
-    min-width: 2rem;
-}
-
 .input-icon {
     height: 100% !important;
 }
@@ -25,6 +21,10 @@ body {
 
 .text-center {
     text-align: center;
+}
+
+label {
+    line-height: 1;
 }
 
 .home-hero {

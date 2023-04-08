@@ -18,7 +18,7 @@ const Recipe = () => {
 
   return (
     <div className="container">
-      <h1 className="recipe__title is-size-1">{recipe.name}</h1>
+      <h1 className="recipe__title is-size-3">{recipe.name}</h1>
       <RecipeTabs />
       {activeTab === null && <RecipeDescription recipe={recipe} />}
       {activeTab === "ingredients" && <RecipeIngredients recipe={recipe} />}

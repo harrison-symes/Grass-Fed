@@ -37,20 +37,22 @@
 }
 
 .dropdown-close__container {
-    height: 40px;
-
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 0.5rem;
+    line-height: 1;
+
+    margin-bottom: 1.5rem;
+    margin-top: .5rem;
 
     @include desktop {
         display: none;
     }
 
     .dropdown-close__button {
-        width: 32px;
-        height: 32px;
+        width: 20px;
+        height: 20px;
         cursor: pointer;
         display: flex;
         align-items: center;

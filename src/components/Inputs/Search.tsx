@@ -18,7 +18,7 @@ const SearchInput = (props: ISearchInputProps) => {
           <SearchIcon containerProps={{ className: "is-left input-icon" }} />
           <input
             id={props.id}
-            className={cn("input is-medium", {
+            className={cn("input", {
               "is-loading": props.isLoading,
             })}
             type="text"

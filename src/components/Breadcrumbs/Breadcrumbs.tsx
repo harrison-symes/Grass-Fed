@@ -15,24 +15,26 @@ const Breadcrumbs = () => {
   }
 
   return (
-    <nav className="breadcrumb mt4" aria-label="breadcrumbs">
-      <ul>
-        <li
-          key={`breadcrumbs-item-home`}
-          className={cn({ "is-active": location.pathname === "/" })}
-        >
-          <Link to={`/`}>Home</Link>
-        </li>
-        {paths.map((path, i) => (
+    <div className="container mb3">
+      <nav className="breadcrumb" aria-label="breadcrumbs">
+        <ul>
           <li
-            key={`breadcrumbs-item-${path}`}
-            className={cn({ "is-active": i === paths.length - 1 })}
+            key={`breadcrumbs-item-home`}
+            className={cn({ "is-active": location.pathname === "/" })}
           >
-            <Link to={`/${paths.slice(0, i + 1).join("/")}`}>{path}</Link>
+            <Link to={`/`}>Home</Link>
           </li>
-        ))}
-      </ul>
-    </nav>
+          {paths.map((path, i) => (
+            <li
+              key={`breadcrumbs-item-${path}`}
+              className={cn({ "is-active": i === paths.length - 1 })}
+            >
+              <Link to={`/${paths.slice(0, i + 1).join("/")}`}>{path}</Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
   );
 };
 

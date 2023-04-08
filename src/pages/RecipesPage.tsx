@@ -32,7 +32,7 @@ const RecipesPage = () => {
 
   return (
     <div className="container">
-      <h1 className="is-size-1">Recipes</h1>
+      <h1 className="is-size-3">Recipes</h1>
       <RecipeFilters />
       <h2 className="is-size-5 mb4 fw6" ref={recipeListRef}>
         Showing ({recipeCount}) recipe{recipeCount === 1 ? "" : "s"}

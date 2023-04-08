@@ -55,7 +55,7 @@ const Dropdown = (props: IDropdownProps) => {
         <div className="dropdown-trigger">
           <button
             id={props.id}
-            className="button is-medium w-100"
+            className="button w-100"
             aria-haspopup="true"
             aria-controls="dropdown-menu3"
           >
