@@ -30,8 +30,9 @@ export type IngredientMeasurement =
 
 export interface IRecipeIngredient {
   name: string;
-  quantity: number;
-  measurement: IngredientMeasurement;
+  quantity?: number;
+  measurement?: IngredientMeasurement;
+  isOptional?: boolean;
 }
 
 export interface IRecipeStep {
@@ -40,7 +41,7 @@ export interface IRecipeStep {
 }
 
 export interface IRecipeComponent {
-  groupName: string;
+  componentName: string;
   recipeId?: string;
   ingredients?: IRecipeIngredient[];
   steps: IRecipeStep[];

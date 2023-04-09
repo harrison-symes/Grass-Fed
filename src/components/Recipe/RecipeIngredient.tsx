@@ -23,12 +23,16 @@ const RecipeIngredient = (props: IRecipeIngredientProps) => {
     >
       <div className="w-100 flex justify-between items-center">
         <div className="flex justify-start items-center">
-          {ingredient.name} {isChecked && <CheckMarkIcon />}
+          {ingredient.name} {ingredient.isOptional && "(optional)"}
+          {isChecked && <CheckMarkIcon />}
         </div>
-        <IngredientQuantity
-          recipe={props.recipe}
-          ingredient={props.ingredient}
-        />
+        {ingredient.measurement !== undefined &&
+          ingredient.quantity !== undefined && (
+            <IngredientQuantity
+              recipe={props.recipe}
+              ingredient={props.ingredient}
+            />
+          )}
       </div>
     </a>
   );

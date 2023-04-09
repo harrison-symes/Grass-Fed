@@ -33,7 +33,7 @@ const RecipeComponentStepsPanel = (props: IRecipeComponentStepsPanelProps) => {
         onClick={onClickHeader}
       >
         <div className="flex items-center justify-between">
-          <p>{component.groupName}</p>
+          <p>{component.componentName}</p>
           {hasMultiComponents && chevron}
         </div>
       </div>
@@ -46,7 +46,7 @@ const RecipeComponentStepsPanel = (props: IRecipeComponentStepsPanelProps) => {
           <RecipeStep
             recipe={props.recipe}
             step={step}
-            key={`${component.groupName}-${step.text}-step`}
+            key={`${component.componentName}-${step.text}-step`}
             component={component}
             stepNumber={i + 1}
           />

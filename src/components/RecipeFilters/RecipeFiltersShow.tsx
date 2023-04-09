@@ -8,7 +8,7 @@ interface IRecipeFiltersShowProps {
 
 const RecipeFiltersShow = (props: IRecipeFiltersShowProps) => {
   return (
-    <a className="recipe-filter-show is-size-5" onClick={props.onClick}>
+    <a className="recipe-filter-show is-size-6" onClick={props.onClick}>
       {props.isShown ? (
         <>
           <MinusIcon /> Hide filters

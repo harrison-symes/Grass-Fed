@@ -32,7 +32,7 @@ const Nav = () => {
         </div>
         <div className={cn("navbar-menu", { "is-active": isActive })}>
           <div className="navbar-start ml-auto mr-auto">
-            <NavItem text="Grass-Fed" href="/" icon={GrassIcon} />
+            <NavItem text="Grass-Fed" href="/" icon={GrassIcon} isExactPath />
             <NavItem text="Recipes" href="/recipes" icon={CookIcon} />
             <NavItem text="Go Vegan" href="/go-vegan" icon={CarrotIcon} />
             <NavItem text="Podcasts" href="/podcasts" icon={PodcastIcon} />

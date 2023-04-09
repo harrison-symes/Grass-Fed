@@ -17,9 +17,7 @@ const RecipeStepIngredient = (props: IRecipeStepIngredientProps) => {
     (ingredient) => ingredient.name === props.ingredient
   );
 
-  console.log({ matchingIngredient });
-
-  if (matchingIngredient === undefined) {
+  if (matchingIngredient === undefined || matchingIngredient.quantity == null) {
     return <>{props.ingredient}</>;
   }
 

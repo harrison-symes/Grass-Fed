@@ -7,6 +7,7 @@ interface INavItemProps {
   text: string;
   href: string;
   icon?: React.FC;
+  isExactPath?: boolean;
 }
 
 const NavItem = (props: INavItemProps) => {
@@ -21,11 +22,13 @@ const NavItem = (props: INavItemProps) => {
     <a
       onClick={onClick}
       className={cn("navbar-item flex items-center", {
-        "is-active": path?.includes(props.href),
+        "is-active": props.isExactPath
+          ? path === props.href
+          : path?.includes(props.href),
       })}
     >
       {props.icon && <props.icon />}
-      {props.text}
+      <p className="inline-flex ml2">{props.text}</p>
     </a>
   );
 };

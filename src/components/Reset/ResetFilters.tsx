@@ -14,7 +14,7 @@ const ResetFilters = () => {
   };
 
   return (
-    <button className="button is-medium mb2" onClick={onClick}>
+    <button className="button mb2" onClick={onClick}>
       Reset
     </button>
   );

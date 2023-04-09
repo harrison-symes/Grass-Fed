@@ -39,7 +39,7 @@ const RecipeComponentIngredientsPanel = (
         onClick={onClickHeader}
       >
         <div className="flex items-center justify-between">
-          <p>{component.groupName}</p>
+          <p>{component.componentName}</p>
           {hasMulticomponents && chevron}
         </div>
       </div>
@@ -52,7 +52,7 @@ const RecipeComponentIngredientsPanel = (
           <RecipeIngredient
             recipe={props.recipe}
             ingredient={ingredient}
-            key={`${component.groupName}-${ingredient.name}-ingredient`}
+            key={`${component.componentName}-${ingredient.name}-ingredient`}
           />
         ))}
       </div>
