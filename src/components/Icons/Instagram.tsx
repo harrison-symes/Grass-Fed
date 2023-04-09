@@ -1,7 +1,7 @@
 import { FaInstagram } from "react-icons/fa";
 import IconContainer, { IIconProps } from "./Icon";
 
-const IntagramIcon = (props: IIconProps) => {
+const InstagramIcon = (props: IIconProps) => {
   return (
     <IconContainer {...props.containerProps}>
       <FaInstagram />
@@ -9,4 +9,4 @@ const IntagramIcon = (props: IIconProps) => {
   );
 };
 
-export default IntagramIcon;
+export default InstagramIcon;

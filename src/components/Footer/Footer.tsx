@@ -1,6 +1,6 @@
 import * as React from "react";
 import GithubIcon from "../Icons/Github";
-import IntagramIcon from "../Icons/Instagram";
+import InstagramIcon from "../Icons/Instagram";
 
 const Footer = () => {
   return (
@@ -14,9 +14,9 @@ const Footer = () => {
           <a
             target="blank"
             href="https://www.instagram.com/grassfed_nz/"
-            className="flex items-center"
+            className="flex items-center ml1"
           >
-            <IntagramIcon />
+            <InstagramIcon />
             Instagram
           </a>{" "}
         </div>
@@ -25,7 +25,7 @@ const Footer = () => {
           <a
             target="blank"
             href="https://github.com/harrison-symes/Grass-Fed"
-            className="flex items-center"
+            className="flex items-center ml1"
           >
             <GithubIcon />
             Github
