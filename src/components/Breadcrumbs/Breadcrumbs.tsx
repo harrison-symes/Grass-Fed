@@ -2,11 +2,24 @@ import { useLocation } from "react-router";
 import cn from "classnames";
 import { Link } from "react-router-dom";
 
-const pathToNameMap: Record<string, string> = {
-  recipes: "Recipes",
-  "go-vegan": "Go Vegan",
-  podcasts: "Podcasts",
-  videos: "Videos",
+const getBreadcrumbForPath = (path: string) => {
+  switch (path) {
+    case "recipes":
+      return "Recipes";
+    case "go-vegan":
+      return "Go Vegan";
+    case "podcasts":
+      return "Podcasts";
+    default:
+      return path
+        .replace("-", " ")
+        .split(" ")
+        .reduce((accum, word) => {
+          const capitalised =
+            word.charAt(0).toUpperCase() + word.slice(1, word.length);
+          return `${accum} ${capitalised}`;
+        }, "");
+  }
 };
 
 const Breadcrumbs = () => {
@@ -34,7 +47,7 @@ const Breadcrumbs = () => {
               className={cn({ "is-active": i === paths.length - 1 })}
             >
               <Link to={`/${paths.slice(0, i + 1).join("/")}`}>
-                {pathToNameMap[path]}
+                {getBreadcrumbForPath(path)}
               </Link>
             </li>
           ))}
