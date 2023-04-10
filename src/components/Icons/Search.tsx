@@ -4,7 +4,7 @@ import IconContainer, { IIconProps } from "./Icon";
 const SearchIcon = (props: IIconProps) => {
   return (
     <IconContainer {...props.containerProps}>
-      <FaSearch />
+      <FaSearch {...props.iconProps} />
     </IconContainer>
   );
 };

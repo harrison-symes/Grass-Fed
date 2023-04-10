@@ -4,7 +4,7 @@ import IconContainer, { IIconProps } from "./Icon";
 const PlusIcon = (props: IIconProps) => {
   return (
     <IconContainer {...props.containerProps}>
-      <FaPlus />
+      <FaPlus {...props.iconProps} />
     </IconContainer>
   );
 };

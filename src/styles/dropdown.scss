@@ -1,4 +1,4 @@
-@import "node_modules/bulma/bulma";
+@import "node_modules/bulma/sass/utilities/_all.sass";
 
 .dropdown {
     &.is-active {
@@ -67,4 +67,20 @@
 
 .dropdown-content {
     padding: 0.5rem 1rem 1rem;
+}
+
+.dropdown__button {
+    display: flex;
+    padding-right: 3rem !important;
+
+    .icon {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+.dropdown__icon {
+    right: calc(1rem - 1px);
+    margin-right: 0;
+    position: absolute;
 }

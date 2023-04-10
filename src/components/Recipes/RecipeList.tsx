@@ -3,8 +3,6 @@ import { getRecipesForPage } from "../../selectors";
 import RecipeCard from "./RecipeCard";
 import NoRecipesFound from "./NoRecipesFound";
 
-import "./recipeList.scss";
-
 const RecipeList = () => {
   const recipes = useSelector(getRecipesForPage);
 

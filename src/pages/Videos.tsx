@@ -1,10 +1,10 @@
-import * as React from "react";
-import WIP from "../components/WIP/WIP";
+import VideoRecommendations from "../components/Videos/VideoRecommendations";
 
 const Videos = () => {
   return (
-    <div>
-      <WIP />
+    <div className="container">
+      <h1 className="is-size-3">Videos</h1>
+      <VideoRecommendations />
     </div>
   );
 };

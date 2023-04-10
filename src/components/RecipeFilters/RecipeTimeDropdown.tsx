@@ -8,7 +8,7 @@ import {
   MAX_TIME_VALUE,
   MIN_TIME_VALUE,
 } from "../../constants/recipe.constants";
-import { speedText } from "../helpers/recipeHelpers";
+import TimeIcons from "../Time/TimeIcons";
 
 const RecipeTimeDropdown = () => {
   const queryUpdater = useQueryUpdater();
@@ -25,11 +25,16 @@ const RecipeTimeDropdown = () => {
       className="recipe-filter"
       id="recipe-time-dropdown"
       label="Time-to-prepare"
-      text={speedText(time)}
+      text={<TimeIcons value={time} />}
       value={time}
     >
       <Slider
-        label={speedText(time)}
+        label={
+          <div className="flex w-100 justify-between">
+            Up to:
+            <TimeIcons value={time} />
+          </div>
+        }
         id="recipe-time-slider"
         min={MIN_TIME_VALUE}
         max={MAX_TIME_VALUE}

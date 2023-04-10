@@ -2,11 +2,11 @@ import { useSelector } from "react-redux";
 import { getRecipeByUrl, getRecipeTabParam } from "../../selectors";
 import RecipeNotFound from "./RecipeNotFound";
 
-import "./recipe.scss";
 import RecipeDescription from "./RecipeDescription";
 import RecipeTabs from "./RecipeTabs";
 import RecipeIngredients from "./RecipeIngredients";
 import RecipeSteps from "./RecipeSteps";
+import RecipeIngredientsControls from "./controls/RecipeIngredientsControls";
 
 const Recipe = () => {
   const recipe = useSelector(getRecipeByUrl);
@@ -20,9 +20,29 @@ const Recipe = () => {
     <div className="container">
       <h1 className="recipe__title is-size-3">{recipe.name}</h1>
       <RecipeTabs />
-      {activeTab === null && <RecipeDescription recipe={recipe} />}
-      {activeTab === "ingredients" && <RecipeIngredients recipe={recipe} />}
-      {activeTab === "steps" && <RecipeSteps recipe={recipe} />}
+      <RecipeIngredientsControls recipe={recipe} />
+      {activeTab === null && (
+        <div className="recipe__all">
+          <div className="recipe__block">
+            <h2 className="is-size-4 mb2">About this recipe</h2>
+            <RecipeDescription recipe={recipe} />
+          </div>
+          <div className="recipe__block">
+            <h2 className="is-size-4 mb2">Ingredients</h2>
+            <RecipeIngredients recipe={recipe} />
+          </div>
+          <div className="recipe__block recipe__block--large">
+            <h2 className="is-size-4 mb2">Steps</h2>
+            <RecipeSteps recipe={recipe} />
+          </div>
+        </div>
+      )}
+      {activeTab !== null && (
+        <div>
+          {activeTab === "ingredients" && <RecipeIngredients recipe={recipe} />}
+          {activeTab === "steps" && <RecipeSteps recipe={recipe} />}
+        </div>
+      )}
     </div>
   );
 };

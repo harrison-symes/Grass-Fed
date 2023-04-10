@@ -4,7 +4,7 @@ import IconContainer, { IIconProps } from "./Icon";
 const MinusIcon = (props: IIconProps) => {
   return (
     <IconContainer {...props.containerProps}>
-      <FaMinus />
+      <FaMinus {...props.iconProps} />
     </IconContainer>
   );
 };

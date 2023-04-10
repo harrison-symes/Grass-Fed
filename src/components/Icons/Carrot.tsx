@@ -4,7 +4,7 @@ import IconContainer, { IIconProps } from "./Icon";
 const CarrotIcon = (props: IIconProps) => {
   return (
     <IconContainer {...props.containerProps}>
-      <FaCarrot />
+      <FaCarrot {...props.iconProps} />
     </IconContainer>
   );
 };

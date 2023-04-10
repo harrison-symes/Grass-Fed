@@ -6,8 +6,6 @@ import { QUERY_PARAMS } from "../../constants/router.constants";
 import { useMemo } from "react";
 import PaginationLink from "./PaginationLink";
 
-import "./pagination.scss";
-
 interface IPaginationProps {
   totalPages: number;
   onPageChange?: () => void;

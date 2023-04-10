@@ -7,6 +7,7 @@ import { ROUTES_INTERNAL } from "./constants/router.constants";
 import RecipePage from "./pages/RecipePage";
 import { history } from "./configureStore";
 import Loader from "./components/Loader/Loader";
+import About from "./pages/About";
 
 const Home = React.lazy(() => import("./pages/Home"));
 const Recipes = React.lazy(() => import("./pages/RecipesPage"));
@@ -60,10 +61,10 @@ const Router = () => {
             }
           />
           <Route
-            path={ROUTES_INTERNAL.GO_VEGAN}
+            path={ROUTES_INTERNAL.ABOUT}
             element={
               <React.Suspense fallback={<Loader />}>
-                <GoVegan />
+                <About />
               </React.Suspense>
             }
           />

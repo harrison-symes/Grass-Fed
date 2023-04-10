@@ -7,8 +7,8 @@ const testRecipes: Array<IRecipe> = [
     categories: ["breakfast", "lunch"],
     cost: 2,
     image: "https://www.noracooks.com/wp-content/uploads/2019/01/IMG_2907.jpg",
-    shortDescription: "Yum yum",
-    longDescription: "Yum yum yum yum yum",
+    shortDescription:
+      "This savory tofu scramble with creamy cashew sauce is a hearty vegan breakfast that's sure to satisfy. Crumbled tofu is seasoned with a blend of spices, sautéed with veggies, and topped with a rich and nutty cashew sauce. Served with crispy toast, this easy and flavorful dish is perfect for lazy weekend mornings or a quick and healthy breakfast any day of the week.",
     time: 1,
     servings: 2,
     components: [
@@ -139,8 +139,8 @@ const testRecipes: Array<IRecipe> = [
     cost: 3,
     image:
       "https://cdn.pickuplimes.com/cache/25/ad/25ade721bce05451beef337257d2218f.jpg",
-    shortDescription: "Yum yum",
-    longDescription: "Yum yum yum yum yum",
+    shortDescription:
+      "Indulge in the rich and creamy flavors of this vegan butter chicken recipe, served with warm and fluffy homemade naan bread. Marinated tofu (Or any protein you choose) is simmered in a fragrant tomato-based sauce infused with traditional Indian spices, coconut milk, and creamy cashews. Paired with a fresh and fluffy naan bread made from scratch, this comforting and satisfying meal is sure to become a favorite for vegans and non-vegans alike.",
     time: 3,
     servings: 3,
     components: [
@@ -225,8 +225,8 @@ const testRecipes: Array<IRecipe> = [
     cost: 2,
     image:
       "https://rainbowplantlife.com/wp-content/uploads/2020/11/137_image-asset-500x500.jpg",
-    shortDescription: "Yum yum",
-    longDescription: "Yum yum yum yum yum",
+    shortDescription:
+      "This hearty and comforting vegan shepherd's pie is the perfect meal for a chilly evening. Loaded with a colorful array of veggies like carrots, peas, and corn, this dish is layered with a savory and protein-packed lentil and vegetable filling. Topped with a creamy and flavorful mashed potato crust, this vegan version of a classic dish is the ultimate in plant-based comfort food. Whether you're a vegan or simply looking to eat more veggies, this recipe is sure to satisfy your craving for a warm and satisfying meal.",
     time: 2,
     servings: 3,
     components: [
@@ -276,8 +276,8 @@ const testRecipes: Array<IRecipe> = [
       "https://thepeskyvegan.com/wp-content/uploads/2020/04/chana-masala-rice-close-up-1.jpg",
     servings: 4,
     name: "Chana Masala",
-    shortDescription: "Blah blah",
-    longDescription: "Blah blah blah blah blah",
+    shortDescription:
+      "This delicious vegan chana masala recipe is bursting with flavor and loaded with protein-rich chickpeas. Simmered in a fragrant blend of spices, tomatoes, and coconut milk, this hearty Indian-inspired dish is perfect for a cozy weeknight dinner. Serve over rice or with naan bread for a satisfying and flavorful meal that's both healthy and delicious.",
     time: 3,
     components: [
       {

@@ -7,8 +7,6 @@ import RecipeSearch from "./RecipeSearch";
 import RecipeTimeDropdown from "./RecipeTimeDropdown";
 import cn from "classnames";
 
-import "./recipeFilters.scss";
-
 const RecipeFilters = () => {
   const [isShown, setIsShown] = useState(false);
 
@@ -23,11 +21,11 @@ const RecipeFilters = () => {
         })}
       >
         <div className="recipe-filter__group">
-          <RecipeCategoryDropdown />
           <RecipePriceDropdown />
+          <RecipeTimeDropdown />
         </div>
         <div className="recipe-filter__group">
-          <RecipeTimeDropdown />
+          <RecipeCategoryDropdown />
         </div>
         <div className="recipe-filter-reset">
           <ResetFilters />

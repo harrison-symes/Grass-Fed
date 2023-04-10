@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IRecipe, IRecipeIngredient } from "../../models/recipe.models";
-import CheckMarkIcon from "../Icons/Cook copy";
+import CheckMarkIcon from "../Icons/Checkmark";
 import IngredientQuantity from "./IngredientQuantity";
 import cn from "classnames";
 

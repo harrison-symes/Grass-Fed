@@ -1,4 +1,5 @@
 import cn from "classnames";
+import { IconBaseProps } from "react-icons";
 
 interface IIconContainerProps {
   className?: string;
@@ -8,10 +9,15 @@ interface IIconContainerProps {
 export interface IIconProps {
   className?: string;
   containerProps?: IIconContainerProps;
+  iconProps?: IconBaseProps;
 }
 
 const IconContainer = (props: IIconContainerProps) => {
-  return <div className={cn("icon", props.className)}>{props.children}</div>;
+  return (
+    <div className={cn("icon flex items-center", props.className)}>
+      {props.children}
+    </div>
+  );
 };
 
 export default IconContainer;

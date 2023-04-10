@@ -1,4 +1,5 @@
 import { QUERY_PARAMS } from "../../constants/router.constants";
+import ResetIcon from "../Icons/Reset";
 import useQueryUpdater from "../hooks/useQueryUpdater";
 
 const ResetFilters = () => {
@@ -14,8 +15,9 @@ const ResetFilters = () => {
   };
 
   return (
-    <button className="button mb2" onClick={onClick}>
-      Reset
+    <button className="button" onClick={onClick}>
+      <span>Reset</span>
+      <ResetIcon containerProps={{ className: "ml2" }} />
     </button>
   );
 };

@@ -1,7 +1,28 @@
-@import "../../node_modules/bulma-checkradio";
+@import "./colours.scss";
+
+$primary: $green;
+$link: $blue;
+$link-hover: $purple;
+$info: $purple;
+$warning: $yellow;
+$danger: $orange;
+
+@import "../../node_modules/bulma-checkradio/src/sass/index.sass";
 @import "../../node_modules/bulma-slider";
-@import "../../node_modules/bulma/bulma";
+@import "../../node_modules/bulma-pageloader";
 @import "../../node_modules/tachyons-sass";
+
+
+@import "./recipeList.scss";
+@import "./recipe.scss";
+@import "./videos.scss";
+@import "./dropdown.scss";
+@import "./pagination.scss";
+@import "./recipeFilters.scss";
+@import "./radio.scss";
+
+@import "node_modules/bulma/bulma";
+
 
 html {
     scroll-behavior: smooth;
@@ -33,24 +54,62 @@ body {
 .home-hero {
     cursor: pointer;
     min-height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
 
     background-image: url("https: //encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoNaLFFSdD4YhW8mqgDBSWY8nHnte6ANHQWz6Lsl37yA&s");
 
     .title {
         transform: scale(1);
         transition: transform 0.4s;
-
+        text-align: center;
     }
     &:hover {
         .title {
             transform: scale(1.5);
         }
     }
+
+    .icon {
+        margin: auto;
+        width: 10rem;
+        height: 10rem;
+    }
 }
 
 .page-content {
     min-height: calc(100vh - #{302px});
+    padding-top: 1.5rem;
+}
+
+.navbar-brand {
+    width: 100%;
+    // @include mobile {
+    //     width: 100%;
+    // }
+    @include desktop {
+        width: auto;
+    }
+}
+
+.icon {
+    > .is-green {
+        color: $green;
+    }
+    > .is-blue {
+        color: $blue;
+    }
+    > .is-brown {
+        color: $brown;
+    }
+    > .is-yellow {
+        color: $yellow;
+    }
+    > .is-purple {
+        color: $purple;
+    }
+    > .is-orange {
+        color: $orange;
+    }
 }

@@ -7,6 +7,7 @@ export enum ROUTES_INTERNAL {
   PODCASTS = "/podcasts",
   VIDEOS = "/videos",
   GO_VEGAN = "/go-vegan",
+  ABOUT = "/about",
 }
 
 export enum QUERY_PARAMS {
