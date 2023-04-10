@@ -10,6 +10,7 @@ import VideoIcon from "../Icons/VideoIcon";
 import PodcastIcon from "../Icons/Podcast";
 import PersonIcon from "../Icons/Person";
 import PersonAddIcon from "../Icons/PersonAdd";
+import InfoIcon from "../Icons/Info";
 
 const Nav = () => {
   const [isActive, setIsActive] = useState(false);
@@ -39,6 +40,7 @@ const Nav = () => {
             <NavItem text="Go Vegan" href="/go-vegan" icon={CarrotIcon} />
             <NavItem text="Podcasts" href="/podcasts" icon={PodcastIcon} />
             <NavItem text="Videos" href="/videos" icon={VideoIcon} />
+            <NavItem text="About Grass-Fed" href="/about" icon={InfoIcon} />
           </div>
           <div className="navbar-end mt3 mt0-ns">
             <NavItem text="Log In" href="/login" icon={PersonIcon} />

@@ -38,7 +38,7 @@
 
     @include desktop {
         display: grid;
-        grid-template-columns: minmax(200px, 30%) minmax(250px, 20%) minmax(400px, 50%);
+        grid-template-columns: minmax(200px, 25%) minmax(250px, 25%) minmax(400px, 50%);
         grid-gap: 1rem;
         width: 100%;
     }
