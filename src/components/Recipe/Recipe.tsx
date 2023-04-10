@@ -7,8 +7,11 @@ import RecipeTabs from "./RecipeTabs";
 import RecipeIngredients from "./RecipeIngredients";
 import RecipeSteps from "./RecipeSteps";
 import RecipeIngredientsControls from "./controls/RecipeIngredientsControls";
+import { goBack } from "redux-first-history";
+import { useDispatch } from "react-redux";
 
 const Recipe = () => {
+  const dispatch = useDispatch();
   const recipe = useSelector(getRecipeByUrl);
   const activeTab = useSelector(getRecipeTabParam);
 
@@ -20,7 +23,12 @@ const Recipe = () => {
     <div className="container">
       <h1 className="recipe__title is-size-3">{recipe.name}</h1>
       <RecipeTabs />
-      <RecipeIngredientsControls recipe={recipe} />
+      <div className="flex justify-between items-center">
+        <a onClick={() => dispatch(goBack())} className="is-size-5">
+          Go back
+        </a>
+        <RecipeIngredientsControls recipe={recipe} />
+      </div>
       {activeTab === null && (
         <div className="recipe__all">
           <div className="recipe__block">
