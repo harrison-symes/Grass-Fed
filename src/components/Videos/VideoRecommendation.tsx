@@ -13,6 +13,7 @@ interface IVideoRecommendationProps {
   imageUrl: string;
   text: string;
   videoId: string;
+  videoId2?: string;
   youtubeUrl?: string;
   instagramUrl?: string;
   websiteUrl?: string;
@@ -31,7 +32,7 @@ const VideoRecommendation = (props: IVideoRecommendationProps) => {
   const isMobile = windowWidth <= 768;
 
   const width = isMobile ? windowWidth - 48 : containerWidth / 2;
-  const height = (width * 3) / 4;
+  const height = (width * 9) / 16;
 
   return (
     <div
@@ -90,6 +91,15 @@ const VideoRecommendation = (props: IVideoRecommendationProps) => {
             height,
           }}
         />
+        {props.videoId2 && (
+          <YouTube
+            videoId={props.videoId2}
+            opts={{
+              width,
+              height,
+            }}
+          />
+        )}
       </div>
     </div>
   );
