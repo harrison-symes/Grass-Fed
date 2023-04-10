@@ -6,7 +6,7 @@ interface ISliderProps {
   max: number;
   value: number | null;
   onChange: (value: number) => void;
-  label?: string;
+  label?: JSX.Element | string;
 }
 
 const Slider = (props: ISliderProps) => {
@@ -19,7 +19,7 @@ const Slider = (props: ISliderProps) => {
       )}
       <input
         id={props.id}
-        className="slider is-fullwidth is-medium is-success"
+        className="slider is-fullwidth is-medium is-link"
         step="1"
         min={props.min}
         max={props.max}

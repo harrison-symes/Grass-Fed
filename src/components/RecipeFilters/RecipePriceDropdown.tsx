@@ -8,7 +8,7 @@ import {
   MAX_TIME_VALUE,
 } from "../../constants/recipe.constants";
 import Slider from "../Slider/Slider";
-import { costText } from "../helpers/recipeHelpers";
+import PriceIcons from "../Price/PriceIcons";
 
 const RecipePriceDropdown = () => {
   const cost = useSelector(getCostParam);
@@ -25,11 +25,16 @@ const RecipePriceDropdown = () => {
       className="recipe-filter"
       id="recipe-cost-dropdown"
       label="Cost-to-prepare"
-      text={costText(cost)}
+      text={<PriceIcons value={cost} />}
       value={cost}
     >
       <Slider
-        label={costText(cost)}
+        label={
+          <div className="flex w-100 justify-between">
+            Up to:
+            <PriceIcons value={cost} />
+          </div>
+        }
         id="recipe-time-slider"
         min={MIN_TIME_VALUE}
         max={MAX_TIME_VALUE}

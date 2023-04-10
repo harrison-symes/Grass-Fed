@@ -15,7 +15,7 @@ export const getRecipes = (state: TStoreState) => state.recipes.recipes;
 
 export const getTimeParam = createSelector(
   getQueryParam(QUERY_PARAMS.TIME_TO_PREPARE),
-  (time): number | null => {
+  (time): number => {
     const numberValue = parseInt(time ?? "");
 
     if (
@@ -23,7 +23,7 @@ export const getTimeParam = createSelector(
       numberValue < MIN_TIME_VALUE ||
       numberValue > MAX_TIME_VALUE
     ) {
-      return null;
+      return MAX_TIME_VALUE;
     }
 
     return numberValue;
@@ -32,7 +32,7 @@ export const getTimeParam = createSelector(
 
 export const getCostParam = createSelector(
   getQueryParam(QUERY_PARAMS.PRICE),
-  (price): number | null => {
+  (price): number => {
     const numberValue = parseInt(price ?? "");
 
     if (
@@ -40,7 +40,7 @@ export const getCostParam = createSelector(
       numberValue < MIN_COST_VALUE ||
       numberValue > MAX_COST_VALUE
     ) {
-      return null;
+      return MAX_COST_VALUE;
     }
 
     return numberValue;

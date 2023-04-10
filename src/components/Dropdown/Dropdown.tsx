@@ -5,7 +5,7 @@ import CrossIcon from "../Icons/Cross";
 
 interface IDropdownProps {
   id: string;
-  text: string;
+  text: string | JSX.Element;
   value: string | number | null | undefined;
   children: React.ReactNode;
   label: string;
@@ -53,12 +53,12 @@ const Dropdown = (props: IDropdownProps) => {
         <div className="dropdown-trigger">
           <button
             id={props.id}
-            className="button w-100"
+            className="button w-100 dropdown__button"
             aria-haspopup="true"
             aria-controls="dropdown-menu3"
           >
             <span>{props.text}</span>
-            <DownArrowIcon />
+            <DownArrowIcon containerProps={{ className: "dropdown__icon" }} />
           </button>
         </div>
       </label>
