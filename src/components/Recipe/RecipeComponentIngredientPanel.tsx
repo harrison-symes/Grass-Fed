@@ -48,6 +48,11 @@ const RecipeComponentIngredientsPanel = (
           "recipe-panel__content--active": isOpen,
         })}
       >
+        {component.note && (
+          <a className="panel-block column recipe-panel__item">
+            <b>Note:</b> {component.note}
+          </a>
+        )}
         {(component.ingredients ?? []).map((ingredient) => (
           <RecipeIngredient
             recipe={props.recipe}

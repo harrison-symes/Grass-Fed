@@ -68,6 +68,14 @@ const Router = () => {
               </React.Suspense>
             }
           />
+          <Route
+            path={ROUTES_INTERNAL.GO_VEGAN}
+            element={
+              <React.Suspense fallback={<Loader />}>
+                <GoVegan />
+              </React.Suspense>
+            }
+          />
         </Route>
       </Routes>
     </HistoryRouter>

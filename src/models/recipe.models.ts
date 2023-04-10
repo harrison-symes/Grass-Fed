@@ -42,6 +42,7 @@ export interface IRecipeStep {
 
 export interface IRecipeComponent {
   componentName: string;
+  note?: string;
   recipeId?: string;
   ingredients?: IRecipeIngredient[];
   steps: IRecipeStep[];
