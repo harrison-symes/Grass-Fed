@@ -24,7 +24,7 @@ const RecipeIngredient = (props: IRecipeIngredientProps) => {
       <div className="w-100 flex justify-between items-center">
         <div className="flex justify-start items-center">
           {ingredient.name} {ingredient.isOptional && "(optional)"}
-          {isChecked && <CheckMarkIcon />}
+          {isChecked && <CheckMarkIcon iconProps={{ className: "is-green" }} />}
         </div>
         {ingredient.measurement !== undefined &&
           ingredient.quantity !== undefined && (

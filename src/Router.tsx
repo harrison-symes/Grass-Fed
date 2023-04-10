@@ -8,6 +8,7 @@ import RecipePage from "./pages/RecipePage";
 import { history } from "./configureStore";
 import Loader from "./components/Loader/Loader";
 import About from "./pages/About";
+import WIP from "./components/WIP/WIP";
 
 const Home = React.lazy(() => import("./pages/Home"));
 const Recipes = React.lazy(() => import("./pages/RecipesPage"));
@@ -73,6 +74,22 @@ const Router = () => {
             element={
               <React.Suspense fallback={<Loader />}>
                 <GoVegan />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path={ROUTES_INTERNAL.LOGIN}
+            element={
+              <React.Suspense fallback={<Loader />}>
+                <WIP />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path={ROUTES_INTERNAL.SIGNUP}
+            element={
+              <React.Suspense fallback={<Loader />}>
+                <WIP />
               </React.Suspense>
             }
           />

@@ -164,6 +164,7 @@ export default {
     },
     {
       componentName: "Naan Bread",
+      note: "You may prefer to buy some Vegan Naan instead of making your own, but I promise it is easier than it looks! 1 Serving = 2 small naan.",
       ingredients: [
         {
           name: "Instant Yeast",
