@@ -11,6 +11,7 @@ const ResetFilters = () => {
       [QUERY_PARAMS.SEARCH]: null,
       [QUERY_PARAMS.PRICE]: null,
       [QUERY_PARAMS.TIME_TO_PREPARE]: null,
+      [QUERY_PARAMS.INGREDIENTS]: null,
     });
   };
 

@@ -1,9 +1,9 @@
-import { IRecipe } from "../models/recipe.models";
+import { IRecipe } from "../../models/recipe.models";
 
 export default {
   id: "scrambled-tofu",
   name: "Scrambled Tofu",
-  categories: ["breakfast", "lunch"],
+  categories: ["breakfast", "lunch", "dinner"],
   cost: 2,
   image: "https://www.noracooks.com/wp-content/uploads/2019/01/IMG_2907.jpg",
   shortDescription:

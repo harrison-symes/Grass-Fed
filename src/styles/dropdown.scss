@@ -18,6 +18,9 @@
 }
 
 .dropdown-content {
+    max-height: 40vh;
+    overflow-y: auto;
+
     @include mobile {
         width: 100%;
         position: fixed;
@@ -26,6 +29,7 @@
         transform: translateY(100%);
         animation: slide-up 0.5s forwards;
         z-index: 999;
+        max-height: 60vh;
 
         @keyframes slide-up {
             to {

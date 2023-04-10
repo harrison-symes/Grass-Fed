@@ -14,6 +14,8 @@ export enum ROUTES_INTERNAL {
 
 export enum QUERY_PARAMS {
   CATEGORY = "category",
+  INGREDIENTS = "ingredients",
+  INGREDIENT_SEARCH = "ingredient_search",
   SEARCH = "search",
   PRICE = "price",
   TIME_TO_PREPARE = "time",

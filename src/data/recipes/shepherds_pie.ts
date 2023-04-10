@@ -3,7 +3,7 @@ import { IRecipe } from "../../models/recipe.models";
 export default {
   id: "shepherds-pie",
   name: "Shepherd's pie",
-  categories: ["dinner"],
+  categories: ["lunch", "dinner"],
   cost: 2,
   image:
     "https://rainbowplantlife.com/wp-content/uploads/2020/11/137_image-asset-500x500.jpg",

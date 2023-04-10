@@ -58,6 +58,17 @@ export const getCategoryParams = createSelector(
   }
 );
 
+export const getIngredientParams = createSelector(
+  getQueryParam(QUERY_PARAMS.INGREDIENTS),
+  (param): string[] => {
+    if (param == null) {
+      return [];
+    }
+
+    return param.split(",");
+  }
+);
+
 export const getRecipeTabParam = createSelector(
   getQueryParam(QUERY_PARAMS.TAB),
   (param): RecipeTabType => {
@@ -72,14 +83,24 @@ export const getRecipeTabParam = createSelector(
 export const getFilteredRecipes = createSelector(
   getRecipes,
   getCategoryParams,
+  getIngredientParams,
   getQueryParam(QUERY_PARAMS.SEARCH),
   getCostParam,
   getTimeParam,
-  (recipes, categories, search, price, time) => {
+  (recipes, categories, ingredients, search, price, time) => {
     const filteredRecipes = recipes.filter((recipe) => {
       if (
         categories.length !== 0 &&
         recipe.categories.findIndex((cat) => categories.includes(cat)) === -1
+      )
+        return false;
+      if (
+        ingredients.length !== 0 &&
+        ingredients.filter((ingredient) =>
+          recipe.components.find((comp) =>
+            comp.ingredients?.find((ing) => ing.name === ingredient)
+          )
+        ).length < ingredients.length
       )
         return false;
       if (

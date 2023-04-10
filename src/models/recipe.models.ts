@@ -15,7 +15,7 @@ export interface IRecipe {
   longDescription?: string;
   time: number;
   cost: number;
-  components: IRecipeComponent | Array<IRecipeComponent>;
+  components: Array<IRecipeComponent>;
   servings: number;
 }
 

@@ -1,7 +1,7 @@
 import { IRecipe } from "../../models/recipe.models";
 
 export default {
-  categories: ["dinner"],
+  categories: ["lunch", "dinner"],
   cost: 2,
   time: 2,
   id: "chana-masala",
@@ -62,7 +62,7 @@ export default {
           quantity: 1,
         },
         {
-          name: "Tumeric",
+          name: "Ground Tumeric",
           measurement: "tsp",
           quantity: 1,
         },
@@ -115,7 +115,7 @@ export default {
           text: "Add the {Minced Garlic}, {Ginger} and {Fresh Chillies} and cook for a couple of minutes.",
         },
         {
-          text: "Once those have softened, add all the dried ground spices ({Ground Cumin}, {Ground Coriander}, {Garam Masala}, {Tumeric} and {Chilli Powder}) and mix well",
+          text: "Once those have softened, add all the dried ground spices ({Ground Cumin}, {Ground Coriander}, {Garam Masala}, {Ground Tumeric} and {Chilli Powder}) and mix well",
         },
         {
           text: "After a couple of minutes, stir in the {Tomato Puree}, {Chopped Tomatoes} and {Salt}. Cook for 5 minutes to allow the ingredients to blend together.",
