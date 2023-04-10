@@ -27,7 +27,7 @@ const RecipeComponentStepsPanel = (props: IRecipeComponentStepsPanelProps) => {
   };
 
   return (
-    <article className="panel recipe-panel is-primary">
+    <article className="panel recipe-panel is-info">
       <div
         className="panel-heading recipe-panel__header"
         onClick={onClickHeader}

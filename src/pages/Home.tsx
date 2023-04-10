@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <HomeBanner
         href="/go-vegan"
-        text="Why you should go vegan"
+        text="Why Vegan?"
         icon={<CarrotIcon iconProps={{ size: 70 }} />}
       />
       <HomeBanner
@@ -26,7 +26,7 @@ const Home = () => {
       />
       <HomeBanner
         href="/podcasts"
-        text="Listen to some podcasts about veganism"
+        text="Listen to some podcasts about Veganism"
         className="is-danger"
         icon={<PodcastIcon iconProps={{ size: 70 }} />}
       />

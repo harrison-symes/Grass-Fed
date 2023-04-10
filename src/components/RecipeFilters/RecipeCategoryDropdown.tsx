@@ -87,6 +87,8 @@ const RecipeCategoryDropdown = () => {
         onClick={onToggleAll}
         className="radio-input"
       />
+      <hr className="dropdown-divider" />
+
       {categories.map((category) => (
         <Radio
           id={`recipe-category-radio-${category.value}`}

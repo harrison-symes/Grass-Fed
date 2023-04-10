@@ -13,9 +13,10 @@ export interface IRecipe {
   image: string;
   shortDescription: string;
   longDescription?: string;
+  rating: number;
   time: number;
   cost: number;
-  components: IRecipeComponent | Array<IRecipeComponent>;
+  components: Array<IRecipeComponent>;
   servings: number;
 }
 
@@ -42,6 +43,7 @@ export interface IRecipeStep {
 
 export interface IRecipeComponent {
   componentName: string;
+  note?: string;
   recipeId?: string;
   ingredients?: IRecipeIngredient[];
   steps: IRecipeStep[];

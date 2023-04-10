@@ -10,6 +10,10 @@ const getBreadcrumbForPath = (path: string) => {
       return "Go Vegan";
     case "podcasts":
       return "Podcasts";
+    case "login":
+      return "Log In";
+    case "signup":
+      return "Sign Up";
     default:
       return path
         .replace("-", " ")

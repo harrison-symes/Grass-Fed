@@ -6,6 +6,8 @@ import RecipePriceDropdown from "./RecipePriceDropdown";
 import RecipeSearch from "./RecipeSearch";
 import RecipeTimeDropdown from "./RecipeTimeDropdown";
 import cn from "classnames";
+import RecipeIngredientDropdown from "./RecipeIngredientDropdown";
+import RecipeRatingDropdown from "./RecipeRatingDropdown";
 
 const RecipeFilters = () => {
   const [isShown, setIsShown] = useState(false);
@@ -17,16 +19,14 @@ const RecipeFilters = () => {
       </div>
       <div
         className={cn("recipe-filters flex w-100 align-end", {
-          "is-shown": isShown,
+          "recipe-filters--shown": isShown,
         })}
       >
-        <div className="recipe-filter__group">
-          <RecipePriceDropdown />
-          <RecipeTimeDropdown />
-        </div>
-        <div className="recipe-filter__group">
-          <RecipeCategoryDropdown />
-        </div>
+        <RecipePriceDropdown />
+        <RecipeTimeDropdown />
+        <RecipeRatingDropdown />
+        <RecipeCategoryDropdown />
+        <RecipeIngredientDropdown />
         <div className="recipe-filter-reset">
           <ResetFilters />
         </div>

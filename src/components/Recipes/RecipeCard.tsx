@@ -4,6 +4,7 @@ import PriceIcons from "../Price/PriceIcons";
 import TimeIcons from "../Time/TimeIcons";
 
 import Ellipsis from "../Ellipsis/Ellipsis";
+import RatingIcons from "../Rating/RatingIcons";
 
 interface IRecipeProps {
   recipe: IRecipe;
@@ -26,7 +27,9 @@ const RecipeCard = (props: IRecipeProps) => {
   return (
     <div className="card recipe-card" onClick={onClick}>
       <div className="card-header">
-        <p className="card-header-title">{props.recipe.name}</p>
+        <p className="card-header-title flex justify-between">
+          {props.recipe.name} <RatingIcons value={props.recipe.rating} />
+        </p>
       </div>
       <div className="card-image mt3">
         <figure className="image is-4by3">

@@ -13,22 +13,38 @@ const TimeIcons = (props: ITimeIconsProps) => {
   const arr = new Array(MAX_COST_VALUE).fill(0);
 
   let colourClass = "is-green";
+  let timeText = "";
 
   switch (current) {
+    case 1:
+      timeText = "Quick";
+      colourClass = "is-green";
+      break;
+    case 2:
+      timeText = "Fast";
+      colourClass = "is-blue";
+      break;
     case 3:
+      timeText = "Reasonable";
+      colourClass = "is-purple";
+      break;
     case 4:
+      timeText = "Slow";
       colourClass = "is-yellow";
       break;
     case 5:
+      timeText = "Long";
       colourClass = "is-orange";
       break;
     default:
-      colourClass = "is-green";
       break;
   }
 
   return (
-    <div className={cn("flex justify-center")}>
+    <div
+      className={cn("flex justify-center")}
+      title={`Time to make: ${timeText}`}
+    >
       {arr.map((_, i) => (
         <ClockIcon
           iconProps={{
