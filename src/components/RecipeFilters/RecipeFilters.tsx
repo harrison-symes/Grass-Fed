@@ -19,18 +19,14 @@ const RecipeFilters = () => {
       </div>
       <div
         className={cn("recipe-filters flex w-100 align-end", {
-          "is-shown": isShown,
+          "recipe-filters--shown": isShown,
         })}
       >
-        <div className="recipe-filter__group">
-          <RecipePriceDropdown />
-          <RecipeTimeDropdown />
-          <RecipeRatingDropdown />
-        </div>
-        <div className="recipe-filter__group">
-          <RecipeCategoryDropdown />
-          <RecipeIngredientDropdown />
-        </div>
+        <RecipePriceDropdown />
+        <RecipeTimeDropdown />
+        <RecipeRatingDropdown />
+        <RecipeCategoryDropdown />
+        <RecipeIngredientDropdown />
         <div className="recipe-filter-reset">
           <ResetFilters />
         </div>

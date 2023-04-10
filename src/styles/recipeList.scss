@@ -11,12 +11,16 @@
     @include tablet-only {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, calc((100% - 3 * 1.5rem) / 2)));
+        justify-content: center;
+        align-content: stretch;
         grid-gap: 1.5rem;
     }
     
     @include desktop {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, calc((100% - 3 * 1.5rem) / 4)));
+        justify-content: center;
+        align-content: stretch;
         grid-gap: 1rem;
     }
 }
