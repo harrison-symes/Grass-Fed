@@ -5,6 +5,7 @@ import useWindowWidth from "../hooks/useWindowWidth";
 import { useEffect, useRef, useState } from "react";
 
 import cn from "classnames";
+import LinkIcon from "../Icons/Link";
 
 interface IVideoRecommendationProps {
   name: string;
@@ -29,7 +30,7 @@ const VideoRecommendation = (props: IVideoRecommendationProps) => {
 
   const isMobile = windowWidth <= 768;
 
-  const width = isMobile ? windowWidth - 64 : containerWidth / 2;
+  const width = isMobile ? windowWidth - 48 : containerWidth / 2;
   const height = (width * 3) / 4;
 
   return (
@@ -75,6 +76,7 @@ const VideoRecommendation = (props: IVideoRecommendationProps) => {
               href={props.websiteUrl}
               className="card-footer-item flex items-center"
             >
+              <LinkIcon />
               Website
             </a>
           )}

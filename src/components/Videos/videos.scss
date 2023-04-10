@@ -34,6 +34,10 @@
 .video-recommendation__card {
     min-width: 50%;
     margin: 1rem;
+
+    @include mobile {
+        width: 100%;
+    }
     @include desktop {}
 }
 

@@ -12,6 +12,7 @@ const VideoRecommendations = () => {
         videoId="Nfy_xQ75U0E"
         youtubeUrl="https://www.youtube.com/c/JoeyCarbstrong/videos"
         instagramUrl="https://www.instagram.com/joey_carbstrong"
+        websiteUrl="https://www.joeycarbstrong.com/"
       />
       <hr />
       <VideoRecommendation
@@ -21,6 +22,7 @@ const VideoRecommendations = () => {
         videoId="Z3u7hXpOm58"
         youtubeUrl="https://www.youtube.com/@ed.winters/videos"
         instagramUrl="https://www.instagram.com/earthlinged/?hl=en"
+        websiteUrl="https://earthlinged.org/"
         isReverse
       />
       <hr />
@@ -31,6 +33,7 @@ const VideoRecommendations = () => {
         videoId="zKwnMCEp3HM"
         youtubeUrl="https://www.youtube.com/c/MictheVegan"
         instagramUrl="https://www.instagram.com/micthevegan/?hl=en"
+        websiteUrl="https://micthevegan.com/"
       />
       <hr />
       <VideoRecommendation
@@ -40,6 +43,7 @@ const VideoRecommendations = () => {
         videoId="U5hGQDLprA8"
         youtubeUrl="https://www.youtube.com/@GaryYourofskyAdaptt"
         websiteUrl="https://www.adaptt.org/"
+        isReverse
       />
     </div>
   );
