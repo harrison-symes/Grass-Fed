@@ -46,7 +46,7 @@ const VideoRecommendation = (props: IVideoRecommendationProps) => {
           <p className="card-header-title">{props.name}</p>
         </div>
         <div className="card-image">
-          <figure className="image">
+          <figure className="image is-4by3">
             <img src={props.imageUrl} alt={props.name} />
           </figure>
         </div>

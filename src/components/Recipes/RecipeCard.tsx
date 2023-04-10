@@ -29,7 +29,7 @@ const RecipeCard = (props: IRecipeProps) => {
         <p className="card-header-title">{props.recipe.name}</p>
       </div>
       <div className="card-image mt3">
-        <figure className="image">
+        <figure className="image is-4by3">
           <img src={props.recipe.image} alt={props.recipe.name} />
         </figure>
       </div>

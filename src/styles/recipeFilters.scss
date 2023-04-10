@@ -31,6 +31,7 @@
 .recipe-filter-show {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     color: $blue;
 
     @include desktop {
