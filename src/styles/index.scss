@@ -32,6 +32,10 @@ body {
     font-size: 16px;
 }
 
+.navbar {
+    z-index: 999 !important;
+}
+
 .input-icon {
     height: 100% !important;
 }

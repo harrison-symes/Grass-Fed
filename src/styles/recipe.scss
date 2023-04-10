@@ -68,7 +68,11 @@
     overflow: hidden;
     transition: max-height 0.4s ease-out;
     &--active {
-        max-height: 80vh;
+        max-height: 300vh;
+
+        @include desktop {
+            max-height: 50vh;
+        }
 
         overflow-y: auto;
         transition: max-height 0.4s ease-in;
@@ -76,6 +80,9 @@
 }
 
 .recipe-panel__header {
+    position: sticky;
+    top: 52px;
+    z-index: 100;
     cursor: pointer;
 }
 

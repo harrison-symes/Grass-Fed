@@ -15,7 +15,6 @@ const IngredientQuantity = (props: IIngredientQuantityProps) => {
     return null;
   }
 
-  console.log(props.ingredient.quantity, props.recipe.servings);
   const value = (props.ingredient.quantity / props.recipe.servings) * servings;
 
   return (

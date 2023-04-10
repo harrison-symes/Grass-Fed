@@ -1,5 +1,5 @@
 import { IRecipe, IRecipeComponent } from "../../models/recipe.models";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import UpChevron from "../Icons/UpChevron";
 import DownChevron from "../Icons/DownChevron";
 import RecipeStep from "./RecipeStep";
@@ -16,20 +16,45 @@ const RecipeComponentStepsPanel = (props: IRecipeComponentStepsPanelProps) => {
   const [isOpen, setIsOpen] = useState(true);
 
   const chevron = isOpen ? <DownChevron /> : <UpChevron />;
+  const panelHeaderRef = useRef<HTMLDivElement>(null);
+  const prevIsOpenRef = useRef<boolean>(isOpen);
+
   const hasMultiComponents =
     Array.isArray(props.recipe.components) &&
     props.recipe.components.length > 1;
 
   const onClickHeader = () => {
     if (hasMultiComponents) {
-      setIsOpen((state) => !state);
+      setIsOpen(!isOpen);
     }
   };
+
+  useEffect(() => {
+    if (prevIsOpenRef.current !== isOpen) {
+      setTimeout(() => {
+        if (panelHeaderRef.current == null) {
+          return;
+        }
+
+        const elementPosition =
+          panelHeaderRef.current?.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - 68;
+
+        prevIsOpenRef.current = isOpen;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "auto",
+        });
+      }, 400);
+    }
+  }, [isOpen]);
 
   return (
     <article className="panel recipe-panel is-info">
       <div
         className="panel-heading recipe-panel__header"
+        ref={panelHeaderRef}
         onClick={onClickHeader}
       >
         <div className="flex items-center justify-between">

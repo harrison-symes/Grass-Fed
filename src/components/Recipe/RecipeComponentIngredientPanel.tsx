@@ -1,6 +1,6 @@
 import { IRecipe, IRecipeComponent } from "../../models/recipe.models";
 import RecipeIngredient from "./RecipeIngredient";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import UpChevron from "../Icons/UpChevron";
 import DownChevron from "../Icons/DownChevron";
 
@@ -16,6 +16,9 @@ const RecipeComponentIngredientsPanel = (
 ) => {
   const { component } = props;
   const [isOpen, setIsOpen] = useState(true);
+  const panelHeaderRef = useRef<HTMLDivElement>(null);
+
+  const prevIsOpenRef = useRef<boolean>(isOpen);
 
   const chevron = isOpen ? <DownChevron /> : <UpChevron />;
   const hasMulticomponents =
@@ -28,6 +31,27 @@ const RecipeComponentIngredientsPanel = (
     }
   };
 
+  useEffect(() => {
+    if (prevIsOpenRef.current !== isOpen) {
+      setTimeout(() => {
+        if (panelHeaderRef.current == null) {
+          return;
+        }
+
+        const elementPosition =
+          panelHeaderRef.current?.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - 68;
+
+        prevIsOpenRef.current = isOpen;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "auto",
+        });
+      }, 400);
+    }
+  }, [isOpen]);
+
   return (
     <article
       className={cn("panel recipe-panel is-link", {
@@ -37,6 +61,7 @@ const RecipeComponentIngredientsPanel = (
       <div
         className="panel-heading recipe-panel__header"
         onClick={onClickHeader}
+        ref={panelHeaderRef}
       >
         <div className="flex items-center justify-between">
           <p>{component.componentName}</p>
