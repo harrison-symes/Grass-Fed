@@ -3,8 +3,6 @@ import DownArrowIcon from "../Icons/DownArrow";
 import cn from "classnames";
 import CrossIcon from "../Icons/Cross";
 
-import "./dropdown.scss";
-
 interface IDropdownProps {
   id: string;
   text: string;

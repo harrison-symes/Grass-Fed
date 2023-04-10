@@ -2,7 +2,6 @@ import { useSelector } from "react-redux";
 import { getRecipeByUrl, getRecipeTabParam } from "../../selectors";
 import RecipeNotFound from "./RecipeNotFound";
 
-import "./recipe.scss";
 import RecipeDescription from "./RecipeDescription";
 import RecipeTabs from "./RecipeTabs";
 import RecipeIngredients from "./RecipeIngredients";

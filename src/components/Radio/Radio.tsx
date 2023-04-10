@@ -1,6 +1,5 @@
 import { MouseEventHandler } from "react";
 import cn from "classnames";
-import "./radio.scss";
 
 interface IRadioProps {
   className?: string;
@@ -14,7 +13,7 @@ const Radio = (props: IRadioProps) => {
   return (
     <div className={cn("field", props.className)}>
       <input
-        className="is-checkradio"
+        className="is-checkradio is-link"
         id={props.id}
         type="checkbox"
         checked={props.isChecked}

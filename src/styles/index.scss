@@ -1,7 +1,24 @@
-@import "../../node_modules/bulma-checkradio";
+@import "./colours.scss";
+
+$primary: $green;
+$link: $blue;
+$link-hover: $purple;
+$info: $purple;
+$warning: $yellow;
+$danger: $orange;
+
 @import "../../node_modules/bulma-slider";
-@import "../../node_modules/bulma/bulma";
 @import "../../node_modules/tachyons-sass";
+
+@import "./recipeList.scss";
+@import "./recipe.scss";
+@import "./videos.scss";
+@import "./dropdown.scss";
+@import "./pagination.scss";
+@import "./recipeFilters.scss";
+@import "./radio.scss";
+
+@import "node_modules/bulma/bulma";
 
 html {
     scroll-behavior: smooth;
@@ -53,4 +70,20 @@ body {
 
 .page-content {
     min-height: calc(100vh - #{302px});
+    padding-top: 1.5rem;
+}
+
+.navbar-content {
+    display: flex;
+    max-width: $container-max-width;
+    margin: auto;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: space-between;
+    
+    @include mobile {
+        width: 100%;
+    }
 }

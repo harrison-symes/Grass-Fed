@@ -7,8 +7,6 @@ import RecipeSearch from "./RecipeSearch";
 import RecipeTimeDropdown from "./RecipeTimeDropdown";
 import cn from "classnames";
 
-import "./recipeFilters.scss";
-
 const RecipeFilters = () => {
   const [isShown, setIsShown] = useState(false);
 

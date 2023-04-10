@@ -1,5 +1,4 @@
 import VideoRecommendation from "./VideoRecommendation";
-import "./videos.scss";
 
 const VideoRecommendations = () => {
   return (
@@ -15,7 +14,7 @@ const VideoRecommendations = () => {
         instagramUrl="https://www.instagram.com/joey_carbstrong"
         websiteUrl="https://www.joeycarbstrong.com/"
       />
-      <hr />
+      <hr className="mb5-m" />
       <VideoRecommendation
         name="Earthling Ed"
         imageUrl="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8xdaOYuDy6RlyUL6-vxqIzeNuDuEeVCQej2ly0hkKlctwd6km"
@@ -27,7 +26,7 @@ const VideoRecommendations = () => {
         websiteUrl="https://earthlinged.org/"
         isReverse
       />
-      <hr />
+      <hr className="mb5-m" />
       <VideoRecommendation
         name="Mic the Vegan"
         imageUrl="https://micthevegan.com/wp-content/uploads/2017/11/Mic3.jpg"
@@ -38,7 +37,7 @@ const VideoRecommendations = () => {
         instagramUrl="https://www.instagram.com/micthevegan/?hl=en"
         websiteUrl="https://micthevegan.com/"
       />
-      <hr />
+      <hr className="mb5-m" />
       <VideoRecommendation
         name="Gary Yourofsky"
         imageUrl="https://yt3.googleusercontent.com/ytc/AL5GRJXyA2nE7Go9Z59gUPC3J7zg0mMNJyxndn6GSGTWxg=s900-c-k-c0x00ffffff-no-rj"
