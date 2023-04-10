@@ -3,9 +3,12 @@ import { TStoreState } from "../reducers";
 import { getPageNumber, getQueryParam } from "./router.selectors";
 import { QUERY_PARAMS } from "../constants/router.constants";
 import {
+  DEFAULT_RATING_VALUE,
   MAX_COST_VALUE,
+  MAX_RATING_VALUE,
   MAX_TIME_VALUE,
   MIN_COST_VALUE,
+  MIN_RATING_VALUE,
   MIN_TIME_VALUE,
   RECIPES_PER_PAGE,
 } from "../constants/recipe.constants";
@@ -24,6 +27,23 @@ export const getTimeParam = createSelector(
       numberValue > MAX_TIME_VALUE
     ) {
       return MAX_TIME_VALUE;
+    }
+
+    return numberValue;
+  }
+);
+
+export const getRatingParam = createSelector(
+  getQueryParam(QUERY_PARAMS.RATING),
+  (rating): number => {
+    const numberValue = parseInt(rating ?? "");
+
+    if (
+      isNaN(numberValue) ||
+      numberValue < MIN_RATING_VALUE ||
+      numberValue > MAX_RATING_VALUE
+    ) {
+      return DEFAULT_RATING_VALUE;
     }
 
     return numberValue;
@@ -87,7 +107,8 @@ export const getFilteredRecipes = createSelector(
   getQueryParam(QUERY_PARAMS.SEARCH),
   getCostParam,
   getTimeParam,
-  (recipes, categories, ingredients, search, price, time) => {
+  getRatingParam,
+  (recipes, categories, ingredients, search, price, time, rating) => {
     const filteredRecipes = recipes.filter((recipe) => {
       if (
         categories.length !== 0 &&
@@ -110,11 +131,20 @@ export const getFilteredRecipes = createSelector(
         return false;
       if (price != null && recipe.cost >= price) return false;
       if (time != null && recipe.time >= time) return false;
+      if (rating != null && recipe.rating < rating) return false;
 
       return true;
     });
 
-    return filteredRecipes;
+    return filteredRecipes.sort((a, b) => {
+      if (a.rating > b.rating) return -1;
+      if (a.rating < b.rating) return 1;
+      if (a.cost > b.cost) return 1;
+      if (a.cost < b.cost) return -1;
+      if (a.time > b.time) return 1;
+      if (a.time < b.time) return -1;
+      return 0;
+    });
   }
 );
 

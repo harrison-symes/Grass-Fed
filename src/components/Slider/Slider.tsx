@@ -11,7 +11,7 @@ interface ISliderProps {
 
 const Slider = (props: ISliderProps) => {
   return (
-    <div className="w-100 mb1 ph3">
+    <div className="w-100 mb1">
       {props.label && (
         <label className="label center" htmlFor={props.id}>
           {props.label}

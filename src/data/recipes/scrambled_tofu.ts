@@ -4,6 +4,7 @@ export default {
   id: "scrambled-tofu",
   name: "Scrambled Tofu",
   categories: ["breakfast", "lunch", "dinner"],
+  rating: 3,
   cost: 2,
   image: "https://www.noracooks.com/wp-content/uploads/2019/01/IMG_2907.jpg",
   shortDescription:

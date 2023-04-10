@@ -5,6 +5,7 @@ export default {
   name: "Butter Chicken",
   categories: ["dinner"],
   cost: 3,
+  rating: 5,
   image:
     "https://cdn.pickuplimes.com/cache/25/ad/25ade721bce05451beef337257d2218f.jpg",
   shortDescription:

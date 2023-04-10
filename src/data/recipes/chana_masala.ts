@@ -4,6 +4,7 @@ export default {
   categories: ["lunch", "dinner"],
   cost: 2,
   time: 2,
+  rating: 4,
   id: "chana-masala",
   image:
     "https://thepeskyvegan.com/wp-content/uploads/2020/04/chana-masala-rice-close-up-1.jpg",

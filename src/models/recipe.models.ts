@@ -13,6 +13,7 @@ export interface IRecipe {
   image: string;
   shortDescription: string;
   longDescription?: string;
+  rating: number;
   time: number;
   cost: number;
   components: Array<IRecipeComponent>;

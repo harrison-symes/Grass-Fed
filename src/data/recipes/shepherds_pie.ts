@@ -5,6 +5,7 @@ export default {
   name: "Shepherd's pie",
   categories: ["lunch", "dinner"],
   cost: 2,
+  rating: 3,
   image:
     "https://rainbowplantlife.com/wp-content/uploads/2020/11/137_image-asset-500x500.jpg",
   shortDescription:

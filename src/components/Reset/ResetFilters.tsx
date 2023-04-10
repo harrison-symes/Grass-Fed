@@ -12,6 +12,7 @@ const ResetFilters = () => {
       [QUERY_PARAMS.PRICE]: null,
       [QUERY_PARAMS.TIME_TO_PREPARE]: null,
       [QUERY_PARAMS.INGREDIENTS]: null,
+      [QUERY_PARAMS.RATING]: null,
     });
   };
 
