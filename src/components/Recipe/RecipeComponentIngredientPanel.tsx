@@ -30,7 +30,7 @@ const RecipeComponentIngredientsPanel = (
 
   return (
     <article
-      className={cn("panel recipe-panel is-primary", {
+      className={cn("panel recipe-panel is-link", {
         "recipe-panel--active": isOpen,
       })}
     >

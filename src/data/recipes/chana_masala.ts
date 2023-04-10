@@ -3,6 +3,7 @@ import { IRecipe } from "../../models/recipe.models";
 export default {
   categories: ["dinner"],
   cost: 2,
+  time: 2,
   id: "chana-masala",
   image:
     "https://thepeskyvegan.com/wp-content/uploads/2020/04/chana-masala-rice-close-up-1.jpg",
@@ -10,7 +11,6 @@ export default {
   name: "Chana Masala",
   shortDescription:
     "This delicious vegan chana masala recipe is bursting with flavor and loaded with protein-rich chickpeas. Simmered in a fragrant blend of spices, tomatoes, and coconut milk, this hearty Indian-inspired dish is perfect for a cozy weeknight dinner. Serve over rice or with naan bread for a satisfying and flavorful meal that's both healthy and delicious.",
-  time: 3,
   components: [
     {
       componentName: "The curry",

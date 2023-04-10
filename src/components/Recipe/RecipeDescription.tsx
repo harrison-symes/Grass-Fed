@@ -6,7 +6,7 @@ interface IRecipeDescriptionProps {
 
 const RecipeDescription = ({ recipe }: IRecipeDescriptionProps) => {
   return (
-    <article className="panel recipe__description is-primary">
+    <article className="panel recipe__description is-warning">
       <p className="panel-heading">{recipe.name}</p>
       <div className="panel-block">{recipe.shortDescription}</div>
       <img src={recipe.image} className="image recipe__image panel-block" />
