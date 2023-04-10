@@ -4,7 +4,7 @@ import IconContainer, { IIconProps } from "./Icon";
 const PodcastIcon = (props: IIconProps) => {
   return (
     <IconContainer {...props.containerProps}>
-      <FaPodcast />
+      <FaPodcast {...props.iconProps} />
     </IconContainer>
   );
 };

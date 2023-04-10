@@ -4,7 +4,7 @@ import IconContainer, { IIconProps } from "./Icon";
 const VideoIcon = (props: IIconProps) => {
   return (
     <IconContainer {...props.containerProps}>
-      <FaVideo />
+      <FaVideo {...props.iconProps} />
     </IconContainer>
   );
 };

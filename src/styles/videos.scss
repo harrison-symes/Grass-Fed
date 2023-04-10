@@ -48,6 +48,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    
     @include desktop {}
+}
+
+.video-recommendation__video-box {
+    background-color: $blue;
+    border-radius: 0.25rem;
 }

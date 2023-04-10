@@ -8,6 +8,7 @@ $warning: $yellow;
 $danger: $orange;
 
 @import "../../node_modules/bulma-slider";
+@import "../../node_modules/bulma-pageloader";
 @import "../../node_modules/tachyons-sass";
 
 @import "./recipeList.scss";
@@ -50,21 +51,27 @@ body {
 .home-hero {
     cursor: pointer;
     min-height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
 
     background-image: url("https: //encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoNaLFFSdD4YhW8mqgDBSWY8nHnte6ANHQWz6Lsl37yA&s");
 
     .title {
         transform: scale(1);
         transition: transform 0.4s;
-
+        text-align: center;
     }
     &:hover {
         .title {
             transform: scale(1.5);
         }
+    }
+
+    .icon {
+        margin: auto;
+        width: 10rem;
+        height: 10rem;
     }
 }
 
@@ -73,17 +80,12 @@ body {
     padding-top: 1.5rem;
 }
 
-.navbar-content {
-    display: flex;
-    max-width: $container-max-width;
-    margin: auto;
-}
-
 .navbar-brand {
-    display: flex;
-    justify-content: space-between;
-    
-    @include mobile {
-        width: 100%;
+    width: 100%;
+    // @include mobile {
+    //     width: 100%;
+    // }
+    @include desktop {
+        width: auto;
     }
 }

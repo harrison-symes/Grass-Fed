@@ -4,7 +4,7 @@ import IconContainer, { IIconProps } from "./Icon";
 const PersonAddIcon = (props: IIconProps) => {
   return (
     <IconContainer {...props.containerProps}>
-      <BsFillPersonPlusFill />
+      <BsFillPersonPlusFill {...props.iconProps} />
     </IconContainer>
   );
 };

@@ -4,7 +4,7 @@ import IconContainer, { IIconProps } from "./Icon";
 const YoutubeIcon = (props: IIconProps) => {
   return (
     <IconContainer {...props.containerProps}>
-      <FaYoutube />
+      <FaYoutube {...props.iconProps} />
     </IconContainer>
   );
 };

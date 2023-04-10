@@ -4,7 +4,7 @@ import IconContainer, { IIconProps } from "./Icon";
 const GithubIcon = (props: IIconProps) => {
   return (
     <IconContainer {...props.containerProps}>
-      <FaGithub />
+      <FaGithub {...props.iconProps} />
     </IconContainer>
   );
 };

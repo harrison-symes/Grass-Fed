@@ -4,7 +4,7 @@ import IconContainer, { IIconProps } from "./Icon";
 const CrossIcon = (props: IIconProps) => {
   return (
     <IconContainer {...props.containerProps}>
-      <ImCross />
+      <ImCross {...props.iconProps} />
     </IconContainer>
   );
 };

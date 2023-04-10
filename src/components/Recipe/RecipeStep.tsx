@@ -4,7 +4,7 @@ import {
   IRecipeComponent,
   IRecipeStep,
 } from "../../models/recipe.models";
-import CheckMarkIcon from "../Icons/Cook copy";
+import CheckMarkIcon from "../Icons/Checkmark";
 import RecipeStepIngredient from "./RecipeStepIngredient";
 
 import cn from "classnames";

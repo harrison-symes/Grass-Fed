@@ -83,22 +83,35 @@ const VideoRecommendation = (props: IVideoRecommendationProps) => {
           )}
         </div>
       </div>
-      <div style={{ width }} className="video-recommendation__video">
-        <YouTube
-          videoId={props.videoId}
-          opts={{
-            width,
-            height,
-          }}
-        />
-        {props.videoId2 && (
+      <div
+        style={{ width, height: height * 2 }}
+        className="video-recommendation__video"
+      >
+        <div
+          className="video-recommendation__video-box"
+          style={{ width, height }}
+        >
           <YouTube
-            videoId={props.videoId2}
+            videoId={props.videoId}
             opts={{
               width,
               height,
             }}
           />
+        </div>
+        {props.videoId2 && (
+          <div
+            className="video-recommendation__video-box mt1"
+            style={{ width, height }}
+          >
+            <YouTube
+              videoId={props.videoId2}
+              opts={{
+                width,
+                height,
+              }}
+            />
+          </div>
         )}
       </div>
     </div>

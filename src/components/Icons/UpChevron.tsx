@@ -4,7 +4,7 @@ import IconContainer, { IIconProps } from "./Icon";
 const UpChevron = (props: IIconProps) => {
   return (
     <IconContainer {...props.containerProps}>
-      <FaChevronUp />
+      <FaChevronUp {...props.iconProps} />
     </IconContainer>
   );
 };

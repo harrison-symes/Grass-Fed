@@ -1,12 +1,11 @@
 import { useNavigate } from "react-router";
-import RightChevron from "../Icons/RightChevron";
-
 import cn from "classnames";
 
 interface IHomeBannerProps {
   href: string;
   text: string;
   className?: string;
+  icon?: JSX.Element;
 }
 
 const HomeBanner = (props: IHomeBannerProps) => {
@@ -20,10 +19,9 @@ const HomeBanner = (props: IHomeBannerProps) => {
       className={cn("home-hero hero is-primary is-medium mb3", props.className)}
       onClick={onClick}
     >
-      <div className="hero-body flex items-center justify-center">
-        <p className="title text-center flex items-center">
-          {props.text} <RightChevron containerProps={{ className: "ml2" }} />
-        </p>
+      <div className="hero-body">
+        <div className="flex justify-center">{props.icon}</div>
+        <p className="title text-center">{props.text}</p>
       </div>
     </div>
   );

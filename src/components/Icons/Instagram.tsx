@@ -4,7 +4,7 @@ import IconContainer, { IIconProps } from "./Icon";
 const InstagramIcon = (props: IIconProps) => {
   return (
     <IconContainer {...props.containerProps}>
-      <FaInstagram />
+      <FaInstagram {...props.iconProps} />
     </IconContainer>
   );
 };

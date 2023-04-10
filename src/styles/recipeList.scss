@@ -22,6 +22,7 @@
 .recipe-card {
     cursor: pointer;
     transform: scale(1.0);
+    border: 1px solid $blue;
 
     margin-bottom: 1.5rem;
 
@@ -40,10 +41,9 @@
     }
 
     &:hover {
-        // .card-header {
-        //     background-color: $primary;
-        // }
+        border: 2px solid $green;
         transform: scale(1.05);
         transition: transform 0.4s;
+        transition: border-color 0.4s smooth;
     }
 }

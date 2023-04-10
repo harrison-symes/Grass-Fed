@@ -4,7 +4,7 @@ import IconContainer, { IIconProps } from "./Icon";
 const RightChevron = (props: IIconProps) => {
   return (
     <IconContainer {...props.containerProps}>
-      <FaChevronRight />
+      <FaChevronRight {...props.iconProps} />
     </IconContainer>
   );
 };

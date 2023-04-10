@@ -4,7 +4,7 @@ import IconContainer, { IIconProps } from "./Icon";
 const GrassIcon = (props: IIconProps) => {
   return (
     <IconContainer {...props.containerProps}>
-      <GiHighGrass />
+      <GiHighGrass {...props.iconProps} />
     </IconContainer>
   );
 };

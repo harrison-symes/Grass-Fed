@@ -4,7 +4,7 @@ import IconContainer, { IIconProps } from "./Icon";
 const CookIcon = (props: IIconProps) => {
   return (
     <IconContainer {...props.containerProps}>
-      <GiCook />
+      <GiCook {...props.iconProps} />
     </IconContainer>
   );
 };

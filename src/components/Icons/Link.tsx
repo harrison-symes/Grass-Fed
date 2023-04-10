@@ -4,7 +4,7 @@ import IconContainer, { IIconProps } from "./Icon";
 const LinkIcon = (props: IIconProps) => {
   return (
     <IconContainer {...props.containerProps}>
-      <FaLink />
+      <FaLink {...props.iconProps} />
     </IconContainer>
   );
 };
