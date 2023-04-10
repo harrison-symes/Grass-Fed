@@ -21,11 +21,11 @@ const RecipeFilters = () => {
         })}
       >
         <div className="recipe-filter__group">
-          <RecipeCategoryDropdown />
           <RecipePriceDropdown />
+          <RecipeTimeDropdown />
         </div>
         <div className="recipe-filter__group">
-          <RecipeTimeDropdown />
+          <RecipeCategoryDropdown />
         </div>
         <div className="recipe-filter-reset">
           <ResetFilters />

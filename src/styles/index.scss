@@ -7,9 +7,11 @@ $info: $purple;
 $warning: $yellow;
 $danger: $orange;
 
+@import "../../node_modules/bulma-checkradio/src/sass/index.sass";
 @import "../../node_modules/bulma-slider";
 @import "../../node_modules/bulma-pageloader";
 @import "../../node_modules/tachyons-sass";
+
 
 @import "./recipeList.scss";
 @import "./recipe.scss";
@@ -20,6 +22,7 @@ $danger: $orange;
 @import "./radio.scss";
 
 @import "node_modules/bulma/bulma";
+
 
 html {
     scroll-behavior: smooth;
@@ -87,5 +90,26 @@ body {
     // }
     @include desktop {
         width: auto;
+    }
+}
+
+.icon {
+    > .is-green {
+        color: $green;
+    }
+    > .is-blue {
+        color: $blue;
+    }
+    > .is-brown {
+        color: $brown;
+    }
+    > .is-yellow {
+        color: $yellow;
+    }
+    > .is-purple {
+        color: $purple;
+    }
+    > .is-orange {
+        color: $orange;
     }
 }

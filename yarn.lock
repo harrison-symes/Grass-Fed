@@ -1917,6 +1917,16 @@
   dependencies:
     "@types/node" "*"
 
+"@types/clamp-js@^0.7.3":
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/@types/clamp-js/-/clamp-js-0.7.3.tgz#99070f4b75047198b7a7b25c603f9b958ad87a14"
+  integrity sha512-q2y5OBbe9/qquZCjccJPzEpqtun9shm+NBTOEw6JpCiow4vOMUiQZCo0UevrA8WBzpxTLzGvoiPG8ZhYQiKESA==
+
+"@types/clamp@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@types/clamp/-/clamp-1.0.1.tgz#571d0267f116314eba70dc8ae5680cdd654e0cf0"
+  integrity sha512-mWimIPuHSjSXP/xpabzQTXWTutHseD0VtFUiJmeArnz21wkT8G92zhadC5WUCa3prlwPexn779Uetx70CIhA5A==
+
 "@types/connect-history-api-fallback@^1.3.5":
   version "1.3.5"
   resolved "https://registry.npmjs.org/@types/connect-history-api-fallback/-/connect-history-api-fallback-1.3.5.tgz"
@@ -2064,6 +2074,11 @@
   resolved "https://registry.npmjs.org/@types/jump.js/-/jump.js-1.0.4.tgz"
   integrity sha512-qhDD1WvrwsKhH22gWF+duJrNLJ2xqAm3RNLl48hSDTzTVQPsZETkyD4KGmTc53GiYoTqcGjdZvkZD5cxZR5Yxw==
 
+"@types/lodash@*":
+  version "4.14.192"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.192.tgz#5790406361a2852d332d41635d927f1600811285"
+  integrity sha512-km+Vyn3BYm5ytMO13k9KTp27O75rbQ0NFw+U//g+PX7VZyjCioXaRFisqSIJRECljcTv73G3i6BpglNGHgUQ5A==
+
 "@types/mime@*":
   version "3.0.1"
   resolved "https://registry.npmjs.org/@types/mime/-/mime-3.0.1.tgz"
@@ -2131,6 +2146,14 @@
   resolved "https://registry.npmjs.org/@types/react-dom/-/react-dom-18.0.11.tgz"
   integrity sha512-O38bPbI2CWtgw/OoQoY+BRelw7uysmXbWvw3nLWO21H1HSh+GOlqPuXshJfjmpNlKiiSDG9cc1JZAaMmVdcTlw==
   dependencies:
+    "@types/react" "*"
+
+"@types/react-lines-ellipsis@^0.15.1":
+  version "0.15.1"
+  resolved "https://registry.yarnpkg.com/@types/react-lines-ellipsis/-/react-lines-ellipsis-0.15.1.tgz#7bc47dbe12e7fe16de2ecb33134b270fbb88802a"
+  integrity sha512-j0lZ5UyO1ShIs2Fk2OfvmUBc1s5gUP3/5n6pHnRCVKLvSfensCBJVqXNa1Tzlcgf6BE31wfEfmn22QrSlnSBnw==
+  dependencies:
+    "@types/lodash" "*"
     "@types/react" "*"
 
 "@types/react-redux@^7.1.25":
@@ -3355,6 +3378,16 @@ cjs-module-lexer@^1.0.0:
   version "1.2.2"
   resolved "https://registry.npmjs.org/cjs-module-lexer/-/cjs-module-lexer-1.2.2.tgz"
   integrity sha512-cOU9usZw8/dXIXKtwa8pM0OTJQuJkxMN6w30csNRUerHfeQ5R6U3kkU/FtJeIf3M202OHfY2U8ccInBG7/xogA==
+
+clamp-js@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/clamp-js/-/clamp-js-0.7.0.tgz#95c49e0e28323c8eeac8c63201dddf30dbd78fce"
+  integrity sha512-YAV7xs9z6/dL3LIkz5ql3xyukyiBSwrz5kqbwFXdu/RLl/3sI3DBoKcabRZJvocdPtCIT7WwSSyONP60CIbKXw==
+
+clamp@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/clamp/-/clamp-1.0.1.tgz#66a0e64011816e37196828fdc8c8c147312c8634"
+  integrity sha512-kgMuFyE78OC6Dyu3Dy7vcx4uy97EIbVxJB/B0eJ3bUNAkwdNcxYzgKltnyADiYwsR7SEqkkUPsEUT//OVS6XMA==
 
 classnames@^2.3.2:
   version "2.3.2"
@@ -8389,7 +8422,7 @@ prompts@^2.0.1, prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@15.8.1, prop-types@^15.8.1:
+prop-types@15.8.1, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -8494,6 +8527,13 @@ react-app-polyfill@^3.0.0:
     regenerator-runtime "^0.13.9"
     whatwg-fetch "^3.6.2"
 
+react-clamp-lines@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/react-clamp-lines/-/react-clamp-lines-3.0.3.tgz#e0f2e4bbfb8dc71a13c55df9093f4e86b63bae7f"
+  integrity sha512-NTPPieGp11XGxXbI0mH1mcLtdvOFUk/aDL5En3VcHUTtctILnUVNcPsB7Fe+EoL8E+mds2NIeED9JYpwJslZjQ==
+  dependencies:
+    prop-types "^15.7.2"
+
 react-dev-utils@^12.0.1:
   version "12.0.1"
   resolved "https://registry.npmjs.org/react-dev-utils/-/react-dev-utils-12.0.1.tgz"
@@ -8556,6 +8596,11 @@ react-is@^18.0.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react-is/-/react-is-18.2.0.tgz"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
+
+react-lines-ellipsis@^0.15.3:
+  version "0.15.3"
+  resolved "https://registry.yarnpkg.com/react-lines-ellipsis/-/react-lines-ellipsis-0.15.3.tgz#eb081c12e58170b09c5bd9db2fdbde9b5a3ea6c0"
+  integrity sha512-+kIcUZJPI3QqazZbO0eeEUmfRjmYKjCRzSmXQL4otrJzwOU9MjvASGQd4SELOOBSy6oiygjfDuCocGMssX0oUQ==
 
 react-redux@^8.0.5:
   version "8.0.5"

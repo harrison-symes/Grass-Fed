@@ -6,11 +6,11 @@ interface IRecipeDescriptionProps {
 
 const RecipeDescription = ({ recipe }: IRecipeDescriptionProps) => {
   return (
-    <div>
-      <div className="content">{recipe.shortDescription}</div>
-      <img src={recipe.image} className="image recipe__image" />
-      <div className="content">{recipe.longDescription}</div>
-    </div>
+    <article className="panel recipe__description is-primary">
+      <p className="panel-heading">{recipe.name}</p>
+      <div className="panel-block">{recipe.shortDescription}</div>
+      <img src={recipe.image} className="image recipe__image panel-block" />
+    </article>
   );
 };
 

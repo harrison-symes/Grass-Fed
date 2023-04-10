@@ -1,7 +1,6 @@
 import { useMemo } from "react";
 import { IRecipe } from "../../models/recipe.models";
 import RecipeComponentIngredientsPanel from "./RecipeComponentIngredientPanel";
-import RecipeIngredientsControls from "./controls/RecipeIngredientsControls";
 
 interface IRecipeIngredientsProps {
   recipe: IRecipe;
@@ -17,8 +16,7 @@ const RecipeIngredients = (props: IRecipeIngredientsProps) => {
   );
 
   return (
-    <div>
-      <RecipeIngredientsControls recipe={props.recipe} />
+    <div className="recipe__ingredients">
       {components.map((step) => (
         <RecipeComponentIngredientsPanel
           key={`${props.recipe}-${step.componentName}-component-ingredients`}
