@@ -1,0 +1,75 @@
+@import "node_modules/bulma/sass/utilities/_all.sass";
+
+.why-vegan__link-container {
+    margin-top: 1.5rem;
+    width: 100%;
+    
+    @include desktop {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        grid-gap: 1rem;
+    }
+}
+
+.why-vegan__page-link {
+    margin-top: 1rem;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $green;
+    color: $white;
+    cursor: pointer;
+    transform: scale(1);
+    font-size: 2rem;
+    transition: transform 0.3s ease-in-out;
+    padding: 1rem;
+    text-align: center;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+    
+    &--blue {
+        background-color: $blue;
+    }
+    &--purple {
+        background-color: $purple;
+    }
+    &--orange {
+        background-color: $orange;
+    }
+}
+
+.about--withImage {
+    display: flex;
+    flex-direction: column;
+    
+    @include tablet {
+        display: grid;
+        justify-content: center;
+        align-items: start;
+        grid-template-columns: minmax(200px, 60%) minmax(250px, 40%);
+        grid-gap: 1rem;
+        
+    }
+
+    &--reverse {
+        @include tablet {
+            grid-template-columns: minmax(250px, 40%) minmax(200px, 60%);
+            .about__image {
+                order: 1;
+            }
+            .about__message {
+                order: 2;
+            }
+        }
+    }
+
+    .about__image {
+        margin-top: 3.5rem;
+        max-height: fit-content;
+    }
+}
+

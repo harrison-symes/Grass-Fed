@@ -20,6 +20,7 @@ $danger: $orange;
 @import "./pagination.scss";
 @import "./recipeFilters.scss";
 @import "./radio.scss";
+@import "./whyVegan.scss";
 
 @import "node_modules/bulma/bulma";
 
@@ -30,6 +31,10 @@ html {
 
 body {
     font-size: 16px;
+}
+
+ul {
+    list-style: circle;
 }
 
 .navbar {
@@ -58,9 +63,6 @@ body {
 .home-hero {
     cursor: pointer;
     min-height: 300px;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
 
     background-image: url("https: //encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoNaLFFSdD4YhW8mqgDBSWY8nHnte6ANHQWz6Lsl37yA&s");
 
@@ -89,9 +91,7 @@ body {
 
 .navbar-brand {
     width: 100%;
-    // @include mobile {
-    //     width: 100%;
-    // }
+
     @include desktop {
         width: auto;
     }

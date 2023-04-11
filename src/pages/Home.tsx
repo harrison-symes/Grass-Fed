@@ -8,8 +8,8 @@ const Home = () => {
   return (
     <div>
       <HomeBanner
-        href="/go-vegan"
-        text="Why Vegan?"
+        href="/why-vegan"
+        text="Learn about the benefits of going Vegan"
         icon={<CarrotIcon iconProps={{ size: 70 }} />}
       />
       <HomeBanner

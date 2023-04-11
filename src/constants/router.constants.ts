@@ -8,6 +8,10 @@ export enum ROUTES_INTERNAL {
   RECIPE = "/recipes/:id",
   PODCASTS = "/podcasts",
   VIDEOS = "/videos",
+  WHY_VEGAN = "/why-vegan",
+  WHY_HEALTH = "/why-vegan/health",
+  WHY_ENVIRONMENT = "/why-vegan/environment",
+  WHY_ANIMALS = "/why-vegan/animals",
   GO_VEGAN = "/go-vegan",
   ABOUT = "/about",
 }

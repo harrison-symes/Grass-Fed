@@ -9,6 +9,10 @@ import { history } from "./configureStore";
 import Loader from "./components/Loader/Loader";
 import About from "./pages/About";
 import WIP from "./components/WIP/WIP";
+import WhyVegan from "./pages/WhyVegan";
+import WhyHealth from "./pages/WhyHealth";
+import WhyEnvironment from "./pages/WhyEnvironment";
+import WhyAnimals from "./pages/WhyAnimals";
 
 const Home = React.lazy(() => import("./pages/Home"));
 const Recipes = React.lazy(() => import("./pages/RecipesPage"));
@@ -66,6 +70,38 @@ const Router = () => {
             element={
               <React.Suspense fallback={<Loader />}>
                 <About />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path={ROUTES_INTERNAL.WHY_VEGAN}
+            element={
+              <React.Suspense fallback={<Loader />}>
+                <WhyVegan />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path={ROUTES_INTERNAL.WHY_HEALTH}
+            element={
+              <React.Suspense fallback={<Loader />}>
+                <WhyHealth />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path={ROUTES_INTERNAL.WHY_ENVIRONMENT}
+            element={
+              <React.Suspense fallback={<Loader />}>
+                <WhyEnvironment />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path={ROUTES_INTERNAL.WHY_ANIMALS}
+            element={
+              <React.Suspense fallback={<Loader />}>
+                <WhyAnimals />
               </React.Suspense>
             }
           />
