@@ -6,7 +6,7 @@ const Protein = () => {
       id="vegan-health-protein"
       messageClassName="is-black"
       title="Where do you get your Protein?"
-      imageUrl="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/06/1015950-A-Comprehensive-Chart-of-Vegan-Protein-Sources-1296x728-header-body-copy.20210607165150916-1296x2895.png?w=1155&h=6087"
+      imageUrl="/images/protein.png"
     >
       <p>
         It's a common misconception that a vegan diet lacks sufficient protein.

@@ -6,7 +6,7 @@ const Calcium = () => {
       id="vegan-health-calcium"
       messageClassName="is-black"
       title="Vegan Calcium Sources: You aren't a Baby Cow!"
-      imageUrl="https://strongwithplants.com/wp-content/uploads/Copy-of-Blue-Aqua-Plant-Based-Calcium-Sources-Infographic-2-683x1024.png"
+      imageUrl="/images/calcium.png"
       isReverse
     >
       <p>
