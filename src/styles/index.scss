@@ -12,7 +12,6 @@ $danger: $orange;
 @import "../../node_modules/bulma-pageloader";
 @import "../../node_modules/tachyons-sass";
 
-
 @import "./recipeList.scss";
 @import "./recipe.scss";
 @import "./videos.scss";
@@ -21,6 +20,7 @@ $danger: $orange;
 @import "./recipeFilters.scss";
 @import "./radio.scss";
 @import "./whyVegan.scss";
+@import "./documentaries.scss";
 
 @import "node_modules/bulma/bulma";
 

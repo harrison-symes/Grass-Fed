@@ -13,6 +13,7 @@ export enum ROUTES_INTERNAL {
   WHY_ENVIRONMENT = "/why-vegan/environment",
   WHY_ANIMALS = "/why-vegan/animals",
   GO_VEGAN = "/go-vegan",
+  DOCUMENTARIES = "/documentaries",
   ABOUT = "/about",
 }
 

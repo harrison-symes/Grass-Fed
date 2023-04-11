@@ -1,0 +1,26 @@
+@import "node_modules/bulma/sass/utilities/_all.sass";
+
+.documentary__container {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: minmax(200px, 50%) minmax(250px, 50%);
+        align-items: center;
+        grid-gap: 1rem;
+
+        &--reverse {
+            .card {
+                order: 2;
+            }
+            .documentary__video-box {
+                order: 0;
+            }
+        }
+    }
+
+    .card {
+        margin-bottom: 0 !important;
+    }
+}
