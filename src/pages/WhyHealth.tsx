@@ -1,3 +1,4 @@
+import Calcium from "../components/Content/WhyHealth/Calcium";
 import Protein from "../components/Content/WhyHealth/Protein";
 import PageContentsNav from "../components/PageContentsNav/PageContentsNav";
 
@@ -11,6 +12,8 @@ const WhyHealth = () => {
         items={{
           "Introduction to Vegan Health": "page-intro",
           "Where do you get your Protein": "vegan-health-protein",
+          "Vegan Calcium Sources: You aren't a Baby Cow!":
+            "vegan-health-calcium",
         }}
       />
       <hr />
@@ -59,6 +62,7 @@ const WhyHealth = () => {
       <hr />
       <Protein />
       <hr />
+      <Calcium />
     </div>
   );
 };

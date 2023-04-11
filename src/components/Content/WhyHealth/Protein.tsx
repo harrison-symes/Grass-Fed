@@ -4,9 +4,9 @@ const Protein = () => {
   return (
     <AboutWithImage
       id="vegan-health-protein"
-      className="is-black"
+      messageClassName="is-black"
       title="Where do you get your Protein?"
-      imageUrl="https://www.eatingwell.com/thmb/Y5jHU7-ClCAA7p2k7h7hcJFT12Q=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/vegan_protein-bd263606aba14f228b72f1409bdc88e1.jpeg"
+      imageUrl="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/06/1015950-A-Comprehensive-Chart-of-Vegan-Protein-Sources-1296x728-header-body-copy.20210607165150916-1296x2895.png?w=1155&h=6087"
     >
       <p>
         It's a common misconception that a vegan diet lacks sufficient protein.

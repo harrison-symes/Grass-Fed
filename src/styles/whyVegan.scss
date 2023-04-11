@@ -44,16 +44,31 @@
 
 .about--withImage {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     
     @include tablet {
         display: grid;
         justify-content: center;
         align-items: start;
         grid-template-columns: minmax(200px, 60%) minmax(250px, 40%);
+        grid-gap: 1rem;
+        
+    }
+
+    &--reverse {
+        @include tablet {
+            grid-template-columns: minmax(250px, 40%) minmax(200px, 60%);
+            .about__image {
+                order: 1;
+            }
+            .about__message {
+                order: 2;
+            }
+        }
     }
 
     .about__image {
+        margin-top: 3.5rem;
         max-height: fit-content;
     }
 }
