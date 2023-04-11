@@ -1,7 +1,7 @@
 import HomeBanner from "../components/Home/HomeBanner";
 import CarrotIcon from "../components/Icons/Carrot";
 import CookIcon from "../components/Icons/Cook";
-import PodcastIcon from "../components/Icons/Podcast";
+import FilmIcon from "../components/Icons/Film";
 import VideoIcon from "../components/Icons/VideoIcon";
 
 const Home = () => {
@@ -25,10 +25,10 @@ const Home = () => {
         icon={<VideoIcon iconProps={{ size: 70 }} />}
       />
       <HomeBanner
-        href="/podcasts"
-        text="Listen to some podcasts about Veganism"
+        href="/documentaries"
+        text="Uncover the truth through these documentaries"
         className="is-danger"
-        icon={<PodcastIcon iconProps={{ size: 70 }} />}
+        icon={<FilmIcon iconProps={{ size: 70 }} />}
       />
     </div>
   );

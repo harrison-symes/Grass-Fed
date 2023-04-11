@@ -1,6 +1,7 @@
 import Calcium from "../components/Content/WhyHealth/Calcium";
 import Protein from "../components/Content/WhyHealth/Protein";
 import PageContentsNav from "../components/PageContentsNav/PageContentsNav";
+import WIP from "../components/WIP/WIP";
 
 const WhyHealth = () => {
   return (
@@ -63,6 +64,8 @@ const WhyHealth = () => {
       <Protein />
       <hr />
       <Calcium />
+
+      <WIP />
     </div>
   );
 };

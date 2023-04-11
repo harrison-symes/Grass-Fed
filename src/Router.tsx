@@ -13,6 +13,7 @@ import WhyVegan from "./pages/WhyVegan";
 import WhyHealth from "./pages/WhyHealth";
 import WhyEnvironment from "./pages/WhyEnvironment";
 import WhyAnimals from "./pages/WhyAnimals";
+import Documentaries from "./pages/Documentaries";
 
 const Home = React.lazy(() => import("./pages/Home"));
 const Recipes = React.lazy(() => import("./pages/RecipesPage"));
@@ -110,6 +111,14 @@ const Router = () => {
             element={
               <React.Suspense fallback={<Loader />}>
                 <GoVegan />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path={ROUTES_INTERNAL.DOCUMENTARIES}
+            element={
+              <React.Suspense fallback={<Loader />}>
+                <Documentaries />
               </React.Suspense>
             }
           />
