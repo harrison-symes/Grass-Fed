@@ -63,9 +63,6 @@ ul {
 .home-hero {
     cursor: pointer;
     min-height: 300px;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
 
     background-image: url("https: //encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoNaLFFSdD4YhW8mqgDBSWY8nHnte6ANHQWz6Lsl37yA&s");
 
@@ -94,9 +91,7 @@ ul {
 
 .navbar-brand {
     width: 100%;
-    // @include mobile {
-    //     width: 100%;
-    // }
+
     @include desktop {
         width: auto;
     }
