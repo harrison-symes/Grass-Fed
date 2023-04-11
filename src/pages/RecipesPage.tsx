@@ -28,7 +28,7 @@ const RecipesPage = () => {
     }
 
     prevRecipesRef.current = recipeCount;
-  }, [recipeCount]);
+  }, [recipeCount, queryUpdater]);
 
   return (
     <div className="container">

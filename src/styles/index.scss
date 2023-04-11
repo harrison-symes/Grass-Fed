@@ -20,6 +20,7 @@ $danger: $orange;
 @import "./pagination.scss";
 @import "./recipeFilters.scss";
 @import "./radio.scss";
+@import "./whyVegan.scss";
 
 @import "node_modules/bulma/bulma";
 
@@ -30,6 +31,10 @@ html {
 
 body {
     font-size: 16px;
+}
+
+ul {
+    list-style: circle;
 }
 
 .navbar {
