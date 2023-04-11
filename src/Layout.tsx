@@ -18,6 +18,13 @@ const Layout = () => {
         <Breadcrumbs />
         <Outlet />
       </div>
+      <div className="hero is-primary">
+        <div className="hero-body">
+          <p className="hero-title text-center is-size-1">
+            Are <b>YOU</b> vegan yet?
+          </p>
+        </div>
+      </div>
       <Footer />
     </div>
   );
