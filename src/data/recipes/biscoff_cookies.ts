@@ -28,6 +28,7 @@ export default {
         },
         {
           name: "Brown Sugar",
+          notes: "Must be smooth",
           measurement: "cups",
           quantity: 1 / 2,
         },
@@ -38,6 +39,8 @@ export default {
         },
         {
           name: "Oat Milk",
+          notes:
+            "You may use any plant-milks you prefer, but I recommend Soy or Oat",
           measurement: "tbsp",
           quantity: 1,
         },
