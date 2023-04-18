@@ -12,13 +12,13 @@ const WhyHealth = () => {
       <PageContentsNav
         items={{
           "Introduction to Vegan Health": "page-intro",
-          "Where do you get your Protein": "vegan-health-protein",
+          "Protein: Everything you need to know": "vegan-health-protein",
           "Vegan Calcium Sources: You aren't a Baby Cow!":
             "vegan-health-calcium",
         }}
       />
       <hr />
-      <h1 className="is-size-4">About Vegan Health</h1>
+      <h1 className="is-size-3 fw5">About Vegan Health</h1>
       <article className="message mt3" id="page-intro">
         <div className="message-body">
           <p>

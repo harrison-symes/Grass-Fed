@@ -5,128 +5,128 @@ const Protein = () => {
     <AboutWithImage
       id="vegan-health-protein"
       messageClassName="is-black"
-      title="Where do you get your Protein?"
+      title="Protein: Everything you need to know"
       imageUrl="/images/protein.png"
     >
+      <h2 className="is-size-4 fw5">What is protein?</h2>
       <p>
-        It's a common misconception that a vegan diet lacks sufficient protein.
-        In fact, <b>there are plenty of plant-based protein sources</b> that can
-        easily meet the recommended daily intake for protein. It's important to
-        note that <b>all protein originates from plants</b>, as animals get
-        their protein from the plants they eat. By consuming plant-based sources
-        of protein directly, vegans are actually{" "}
-        <b>cutting out the middleman</b> and obtaining their protein in a more
-        efficient and environmentally friendly way.
+        Protein is a macronutrient that is essential for the proper functioning
+        and maintenance of the human body. It is composed of long chains of
+        amino acids, which are the building blocks of all proteins. There are 20
+        different amino acids, and nine of these are considered "essential,"
+        meaning that the body cannot produce them on its own and must obtain
+        them through the diet.
       </p>
-      <p className="mt3">
-        Some excellent vegan protein sources include legumes such as{" "}
-        <b>lentils, chickpeas, and beans</b>, which are high in protein and
-        fiber. <b>Quinoa</b>, a grain-like seed, is also a great source of
-        protein, as well as essential amino acids. Other grains such as{" "}
-        <b>brown rice and oats</b> also contain protein, while{" "}
-        <b>nuts and seeds like almonds, chia seeds, and pumpkin seeds</b> are
-        packed with protein, healthy fats, and other essential nutrients.
-        Additionally,{" "}
-        <b>
-          <a
-            href="https://en.wikipedia.org/wiki/Tofu"
-            target="_blank"
-            rel="noreferrer"
-          >
-            tofu
-          </a>
-          ,{" "}
-          <a
-            href="https://en.wikipedia.org/wiki/Tempeh"
-            target="_blank"
-            rel="noreferrer"
-          >
-            tempeh
-          </a>
-          , and{" "}
-          <a
-            href="https://en.wikipedia.org/wiki/Seitan"
-            target="_blank"
-            rel="noreferrer"
-          >
-            seitan
-          </a>
-        </b>{" "}
-        are all excellent sources of protein for vegans.
-      </p>
-      <p className="mt3">
-        Incorporating a variety of these protein sources into meals throughout
-        the day can help ensure that vegans are getting the protein they need to
-        support their overall health and wellbeing. And by choosing plant-based
-        sources of protein, vegans can enjoy all the benefits of protein{" "}
-        <b>
-          without contributing to the negative environmental and ethical impacts
-          associated with animal agriculture
-        </b>
-        .
-      </p>
-      <hr className="hr" />
+      <hr />
+      <h2 className="is-size-4 fw5">Why do we need protein?</h2>
       <p>
-        It's worth noting that while there are many healthy and nutrient-dense
-        vegan protein sources, not all vegan products are created equal. In
-        recent years, there has been a surge in the availability of{" "}
-        <b>plant-based "fake meat" products</b> in New Zealand and other
-        countries (such as{" "}
-        <b>
-          <a
-            href="https://www.countdown.co.nz/shop/productdetails?stockcode=814850&name=sunfed-chicken-free-chicken-meat-alternative-original"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Sun-fed Chicken
-          </a>
-          ,{" "}
-          <a
-            href="https://www.countdown.co.nz/shop/productdetails?stockcode=265033&name=bean-supreme-vegetarian-sausages-rosemary-sage-parsley"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Vegan Sausages
-          </a>{" "}
-          or{" "}
-          <a
-            href="https://gratergoods.co.nz/collections/the-grater-goods-collection"
-            target="_blank"
-            rel="noreferrer"
-          >
-            the Grater Goods range of fake-meats
-          </a>
-        </b>
-        ). While these products may be convenient and offer a meat-like texture
-        and flavor, they can often be highly processed and contain added salt,
-        fat, and other additives. While some of these products may not be the
-        healthiest food options, they{" "}
-        <b>
-          generally have lower amounts of saturated fat and cholesterol compared
-          to animal products
-        </b>
-        , which can contribute to the development of chronic health conditions
-        like heart disease, stroke, and diabetes.
+        Protein plays a crucial role in various bodily functions, including:
       </p>
-      <p className="mt3">
-        For the best health, it's best to approach veganism with a focus on
-        whole, unprocessed foods to ensure that you're getting the most benefit
-        from your diet. While plant-based meat alternatives can be a fun and
-        tasty addition to your meals on occasion, you can expect better health
-        results if you view them as an occasional treat rather than a staple of
-        your diet. By prioritizing nutrient-dense whole foods like fruits,
-        vegetables, legumes, and whole grains, you can enjoy a healthy and
-        well-rounded vegan diet that supports your long-term health and
-        wellbeing. Of course,{" "}
-        <b>
-          you are welcome to be as unhealthy as you like as a vegan, as long as
-          you aren't causing harm to another
-        </b>
-        .
-      </p>
-      <hr className="hr" />
+      <ul className="mt2 ml3">
+        <li>
+          Growth and repair: Protein is necessary for the growth and repair of
+          tissues, such as muscles, bones, and skin.
+        </li>
+        <li>
+          Enzyme production: Proteins are required for the production of enzymes
+          that facilitate chemical reactions in the body.
+        </li>
+        <li>
+          Hormone production: Some hormones, like insulin, are proteins that
+          help regulate various physiological processes.
+        </li>
+        <li>
+          Immune function: Proteins are essential components of antibodies,
+          which help the immune system to fight infections.
+        </li>
+        <li>
+          Energy source: When other energy sources (carbohydrates and fats) are
+          insufficient, proteins can be used to provide energy for the body.
+        </li>
+      </ul>
+      <hr />
+      <h2 className="is-size-4 fw5">Where do vegans get their protein?</h2>
       <p>
-        For more reading about this topic, you can refer to these sources:
+        Vegans can obtain protein from a variety of plant-based sources,
+        including:
+      </p>
+      <ul className="mt2 ml3">
+        <li>
+          Legumes: Beans, lentils, chickpeas, and peas are rich sources of
+          plant-based protein.
+        </li>
+        <li>
+          Grains: Whole grains, such as quinoa, barley, brown rice, and oats,
+          provide protein and other essential nutrients.
+        </li>
+        <li>
+          Nuts and seeds: Almonds, peanuts, sunflower seeds, chia seeds, and
+          hemp seeds are high in protein and healthy fats.
+        </li>
+        <li>
+          Soy products: Tofu, tempeh, and edamame are protein-rich soy-based
+          foods.
+        </li>
+        <li>
+          Meat alternatives: Plant-based meat alternatives, such as seitan,
+          textured vegetable protein (TVP), and veggie burgers, can provide
+          substantial amounts of protein.
+        </li>
+      </ul>
+      <p className="mt2">
+        By consuming a varied and balanced diet, vegans can meet their protein
+        needs and obtain all essential amino acids.
+      </p>
+      <hr />
+      <h2 className="is-size-4 fw5">Health concerns of animal protein:</h2>
+      <p>
+        There are some health concerns associated with consuming large amounts
+        of animal protein, particularly from processed and red meat sources:
+      </p>
+      <ul className="mt2 ml3">
+        <li>
+          Cardiovascular disease: High intake of saturated fat and cholesterol,
+          often found in animal protein sources, can contribute to an increased
+          risk of cardiovascular disease.
+        </li>
+        <li>
+          Cancer risk: Processed meats and excessive red meat consumption have
+          been linked to an increased risk of certain types of cancer, such as
+          colorectal cancer.
+        </li>
+        <li>
+          Kidney function: High protein intake, especially from animal sources,
+          may put strain on the kidneys and potentially increase the risk of
+          kidney disease.
+        </li>
+        <li>
+          Environmental impact: The production of animal protein often requires
+          more resources and has a higher environmental impact compared to
+          plant-based protein sources.
+        </li>
+        <li>
+          There is a hypothesis that consuming large amounts of animal protein
+          can lead to increased acidity in the body, which in turn could cause
+          the body to draw phosphate from bones to neutralize the acid. This
+          process could potentially contribute to bone loss over time. However,
+          scientific evidence on this topic is not conclusive, and more research
+          is needed to determine the exact relationship between animal protein
+          consumption, acid-base balance, and bone health
+        </li>
+      </ul>
+      <p className="mt2">
+        It is important to note that not all animal proteins carry the same
+        risks, and moderate consumption of lean meats, poultry, and fish can be
+        part of a healthy and balanced diet. However, incorporating more
+        plant-based proteins can offer health benefits and help address some of
+        the concerns associated with animal protein consumption.
+      </p>
+      <hr />
+      <h2 className="is-size-4 fw5">Sources</h2>
+      <p>
+        <p>
+          For further reading about this topic, you can refer to these sources:
+        </p>
         <p className="mt2">
           <a
             target="_blank"

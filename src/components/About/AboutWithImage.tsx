@@ -20,7 +20,7 @@ const AboutWithImage: React.FC<IAboutWithImageProps> = (
         })}
       >
         <div className="about__message">
-          <h1 className="is-size-4">{props.title}</h1>
+          <h1 className="is-size-3 fw5">{props.title}</h1>
           <article className={cn("message mt3", props.messageClassName)}>
             <div className="message-body">{props.children}</div>
           </article>
