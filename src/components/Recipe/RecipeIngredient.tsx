@@ -22,9 +22,16 @@ const RecipeIngredient = (props: IRecipeIngredientProps) => {
       onClick={() => setIsChecked((state) => !state)}
     >
       <div className="w-100 flex justify-between items-center">
-        <div className="flex justify-start items-center">
-          {ingredient.name} {ingredient.isOptional && "(optional)"}
-          {isChecked && <CheckMarkIcon iconProps={{ className: "is-green" }} />}
+        <div className="flex flex-column mr2 flex-shrink-1">
+          <div className="flex justify-start items-center">
+            {ingredient.name} {ingredient.isOptional && "(optional)"}
+            {isChecked && (
+              <CheckMarkIcon iconProps={{ className: "is-green" }} />
+            )}
+          </div>
+          {props.ingredient.notes && (
+            <div className="is-size-7">{props.ingredient.notes}</div>
+          )}
         </div>
         {ingredient.measurement !== undefined &&
           ingredient.quantity !== undefined && (

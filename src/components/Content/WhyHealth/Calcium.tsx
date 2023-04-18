@@ -6,68 +6,116 @@ const Calcium = () => {
       id="vegan-health-calcium"
       messageClassName="is-black"
       title="Vegan Calcium Sources: You aren't a Baby Cow!"
-      imageUrl="https://strongwithplants.com/wp-content/uploads/Copy-of-Blue-Aqua-Plant-Based-Calcium-Sources-Infographic-2-683x1024.png"
+      imageUrl="/images/calcium.png"
       isReverse
     >
+      <h2 className="is-size-4 fw5">What is calcium?</h2>
       <p>
-        There's a common misconception that the best source of calcium is cow's
-        milk. However, this idea has been{" "}
-        <b>heavily promoted by the dairy industry</b>, which has spent millions
-        of dollars on marketing campaigns to convince people that they need
-        cow's milk for strong bones. In reality,{" "}
-        <b>there are many plant-based sources of calcium</b> that are just as
-        effective at promoting bone health.
-      </p>
-      <p className="mt3">
-        Leafy greens like <b>kale, collard greens, and spinach</b> are excellent
-        sources of calcium, with a cup of cooked collard greens providing over
-        25% of the recommended daily intake.{" "}
-        <b>Tofu and fortified plant milks (such as Oat, Almond or Soy Milk)</b>{" "}
-        are also good sources of calcium, with many brands offering products
-        that <b>contain even more calcium than cow's milk</b>. Other sources of
-        plant-based calcium include{" "}
-        <b>almonds, sesame seeds, and fortified cereals</b>.
-      </p>
-      <p className="mt3">
-        It's important to note that calcium is just one of many nutrients that
-        are important for bone health. Eating a balanced diet that includes
-        plenty of fruits, vegetables, whole grains, and plant-based protein
-        sources is key. By getting your calcium from plant-based sources, you'll
-        be{" "}
-        <b>
-          avoiding the saturated fat and cholesterol that come with animal
-          products
-        </b>
-        . Plus, you'll be taking a stand against the misleading marketing
-        tactics of the dairy industry. In fact,{" "}
-        <b>
-          the dairy industry has faced legal action for falsely advertising
-          cow's milk as the best source of calcium
-        </b>
-        , and even for suggesting that it is necessary for good health.
-      </p>
-      <p className="mt3">
-        Humans are the <b>only species on the planet</b> that drinks the milk of
-        another species. Furthermore,{" "}
-        <b>
-          drinking cow's milk is not a natural or necessary part of the human
-          diet
-        </b>
-        . In fact, many people are lactose intolerant, meaning they cannot
-        properly digest the lactose found in cow's milk, and consuming dairy can
-        lead to digestive issues, discomfort, and other health problems.
-        Fortunately, there are many delicious and healthy plant-based
-        alternatives to cow's milk available, including{" "}
-        <b>soy, almond, oat, and rice milk</b>. By choosing these alternatives,
-        you can ensure that you are getting all the nutrients you need for
-        optimal health{" "}
-        <b>without the negative side effects of consuming dairy</b>.
+        Calcium is an essential mineral that plays a critical role in numerous
+        physiological processes in the human body. It is the most abundant
+        mineral in the body and is primarily found in bones and teeth, where it
+        provides structural support.
       </p>
       <hr />
+      <h2 className="is-size-4 fw5">Why do we need calcium?</h2>
+      <p>Calcium is necessary for various functions, including:</p>
+      <ul className="mt2 ml3">
+        <li>
+          Bone health: Calcium is a vital component of bones and teeth,
+          providing strength and structure. The body continually remodels bone
+          tissue, breaking it down and rebuilding it, which requires a
+          consistent intake of calcium.
+        </li>
+        <li>
+          Muscle function: Calcium is involved in muscle contractions, including
+          those of the heart.
+        </li>
+        <li>
+          Nerve transmission: Calcium plays a role in transmitting nerve
+          impulses and regulating neurotransmitter release.
+        </li>
+        <li>
+          Blood clotting: Calcium is essential for the blood clotting process,
+          helping to prevent excessive bleeding after an injury.
+        </li>
+      </ul>
+      <hr />
+      <h2 className="is-size-4 fw5">Where do vegans get their calcium?</h2>
       <p>
-        <span className="is-size-5">
-          For more reading about this topic, you can refer to these sources:
-        </span>
+        Vegans can obtain calcium from a variety of plant-based sources,
+        including:
+      </p>
+      <ul className="mt2 ml3">
+        <li>
+          Leafy greens: Kale, collard greens, bok choy, and broccoli are rich
+          sources of calcium.
+        </li>
+        <li>
+          Nuts and seeds: Almonds, sesame seeds, and chia seeds are high in
+          calcium.
+        </li>
+        <li>
+          Fortified plant-based milks: Many plant-based milks, such as almond,
+          soy, or oat milk, are fortified with calcium.
+        </li>
+        <li>
+          Calcium-set tofu: Tofu that is made with calcium sulfate as a
+          coagulant is a good source of calcium.
+        </li>
+        <li>
+          Legumes: Some legumes, such as white beans and chickpeas, contain
+          calcium.
+        </li>
+        <li>
+          Fortified cereals and bread: Some breakfast cereals and bread products
+          are fortified with calcium.
+        </li>
+      </ul>
+      <p className="mt2">
+        By consuming a varied and balanced diet, vegans can meet their calcium
+        needs without relying on dairy products.
+      </p>
+      <hr />
+      <h2 className="is-size-4 fw5">Lies the dairy industry has told you:</h2>
+      <p>
+        The dairy industry has promoted milk and dairy products as essential for
+        strong bones and overall health. Some common misconceptions or
+        exaggerated claims include:
+      </p>
+      <ul className="mt2 ml3">
+        <li>
+          Dairy is the only source of calcium: While dairy products do contain
+          significant amounts of calcium, they are not the only source. As
+          mentioned above, many plant-based foods also provide calcium, and
+          vegans can meet their calcium needs without consuming dairy.
+        </li>
+        <li>
+          More dairy equals stronger bones: Although calcium is essential for
+          bone health, consuming excessive amounts of dairy does not guarantee
+          stronger bones. Factors such as physical activity, vitamin D intake,
+          and genetics also play crucial roles in bone health. Some studies have
+          suggested that high dairy consumption does not necessarily lead to a
+          lower risk of osteoporosis or fractures.
+        </li>
+        <li>
+          Dairy is essential for everyone: Dairy products can be a part of a
+          healthy and balanced diet for many people, but they are not essential.
+          Individuals with lactose intolerance, milk allergies, or those
+          following a vegan diet can still meet their nutritional needs without
+          consuming dairy products.
+        </li>
+      </ul>
+      <p className="mt2">
+        It is essential to critically evaluate the claims made by any industry,
+        including the dairy industry, and to make informed decisions about your
+        diet based on scientific evidence and personal preferences.
+      </p>
+      <hr />
+      <h2 className="is-size-4 fw5">Sources</h2>
+      <p>
+        <p>
+          For further reading about this topic, you can refer to these sources:
+        </p>
         <p className="mt2">
           <a
             target="_blank"
@@ -125,7 +173,7 @@ const Calcium = () => {
           >
             "Dairy and Cancer" - Physicians Committee for Responsible Medicine:
           </a>{" "}
-          - his article summarizes research linking dairy consumption to
+          - This article summarizes research linking dairy consumption to
           increased risk of breast, ovarian, and prostate cancers.
         </p>
       </p>

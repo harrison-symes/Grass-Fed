@@ -5,7 +5,7 @@ import DropdownItem from "../../Dropdown/DropdownItem";
 import useQueryUpdater from "../../hooks/useQueryUpdater";
 import { QUERY_PARAMS } from "../../../constants/router.constants";
 
-const quantities: number[] = [0.5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const quantities: number[] = [0.5, 1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20];
 
 const QuantityControl = () => {
   const servings = useSelector(getServingsValue);
@@ -24,7 +24,7 @@ const QuantityControl = () => {
       label="Servings"
       text={`${servings} Servings`}
       value={servings}
-      className="w-100 w-auto-ns"
+      className="w-100 w-auto-ns is-right"
     >
       {quantities.map((quantity) => (
         <DropdownItem

@@ -174,6 +174,8 @@ export default {
         },
         {
           name: "Warm Water",
+          notes:
+            "Think 'bath temperature'. If it is too hot it will kill the yeast",
           quantity: 3 / 4,
           measurement: "cups",
         },

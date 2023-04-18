@@ -38,7 +38,7 @@ const RecipeCard = (props: IRecipeProps) => {
       </div>
       <div className="card-content">
         <div className="content">
-          <Ellipsis text={props.recipe.shortDescription} max={200} />
+          <Ellipsis text={props.recipe.shortDescription} max={150} />
         </div>
       </div>
       <div className="card-footer">

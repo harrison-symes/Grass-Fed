@@ -34,6 +34,7 @@ export interface IRecipeIngredient {
   quantity?: number;
   measurement?: IngredientMeasurement;
   isOptional?: boolean;
+  notes?: string;
 }
 
 export interface IRecipeStep {
