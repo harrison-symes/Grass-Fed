@@ -7,7 +7,7 @@ const VideoRecommendations = () => {
       <VideoRecommendation
         name="Gary Yourofsky"
         imageUrl="/images/gary_yourofsky.jpg"
-        text="Gary Yourofsky is a passionate animal rights activist and public speaker who is known for his provocative speeches on animal liberation and veganism, including his widely viewed 'Best Speech You Will Ever Hear' presentation. He is also the founder of the animal rights organization ADAPTT and has been involved in various forms of animal rights activism for over two decades."
+        text="Gary Yourofsky is a passionate animal rights activist and public speaker who is known for his provocative speeches on animal liberation and veganism, including his widely viewed 'Best Speech You Will Ever Hear' presentation. He is also the founder of the animal rights organization ADAPTT and has been involved in various forms of animal rights activism for over two decades. The first video here is age restricted, but you should watch it. It really is the best speech you will ever hear."
         videoId="U5hGQDLprA8"
         videoId2="GPHPVvKoZDI"
         youtubeUrl="https://www.youtube.com/@GaryYourofskyAdaptt"

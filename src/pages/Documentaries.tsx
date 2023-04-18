@@ -6,31 +6,6 @@ const Documentaries = () => {
       <h1 className="is-size-3">Documentaries</h1>
       <div className="documentaries">
         <Documentary
-          title="Cowspiracy"
-          year="2014"
-          text={
-            <>
-              <p>
-                "Cowspiracy" is a 2014 documentary film produced and directed by
-                Kip Andersen and Keegan Kuhn. The film explores the devastating
-                impact of animal agriculture on the environment and the
-                practices of the animal agriculture industry, while highlighting
-                the environmental organizations' reluctance to address the
-                issue. The film covers the impact of animal agriculture on
-                various regions, including North America, South America, Asia,
-                and Europe. The documentary has been praised for its informative
-                approach to environmentalism and its exploration of a topic that
-                is often overlooked in mainstream discussions about
-                sustainability.
-              </p>
-            </>
-          }
-          youtubeId="nV04zyfLyN4"
-          videoUrl="https://www.netflix.com/watch/80033772"
-          watchService="Netflix"
-        />
-        <hr />
-        <Documentary
           title="Earthlings"
           year="2019"
           text={
@@ -88,6 +63,63 @@ const Documentaries = () => {
           youtubeId="LpDJlEQsDoA"
           videoUrl="https://www.youtube.com/watch?v=LQRAfJyEsko"
           watchService="Youtube"
+        />
+        <hr />
+        <Documentary
+          title="Land of Hope and Glory"
+          year="2017"
+          text={
+            <>
+              <p>
+                "Land of Hope and Glory" is a powerful and thought-provoking
+                documentary film that exposes the hidden truths behind modern
+                animal agriculture. Directed and produced by the UK-based animal
+                welfare organization, Surge, the film takes an unflinching look
+                at the cruelty and suffering that takes place within the walls
+                of factory farms and slaughterhouses. Through powerful footage
+                and expert testimony from veterinarians, animal welfare experts,
+                and industry insiders, "Land of Hope and Glory" reveals the grim
+                reality of animal agriculture and its impact on animals, the
+                environment, and human health. The film also highlights the
+                ethical and moral implications of our food choices, and
+                challenges viewers to consider the impact of their daily
+                decisions on the lives of animals and the planet. Despite its
+                challenging subject matter, "Land of Hope and Glory" has been
+                widely praised for its honesty, integrity, and impact, inspiring
+                many viewers to make changes in their own lives and sparking a
+                growing movement towards more compassionate and sustainable food
+                choices.
+              </p>
+            </>
+          }
+          youtubeId="OqPflP_hXyY"
+          videoUrl="https://www.youtube.com/watch?v=dvtVkNofcq8"
+          watchService="Youtube"
+        />
+        <hr />
+        <Documentary
+          title="Cowspiracy"
+          year="2014"
+          text={
+            <>
+              <p>
+                "Cowspiracy" is a 2014 documentary film produced and directed by
+                Kip Andersen and Keegan Kuhn. The film explores the devastating
+                impact of animal agriculture on the environment and the
+                practices of the animal agriculture industry, while highlighting
+                the environmental organizations' reluctance to address the
+                issue. The film covers the impact of animal agriculture on
+                various regions, including North America, South America, Asia,
+                and Europe. The documentary has been praised for its informative
+                approach to environmentalism and its exploration of a topic that
+                is often overlooked in mainstream discussions about
+                sustainability.
+              </p>
+            </>
+          }
+          youtubeId="nV04zyfLyN4"
+          videoUrl="https://www.netflix.com/watch/80033772"
+          watchService="Netflix"
         />
         <hr />
         <Documentary
