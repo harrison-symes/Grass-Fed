@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 
 import cn from "classnames";
 import LinkIcon from "../Icons/Link";
+import TwitterIcon from "../Icons/Twitter";
 
 interface IVideoRecommendationProps {
   name: string;
@@ -17,6 +18,7 @@ interface IVideoRecommendationProps {
   youtubeUrl?: string;
   instagramUrl?: string;
   websiteUrl?: string;
+  twitterUrl?: string;
   isReverse?: boolean;
 }
 
@@ -57,28 +59,45 @@ const VideoRecommendation = (props: IVideoRecommendationProps) => {
           {props.youtubeUrl && (
             <a
               href={props.youtubeUrl}
-              className="card-footer-item flex items-center"
+              target="_blank"
+              rel="noreferrer"
+              className="card-footer-item flex items-center is-size-1-mobile"
             >
               <YoutubeIcon />
-              Youtube
+              <span className="dn db-ns">Youtube</span>
             </a>
           )}
           {props.instagramUrl && (
             <a
               href={props.instagramUrl}
-              className="card-footer-item flex items-center"
+              target="_blank"
+              rel="noreferrer"
+              className="card-footer-item flex items-center is-size-1-mobile"
             >
               <InstagramIcon />
-              Instagram
+              <span className="dn db-ns">Instagram</span>
+            </a>
+          )}
+          {props.twitterUrl && (
+            <a
+              href={props.twitterUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="card-footer-item flex items-center is-size-1-mobile"
+            >
+              <TwitterIcon />
+              <span className="dn db-ns">Twitter</span>
             </a>
           )}
           {props.websiteUrl && (
             <a
               href={props.websiteUrl}
-              className="card-footer-item flex items-center"
+              target="_blank"
+              rel="noreferrer"
+              className="card-footer-item flex items-center is-size-1-mobile"
             >
               <LinkIcon />
-              Website
+              <span className="dn db-ns">Website</span>
             </a>
           )}
         </div>
