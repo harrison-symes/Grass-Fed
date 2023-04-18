@@ -6,7 +6,7 @@ export default {
   categories: ["baking", "snack", "dessert"],
   cost: 2,
   time: 3,
-  servings: 8,
+  servings: 4,
   shortDescription:
     "These cookies are simple, delicious and very easy to make. My non-vegan friends love them!",
   rating: 4,
@@ -15,6 +15,7 @@ export default {
   components: [
     {
       componentName: "Biscoff Stuffed Cookies",
+      note: "Makes 2 cookies per serving",
       ingredients: [
         {
           name: "Biscoff Spread",

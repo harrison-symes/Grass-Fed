@@ -24,7 +24,7 @@ const QuantityControl = () => {
       label="Servings"
       text={`${servings} Servings`}
       value={servings}
-      className="w-100 w-auto-ns"
+      className="w-100 w-auto-ns is-right"
     >
       {quantities.map((quantity) => (
         <DropdownItem
