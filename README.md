@@ -1,6 +1,22 @@
-# Getting Started with Create React App
+# Grass-Fed
+
+This website is a labour of love, to condense everything I know about being vegan into one place.
+
+This mass resource includes
+
+- Vegan Recipes
+- Documentaries
+- Activists and Content Creators
+- Facts about Health, Environment and Animals
+- And hopefully more to come
+
+Hopefully with this resource it will be easier for people to understand Veganism, and make the right choice for themselves, the planet and the animals.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Website
+
+You can can find the live website at https://grass-fed.co.nz
 
 ## Available Scripts
 
